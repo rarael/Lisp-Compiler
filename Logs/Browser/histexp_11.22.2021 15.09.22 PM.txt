@@ -1,0 +1,19 @@
+11/22/2021 15:09:24 PM	COMP 311 - Computer Organization - Course.Care	https://course.care/ng/course/57
+11/22/2021 15:09:26 PM	COMP 311 - Computer Organization - Course.Care	https://course.care/course/57/event/7025/queue#/staff/course/57/event/7025
+11/22/2021 15:09:27 PM	COMP 311 - Computer Organization - Course.Care	https://course.care/course/57/event/7025/queue#/staff/course/57/event/7025?_k=ff7qz8
+11/22/2021 16:08:14 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/portal/site/~rarael
+11/22/2021 16:08:17 PM	Sakai @ UNC-Chapel Hill : COMP311.001.FA21 : Overview	https://sakai.unc.edu/portal/site/d6392143-7cea-4999-9e03-a9842888b676
+11/22/2021 16:08:20 PM	Sakai @ UNC-Chapel Hill : COMP311.001.FA21 : Resources	https://sakai.unc.edu/portal/site/d6392143-7cea-4999-9e03-a9842888b676/tool/561e8a03-83f6-4f75-bf2b-0242224862a8
+11/22/2021 16:08:23 PM	Sakai @ UNC-Chapel Hill : COMP311.001.FA21 : Resources	https://sakai.unc.edu/portal/site/d6392143-7cea-4999-9e03-a9842888b676/tool/561e8a03-83f6-4f75-bf2b-0242224862a8#
+11/22/2021 16:08:23 PM	Sakai @ UNC-Chapel Hill : COMP311.001.FA21 : Resources	https://sakai.unc.edu/portal/site/d6392143-7cea-4999-9e03-a9842888b676/tool/561e8a03-83f6-4f75-bf2b-0242224862a8?panel=Main
+11/22/2021 16:08:18 PM		https://sakai.unc.edu/portal/tool/6126f793-9d2f-4fda-ad02-8fcf0dff8dff/synMainLite?time=1
+11/22/2021 16:08:13 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e2s1
+11/22/2021 16:08:12 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJdb4IwFIb%2FCum9lNbptBESphczcZMI28VulgLH0Qxa1lP28e%2BH4haXLF73%2Fej75CxQNnUr4s5VegdvHaDzPptaozg%2BhKSzWhiJCoWWDaBwhUjju43gfiBaa5wpTE28GBGsU0YvjcauAZuCfVcFPOw2Iamca1FQivJVKr%2FThQ9lR9NK5bmpwVU%2BoqGHUE6TbZoRb9X%2FQml5yDtzo%2Fn1qrKlffle1XAy7qBUFgpH03RLvPUqJM%2BT6YzLMfBiejUpeckm82K65yxnc3YdwHzWyxA7WGt0UruQ8ICzEWMjzjPORDATbPxEvOS08UbpUumXy0DyQYTiNsuS0TDmESweh%2FQCEi0OWMWx2J6Bvhwrf%2BiS6H%2BW%2BMtyQc8KhrZW3PeJ61VialV8eXFdm4%2BlBekgJIzQaLD8vYHoGw%3D%3D&RelayState=ss%3Amem%3Abf784de930b7dcd66c71f837f8d672946a8ee50a41babc73b2e4917a9f9b0b58&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=Q2GtAVh%2Fb75i4v%2F8IalhP6v%2BxScKNkoWIgbxjLoMFXJcAk4irr01bbLoc7ueyywBoIpoeWjATplsdHlkBmHld7KOo1gF1OevDIa5zokgcNzd1I22O4zYDk5KlKD36hdmZ5yMVHHnb1SMim%2BjCN4nrXlvUoYg9ZuYnmAky5XXeJK1EAZHInuDqYmoFmPQFUZfJvlDVZtkdJkhnfKyJnQTtqQ8VuuotF7qO%2FO91Xhh8lJqm1Zwjxkaebmzuh9Ut30zP5R%2BirqtUQng3059maG5KboDBcTAUvBhRzf4SqwhQYJtMHE2lJcFoggoNYZ0IQ6%2F8WooJMUKkM3%2BiDsR3uSNZA%3D%3D
+11/22/2021 16:08:29 PM	#9: Procedures & Stacks - Google Slides	https://sakai.unc.edu/access/content/group/d6392143-7cea-4999-9e03-a9842888b676/Lecture%20Slides/https%3A__docs.googl20211019084511.URL
+11/22/2021 16:28:54 PM	COMP 311 - Computer Organization - Course.Care	https://course.care/ng/course/57
+11/22/2021 16:28:53 PM	COMP 311 - Computer Organization - Course.Care	https://course.care/course/57/member/10552/history
+11/22/2021 16:28:56 PM	COMP 311 - Computer Organization - Course.Care	https://course.care/course/57/event/7025/queue#/staff/course/57/event/7025
+11/22/2021 16:28:56 PM	COMP 311 - Computer Organization - Course.Care	https://course.care/course/57/event/7025/queue#/staff/course/57/event/7025?_k=ren32v
+11/22/2021 16:30:57 PM	#10: Building a MIPS 32 - Google Slides	https://sakai.unc.edu/access/content/group/d6392143-7cea-4999-9e03-a9842888b676/Lecture%20Slides/https%3A__docs.googl20211102084320.URL
+11/22/2021 17:31:09 PM	Assignment-6.docx - Google Docs	https://docs.google.com/document/d/1vDGOP1LhUlGlwbPQf52p_k0IgNqn9Ibq/edit?rtpof=true
+11/22/2021 17:33:08 PM	Assignment-6.docx - Google Docs	https://docs.google.com/document/d/1vDGOP1LhUlGlwbPQf52p_k0IgNqn9Ibq/edit

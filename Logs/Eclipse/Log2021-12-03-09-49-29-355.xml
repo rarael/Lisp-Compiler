@@ -1,0 +1,72 @@
+<Events startTimestamp="1638542969355" logVersion="1.0.0.202108012048">
+  <Command __id="472" _type="PauseCommand" date="Fri Dec 03 10:26:15 EST 2021" range="2s-5s" starttimestamp="1638542969355" timestamp="2205790">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2140]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="471" _type="ShellCommand" date="Fri Dec 03 10:26:15 EST 2021" starttimestamp="1638542969355" timestamp="2205790" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="474" _type="PauseCommand" date="Fri Dec 03 10:26:44 EST 2021" range="20s-30s" starttimestamp="1638542969355" timestamp="2234866">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[29076]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="475" _type="MoveCaretCommand" caretOffset="19" date="Fri Dec 03 10:26:44 EST 2021" docOffset="19" starttimestamp="1638542969355" timestamp="2235106" />
+  <Command __id="480" _type="PauseCommand" date="Fri Dec 03 10:26:52 EST 2021" range="5s-10s" starttimestamp="1638542969355" timestamp="2243302">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[BreakPointCommand]]></prev>
+    <pause><![CDATA[5542]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="479" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 10:26:52 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638542969355" timestamp="2243302" type="Run" />
+  <Command __id="481" _type="ProgramExecutionEvent" className="(Unknown)" date="Fri Dec 03 10:26:53 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638542969355" timestamp="2243765" type="Run" />
+  <Command __id="482" _type="ProgramExecutionEvent" className="(Unknown)" date="Fri Dec 03 10:26:53 EST 2021" kind="StepInto" projectName="(Unknown)" starttimestamp="1638542969355" timestamp="2243844" type="Run" />
+  <Command __id="483" _type="ProgramExecutionEvent" className="(Unknown)" date="Fri Dec 03 10:26:53 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638542969355" timestamp="2244193" type="Run" />
+  <Command __id="484" _type="ConsoleOutput" date="Fri Dec 03 10:26:53 EST 2021" overflow="false" starttimestamp="1638542969355" timestamp="2244350" type="ConsoleOutput">
+    <outputString><![CDATA[JRE Oracle Corporation/11.0.12 is not supported, advanced source lookup disabled: Unsupported class file major version 55.
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"(T NIL NIL)"), Diff(INSERT,"JRE Oracle Corporation/11.0.12 is not supported, advanced source lookup disabled: Unsupported class file major version 55."), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="485" _type="PasteCommand" date="Fri Dec 03 10:26:54 EST 2021" starttimestamp="1638542969355" timestamp="2245061" />
+  <Command __id="487" _type="PauseCommand" date="Fri Dec 03 10:27:02 EST 2021" range="5s-10s" starttimestamp="1638542969355" timestamp="2252675">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[PasteCommand]]></prev>
+    <pause><![CDATA[7614]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="486" _type="ConsoleOutput" date="Fri Dec 03 10:27:02 EST 2021" overflow="false" starttimestamp="1638542969355" timestamp="2252675" type="ConsoleOutput">
+    <outputString><![CDATA[(setq f1 
+   (lambda (L) 
+       (cond         
+          ((eq L Nil) NIL)
+          (T  (cons 
+                (atom (car L)) 
+                (funcall f1 (cdr L))
+              )
+          )
+       )
+    )
+ )
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"JRE Oracle Corporation/11.0.12 is not supported, advanced source lookup disabled: Unsupported class file major version 55."), Diff(INSERT,"(setq f1 ¶   (lambda (L) ¶       (cond         ¶          ((eq L Nil) NIL)¶          (T  (cons ¶                (atom (car L)) ¶                (funcall f1 (cdr L))¶              )¶          )¶       )¶    )¶ )"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="488" _type="PasteCommand" date="Fri Dec 03 10:27:02 EST 2021" starttimestamp="1638542969355" timestamp="2252692" />
+  <Command __id="489" _type="ConsoleOutput" date="Fri Dec 03 10:27:02 EST 2021" overflow="false" starttimestamp="1638542969355" timestamp="2252790" type="ConsoleOutput">
+    <outputString><![CDATA[LAMBDA (L) (COND ((EQ L NIL) NIL) (T (CONS (ATOM (CAR L)) (FUNCALL F1 (CDR L)))))
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"(setq f1 ¶   (lambda (L) ¶       (cond         ¶         "), Diff(INSERT,"LAMBDA (L) (COND"), Diff(EQUAL," (("), Diff(DELETE,"eq"), Diff(INSERT,"EQ"), Diff(EQUAL," L N"), Diff(DELETE,"il"), Diff(INSERT,"IL"), Diff(EQUAL,") NIL)"), Diff(DELETE,"¶         "), Diff(EQUAL," (T "), Diff(DELETE," "), Diff(EQUAL,"("), Diff(DELETE,"cons ¶                (atom (car L)) ¶                (funcall f1 (cdr L))¶              )¶          )¶       )¶    )¶ "), Diff(INSERT,"CONS (ATOM (CAR L)) (FUNCALL F1 (CDR L))))"), Diff(EQUAL,")¶")]]]></diff>
+  </Command>
+  <Command __id="491" _type="PauseCommand" date="Fri Dec 03 10:27:06 EST 2021" range="2s-5s" starttimestamp="1638542969355" timestamp="2257364">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[4574]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[PasteCommand]]></next>
+  </Command>
+  <Command __id="490" _type="PasteCommand" date="Fri Dec 03 10:27:06 EST 2021" starttimestamp="1638542969355" timestamp="2257364" />
+</Events>

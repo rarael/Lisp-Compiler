@@ -1,0 +1,2142 @@
+<Events startTimestamp="1638547302020" logVersion="1.0.0.202108012048">
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 11:01:42 EST 2021" docLength="6407" projectName="a4" starttimestamp="1638547302020" timestamp="326">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a4\src\SocialDistance.sml]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[fun givenSafe(13, 30, 30) = true |
+		givenSafe(6, 30, 10) = true |
+		givenSafe(27, 30, 50) = true |
+		givenSafe(13, 15, 50) = true |
+		givenSafe(13, 120, 10) = true |
+		givenSafe(27, 120, 30) = true |
+		givenSafe(6, 15, 30) = true |
+		givenSafe(distance, duration, exhalation) = false;
+		
+				
+fun interpolatedDistance(aDistance) = 
+		if aDistance < 6 then
+				0
+		else if aDistance >= 6 andalso aDistance < 13 then 
+				6
+		else if aDistance >= 13 andalso aDistance < 27 then
+				13
+		else 
+				27;
+
+fun interpolatedDuration(aDuration) = 
+		if aDuration <= 15 then
+				15
+		else if aDuration > 15 andalso aDuration <= 30 then
+				30
+		else if aDuration > 30 andalso aDuration<= 120 then 
+				120
+		else
+		    200;
+
+fun interpolatedExhalation(aExhalation) = 
+		if aExhalation <= 10 then
+				10
+		else if aExhalation > 10 andalso aExhalation <= 30 then
+				30
+		else if aExhalation > 30 andalso aExhalation<= 50 then 
+				50
+		else
+		    200;		
+		    
+		
+fun interpolatedSafe(distance, duration, exhalation) = 
+				givenSafe(interpolatedDistance(distance), interpolatedDuration(duration), interpolatedExhalation(exhalation));
+				
+val SAFETY_TABLE =
+  [(13,30,30),(6,30,10),(27,30,50),(13,15,50),(13,120,10),(27,120,30),
+   (6,15,30)]; 
+ 
+fun listDerivedSafeRecurse(distance, duration, exhalation, nil) = false |
+		listDerivedSafeRecurse(distance, duration, exhalation, (distance1, duration2, exhalation3) :: tail) =  
+			if distance >= distance1 andalso duration <= duration2 andalso exhalation <= exhalation3 then
+				true
+			else 
+				listDerivedSafeRecurse(distance, duration, exhalation, tail); 
+		   
+fun listDerivedSafe(distance, duration, exhalation) =
+		listDerivedSafeRecurse(distance, duration, exhalation, SAFETY_TABLE);
+		
+fun printSafety(safetyComputer, (distance, duration, exhalation)) = 
+		let val safety = safetyComputer(distance, duration, exhalation)
+		in
+			if safety then 
+				print("Distance:"^(Int.toString distance)^" Duration:"^(Int.toString duration)^" Exhalation:"^(Int.toString exhalation)^" Safe:true\n")
+			else 
+				print ("Distance:"^(Int.toString distance)^" Duration:"^(Int.toString duration)^" Exhalation:"^(Int.toString exhalation)^" Safe:false\n")
+		end;		
+		
+fun concisePrintSafety(safetyComputer, (distance, duration, exhalation)) = 
+		let val safety = safetyComputer(distance, duration, exhalation)
+		in
+			if safety then 
+				print("("^(Int.toString distance)^","^(Int.toString duration)^","^(Int.toString exhalation)^",true)\n")
+			else 
+				print ("("^(Int.toString distance)^","^(Int.toString duration)^","^(Int.toString exhalation)^",false)\n")
+		end;	
+			
+fun listPrintSafety(whichPrint, safetyComputer, nil) = () |
+		listPrintSafety(whichPrint, safetyComputer, head :: tail) =  (
+			whichPrint(safetyComputer, head);
+			listPrintSafety(whichPrint, safetyComputer, tail)
+			);
+fun matchingSafeRecurse(matcherFunction, featureTuple, nil) = false |
+		matchingSafeRecurse(matcherFunction, featureTuple, head:: tail) = 
+		if matcherFunction(featureTuple, head) then
+			true
+		else 
+			matchingSafeRecurse(matcherFunction, featureTuple, tail);
+
+fun matchingSafe(matcherFunction, featureTuple) = 
+		matchingSafeRecurse(matcherFunction, featureTuple, SAFETY_TABLE);
+				
+fun derivedSafeMatcher((distance, duration, exhalation), (distance2, duration2, exhalation2)) = 
+			if distance >= distance2 andalso duration <= duration2 andalso exhalation <= exhalation2 then
+				true
+			else 
+				false;
+fun givenSafeMatcher((distance, duration, exhalation), (distance2, duration2, exhalation2)) = 
+		if (distance, duration, exhalation) = (distance2, duration2, exhalation2) then
+			true
+		else 
+			false;
+							
+fun matchingDerivedSafe(distance, duration, exhalation) =
+		matchingSafe(derivedSafeMatcher, (distance, duration, exhalation));	
+	
+fun matchingGivenSafe(distance, duration, exhalation) = 
+		matchingSafe(givenSafeMatcher, (distance, duration, exhalation));	
+		
+fun curryableInterpolatedSafe distance duration exhalation
+		= givenSafe(interpolatedDistance(distance), interpolatedDuration(duration), interpolatedExhalation(exhalation));  
+			
+fun curriedOnceInterpolatedSafe duration exhalation =
+		curryableInterpolatedSafe 13 duration exhalation;
+		
+fun curriedTwiceInterpolatedSafe exhalation =
+		curriedOnceInterpolatedSafe 30 exhalation;
+		
+fun curryableMatchingSafe matcherFunction featureTuple = 
+		matchingSafeRecurse(matcherFunction, featureTuple, SAFETY_TABLE); 
+		
+val curriedMatchingDerivedSafe =
+		curryableMatchingSafe derivedSafeMatcher;	
+
+val curriedMatchingGivenSafe  = 
+		curryableMatchingSafe givenSafeMatcher;	
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+fun sumSquareOfPositiveElements (nil) = 0 |
+	sumSquareOfPositiveElements(head::tail) =
+	if head > 0 then
+		(sumSquareOfPositiveElements(tail)) + head*head
+	else 
+		sumSquareOfPositiveElements(tail);	
+		
+fun sumCubeOfPositiveElements (nil) = 0 |
+sumCubeOfPositiveElements(head::tail) =
+	if head > 0 then
+		sumCubeOfPositiveElements(tail) + head*head*head 
+	else 
+		sumCubeOfPositiveElements(tail);	
+		
+fun sumCubeOfNegativeElements (nil) = 0 |
+sumCubeOfNegativeElements(head::tail) =
+	if head < 0 then
+		sumCubeOfNegativeElements(tail) + head*head*head 
+	else 
+		sumCubeOfNegativeElements(tail);
+		
+fun NumberOfPositiveElements (nil) = 0 |
+NumberOfPositiveElements(head::tail) =
+	if head > 0 then
+		NumberOfPositiveElements(tail) + 1
+	else 
+		NumberOfPositiveElements(tail);
+
+fun curriedHighestOrderFunction equalityFun addingFun (nil) = 0 |
+curriedHighestOrderFunction equalityFun addingFun (head::tail) =
+	if equalityFun(head) then
+		curriedHighestOrderFunction equalityFun addingFun (tail) + addingFun(head)
+	else 
+		curriedHighestOrderFunction equalityFun addingFun (tail);
+
+fun negativeEqualityFun (number) =
+	if number < 0 then 
+		true
+	else 
+		false;
+	
+fun positiveEqualityFun (number) =
+	if number > 0 then true
+	else false;
+	
+fun squareAddingFun (number) =
+	number*number;
+	
+fun cubeAddingFun (number) =
+	number*number*number;
+	
+fun squareAddingFun (number) =
+	number*number;
+
+val curriedSumSquareOfPositiveElements = curriedHighestOrderFunction positiveEqualityFun squareAddingFun;
+val curriedSumCubeOfPositiveElements = curriedHighestOrderFunction positiveEqualityFun cubeAddingFun;
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		]]></snapshot>
+  </Command>
+  <Command __id="2" _type="PauseCommand" date="Fri Dec 03 11:01:50 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="8431">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[8100]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="3" _type="MoveCaretCommand" caretOffset="0" date="Fri Dec 03 11:01:50 EST 2021" docOffset="0" starttimestamp="1638547302020" timestamp="8793" />
+  <Command __id="1" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 11:01:50 EST 2021" docASTNodeCount="233" docActiveCodeLength="1509" docExpressionCount="173" docLength="1683" projectName="a5" starttimestamp="1638547302020" timestamp="8426">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\evaluators\StringFormats.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package evaluators;
+import main.lisp.parser.terms.AbstractSExpression;
+import main.lisp.parser.terms.BasicExpression;
+import main.lisp.parser.terms.SExpression;
+public class StringFormats extends BasicExpression{
+
+	public StringFormats(SExpression head, SExpression tail) {
+		super(head, tail);
+	}
+	@Override
+	public String toString() {
+		if(this.isNIL()) {
+			return this.toStringAsSExpression();
+		}
+		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();
+	}
+	@Override
+	public String toStringAsSExpressionDeep() {
+		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";
+	}
+	
+	@Override
+	public String toStringAsSExpression() {
+		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";
+	}
+	@Override
+	public String toStringAsListHelperPublic() {
+		if (this.getTail().isNIL()) {
+			return this.getHead().toString();
+		}else {
+			return this.getHead().toString() + " " + ((AbstractSExpression) this.getTail()).toStringAsListHelperPublic();
+		}
+		
+	}
+	@Override
+	public String toStringAsList() {
+			// does the same thing as toStringas list deep....need to change
+			return "(" + this.toStringAsListHelperPublic() + ")";
+	}
+
+	@Override
+	public boolean isList() {
+		// if head is a non nil atom and tail is nil, is a list
+		if(this.getHead().isAtom() && !(this.getHead().isNIL()) && this.getTail().isNIL()) {
+			return true;
+			// if the tail is an atom but not nil, it is not a list
+		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {
+			return false;
+		} else 
+			return this.getTail().isList();
+		}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="5" _type="PauseCommand" date="Fri Dec 03 11:02:17 EST 2021" range="20s-30s" starttimestamp="1638547302020" timestamp="35033">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[26240]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="4" _type="SelectTextCommand" caretOffset="1313" date="Fri Dec 03 11:02:17 EST 2021" end="1338" start="1313" starttimestamp="1638547302020" timestamp="35033" />
+  <Command __id="18" _type="PauseCommand" date="Fri Dec 03 11:02:20 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="38673">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1432]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="17" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:20 EST 2021" starttimestamp="1638547302020" timestamp="38672" />
+  <Command __id="19" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Fri Dec 03 11:02:20 EST 2021" starttimestamp="1638547302020" timestamp="38722" />
+  <Command __id="20" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:20 EST 2021" starttimestamp="1638547302020" timestamp="38792" />
+  <Command __id="21" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:20 EST 2021" starttimestamp="1638547302020" timestamp="38794" />
+  <Command __id="22" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:20 EST 2021" starttimestamp="1638547302020" timestamp="38949" />
+  <Command __id="23" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:20 EST 2021" starttimestamp="1638547302020" timestamp="38959" />
+  <Command __id="24" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:20 EST 2021" starttimestamp="1638547302020" timestamp="38964" />
+  <Command __id="25" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:20 EST 2021" starttimestamp="1638547302020" timestamp="38966" />
+  <Command __id="26" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:20 EST 2021" starttimestamp="1638547302020" timestamp="38977" />
+  <Command __id="27" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:20 EST 2021" starttimestamp="1638547302020" timestamp="38978" />
+  <Command __id="28" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:21 EST 2021" starttimestamp="1638547302020" timestamp="39006" />
+  <Command __id="32" _type="PauseCommand" date="Fri Dec 03 11:02:34 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="52161">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[6272]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="31" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:34 EST 2021" starttimestamp="1638547302020" timestamp="52161" />
+  <Command __id="33" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:34 EST 2021" starttimestamp="1638547302020" timestamp="52171" />
+  <Command __id="34" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:34 EST 2021" starttimestamp="1638547302020" timestamp="52172" />
+  <Command __id="35" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:34 EST 2021" starttimestamp="1638547302020" timestamp="52175" />
+  <Command __id="36" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:34 EST 2021" starttimestamp="1638547302020" timestamp="52176" />
+  <Command __id="37" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:34 EST 2021" starttimestamp="1638547302020" timestamp="52178" />
+  <Command __id="38" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:34 EST 2021" starttimestamp="1638547302020" timestamp="52178" />
+  <Command __id="39" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:02:34 EST 2021" starttimestamp="1638547302020" timestamp="52183" />
+  <Command __id="40" _type="ProgramExecutionEvent" className="/a5/src/a5/LocalChecks.java" date="Fri Dec 03 11:02:34 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="52206" type="Run" />
+  <Command __id="41" _type="RunCommand" className="/a5/src/a5/LocalChecks.java" date="Fri Dec 03 11:02:34 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="52206" type="Run" />
+  <Command __id="43" _type="PauseCommand" date="Fri Dec 03 11:02:37 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="55851">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[3645]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="42" _type="ShellCommand" date="Fri Dec 03 11:02:37 EST 2021" starttimestamp="1638547302020" timestamp="55851" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="45" _type="PauseCommand" date="Fri Dec 03 11:02:40 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="58935">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3084]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="44" _type="ConsoleOutput" date="Fri Dec 03 11:02:40 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="58935" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):37
+Test execution time (ms):25
+Test execution time (ms):29
+]]></outputString>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="46" _type="ExceptionCommand" date="Fri Dec 03 11:02:41 EST 2021" starttimestamp="1638547302020" timestamp="59076" type="Exception">
+    <exceptionString><![CDATA[java.lang.IllegalStateException: Expression does not start with an operator
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:18)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at expression.CondEvaluator.eval(CondEvaluator.java:21)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
+	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
+	at functional.FuncallEvaluator.evaluateLambda(FuncallEvaluator.java:55)
+	at functional.FuncallEvaluator.eval(FuncallEvaluator.java:35)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at expression.LoadEvaluator.eval(LoadEvaluator.java:31)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="47" _type="ExceptionCommand" date="Fri Dec 03 11:02:41 EST 2021" starttimestamp="1638547302020" timestamp="59180" type="Exception">
+    <exceptionString><![CDATA[LispIsListChecker did not pass completely:Expected strings:Tactual string NIL%0.0
+
+Test execution time (ms):4
+java.lang.IllegalStateException: Expression does not start with an operator
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:18)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at expression.CondEvaluator.eval(CondEvaluator.java:21)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
+	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
+	at functional.FuncallEvaluator.evaluateLambda(FuncallEvaluator.java:55)
+	at functional.FuncallEvaluator.eval(FuncallEvaluator.java:35)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="52" _type="PauseCommand" date="Fri Dec 03 11:02:46 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="64239">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[3123]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="51" _type="RunCommand" className="/a5/src/a5/LocalChecks.java" date="Fri Dec 03 11:02:46 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="64239" type="Run" />
+  <Command __id="54" _type="PauseCommand" date="Fri Dec 03 11:02:50 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="68161">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[3921]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="53" _type="ShellCommand" date="Fri Dec 03 11:02:50 EST 2021" starttimestamp="1638547302020" timestamp="68160" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="56" _type="PauseCommand" date="Fri Dec 03 11:02:53 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="71321">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3161]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="55" _type="ConsoleOutput" date="Fri Dec 03 11:02:53 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="71321" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):133
+Test execution time (ms):1
+Test execution time (ms):11
+Test execution time (ms):15
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"37"), Diff(INSERT,"133¶Test execution time (ms):1"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"25"), Diff(INSERT,"11"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"29"), Diff(INSERT,"15"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="57" _type="ExceptionCommand" date="Fri Dec 03 11:02:53 EST 2021" starttimestamp="1638547302020" timestamp="71429" type="Exception">
+    <exceptionString><![CDATA[java.lang.IllegalStateException: Expression does not start with an operator
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:18)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at expression.CondEvaluator.eval(CondEvaluator.java:21)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
+	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
+	at functional.FuncallEvaluator.evaluateLambda(FuncallEvaluator.java:55)
+	at functional.FuncallEvaluator.eval(FuncallEvaluator.java:35)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at expression.LoadEvaluator.eval(LoadEvaluator.java:31)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AJUnitTestContext.getAndPossiblyRunJUnitPassFailTestCase(AJUnitTestContext.java:52)
+	at grader.basics.junit.JUnitTestsEnvironment.getAndPossiblyRunGradableJUnitTest(JUnitTestsEnvironment.java:62)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:45)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="59" _type="PauseCommand" date="Fri Dec 03 11:02:55 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="73790">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[2361]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="58" _type="ConsoleOutput" date="Fri Dec 03 11:02:55 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="73790" type="ConsoleOutput">
+    <outputString><![CDATA[Symbol table size:38
+Running second pass checks Fri Dec 03 11:02:55 EST 2021
+Start O(n2) inter- and intra class method calls:Fri Dec 03 11:02:55 EST 2021
+End O(n2) inter- and intra class method calls:Fri Dec 03 11:02:55 EST 2021
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):133¶Test execution time (ms):1¶Test execution time (ms):11¶Test execution time (ms):15"), Diff(INSERT,"Symbol table size:38¶Running second pass checks Fri Dec 03 11:02:55 EST 2021¶Start O(n2) inter- and intra class method calls:Fri Dec 03 11:02:55 EST 2021¶End O(n2) inter- and intra class method calls:Fri Dec 03 11:02:55 EST 2021"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="61" _type="PauseCommand" date="Fri Dec 03 11:02:57 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="75073">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1282]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="60" _type="ConsoleOutput" date="Fri Dec 03 11:02:57 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="75072" type="ConsoleOutput">
+    <outputString><![CDATA[Finished second pass checks:Fri Dec 03 11:02:57 EST 2021
+Generating checks:Fri Dec 03 11:02:57 EST 2021
+Finished Generating checks:Fri Dec 03 11:02:57 EST 2021
+Generating externals:Fri Dec 03 11:02:57 EST 2021
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Symbol table size:38¶Running"), Diff(INSERT,"Finished"), Diff(EQUAL," second pass checks"), Diff(DELETE," "), Diff(INSERT,":"), Diff(EQUAL,"Fri Dec 03 11:02:5"), Diff(DELETE,"5"), Diff(INSERT,"7"), Diff(EQUAL," EST 2021¶"), Diff(DELETE,"Start O(n2) inter- and intra class method call"), Diff(INSERT,"Generating checks:Fri Dec 03 11:02:57 EST 2021¶Finished Generating check"), Diff(EQUAL,"s:Fri Dec 03 11:02:5"), Diff(DELETE,"5"), Diff(INSERT,"7"), Diff(EQUAL," EST 2021¶"), Diff(DELETE,"End O(n2) inter- and intra class method cal"), Diff(INSERT,"Generating externa"), Diff(EQUAL,"ls:Fri Dec 03 11:02:5"), Diff(DELETE,"5"), Diff(INSERT,"7"), Diff(EQUAL," EST 2021¶")]]]></diff>
+  </Command>
+  <Command __id="62" _type="ConsoleOutput" date="Fri Dec 03 11:02:57 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="75169" type="ConsoleOutput">
+    <outputString><![CDATA[Finished Generating externals:Fri Dec 03 11:02:57 EST 2021
+Test execution time (ms):3763
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Finished "), Diff(DELETE,"second pass checks:Fri Dec 03 11:02:57 EST 2021¶"), Diff(EQUAL,"Generating "), Diff(DELETE,"check"), Diff(INSERT,"external"), Diff(EQUAL,"s:Fri Dec 03 11:02:57 EST 2021¶"), Diff(DELETE,"Finished Generating checks:Fri Dec 03 11:02:57 EST 2021¶Generating externals:Fri Dec 03 11:02:57 EST 2021"), Diff(INSERT,"Test execution time (ms):3763"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="63" _type="ConsoleOutput" date="Fri Dec 03 11:02:57 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="75266" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):22
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):0
+Test execution time (ms):1
+Test execution time (ms):1
+FuncallCallsExpressionFactory did not pass completely:Checkstyle output does not match:.*INFO.*BasicFuncallEvaluator(.*)main.lisp.parser.terms.ExpressionFactory!newInstance:main.lisp.parser.terms.SExpression;main.lisp.parser.terms.SExpression->SExpression(.*)\[MissingMethodCall\].*. Is your class named or tagged properly and checkstyle file upto date?%0.0
+
+Test execution time (ms):23
+Test execution time (ms):12
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Finished Generating externals:Fri Dec 03 11:02:57 EST 2021¶Test execution time (ms):3763"), Diff(INSERT,"Test execution time (ms):22¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1¶FuncallCallsExpressionFactory did not pass completely:Checkstyle output does not match:.*INFO.*BasicFuncallEvaluator(.*)main.lisp.parser.terms.ExpressionFactory!newInstance:main.lisp.parser.terms.SExpression;main.lisp.parser.terms.SExpression->SExpression(.*)\[MissingMethodCall\].*. Is your class named or tagged properly and checkstyle file upto date?%0.0¶¶Test execution time (ms):23¶Test execution time (ms):12"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="64" _type="ConsoleOutput" date="Fri Dec 03 11:02:57 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="75342" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):19
+Test execution time (ms):22
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"22¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1¶FuncallCallsExpressionFactory did not pass completely:Checkstyle output does not match:.*INFO.*BasicFuncallEvaluator(.*)main.lisp.parser.terms.ExpressionFactory!newInstance:main.lisp.parser.terms.SExpression;main.lisp.parser.terms.SExpression->SExpression(.*)\[MissingMethodCall\].*. Is your class named or tagged properly and checkstyle file upto date?%0.0¶¶Test execution time (ms):23¶Test execution time (ms):1"), Diff(INSERT,"19¶Test execution time (ms):2"), Diff(EQUAL,"2¶")]]]></diff>
+  </Command>
+  <Command __id="66" _type="PauseCommand" date="Fri Dec 03 11:02:58 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="76477">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1135]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="65" _type="ConsoleOutput" date="Fri Dec 03 11:02:58 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="76477" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):1
+Test execution time (ms):2
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):1"), Diff(DELETE,"9"), Diff(EQUAL,"¶Test execution time (ms):2"), Diff(DELETE,"2"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="67" _type="ConsoleOutput" date="Fri Dec 03 11:02:59 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="77265" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):0
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):1¶Test execution time (ms):"), Diff(DELETE,"2"), Diff(INSERT,"1¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="68" _type="ConsoleOutput" date="Fri Dec 03 11:02:59 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="77365" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):2
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"1¶Test execution time (ms):1¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1"), Diff(INSERT,"2"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="69" _type="ConsoleOutput" date="Fri Dec 03 11:03:00 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="78222" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):44
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"2"), Diff(INSERT,"44"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="70" _type="ConsoleOutput" date="Fri Dec 03 11:03:01 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="78996" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):3
+Test execution time (ms):2
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"44"), Diff(INSERT,"3¶Test execution time (ms):2"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="71" _type="ExceptionCommand" date="Fri Dec 03 11:03:01 EST 2021" starttimestamp="1638547302020" timestamp="79929" type="Exception">
+    <exceptionString><![CDATA[java.lang.IllegalStateException: No evaluator registered for operator 'CURRY'
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:14)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at functional.FuncallEvaluator.eval(FuncallEvaluator.java:24)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="73" _type="PauseCommand" date="Fri Dec 03 11:03:03 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="81063">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[1134]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="72" _type="ConsoleOutput" date="Fri Dec 03 11:03:03 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="81063" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):1
+Test execution time (ms):0
+Test execution time (ms):0
+Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"3"), Diff(INSERT,"1"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"2"), Diff(INSERT,"0¶Test execution time (ms):0¶Test execution time (ms):1"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="74" _type="ExceptionCommand" date="Fri Dec 03 11:03:04 EST 2021" starttimestamp="1638547302020" timestamp="82008" type="Exception">
+    <exceptionString><![CDATA[LispIsListChecker did not pass completely:Expected strings:Tactual string NIL%0.0
+
+Test execution time (ms):1
+java.lang.IllegalStateException: Expression does not start with an operator
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:18)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at expression.CondEvaluator.eval(CondEvaluator.java:21)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
+	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
+	at functional.FuncallEvaluator.evaluateLambda(FuncallEvaluator.java:55)
+	at functional.FuncallEvaluator.eval(FuncallEvaluator.java:35)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="75" _type="ConsoleOutput" date="Fri Dec 03 11:03:04 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="82038" type="ConsoleOutput">
+    <outputString><![CDATA[	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):1¶Test execution time (ms):0¶Test execution time (ms):0¶Test execution time (ms):1"), Diff(INSERT,"	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)¶	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)¶	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)¶	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)¶	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)¶	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)¶	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)¶	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)¶	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)¶	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)¶	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)¶	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)¶	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)¶	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)¶	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)¶	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)¶	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)¶	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)¶	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)¶	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)¶	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)¶	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)¶	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)¶	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)¶	at java.desktop/java.awt.Component.processEvent(Component.java:6400)¶	at java.desktop/java.awt.Container.processEvent(Container.java:2263)¶	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)¶	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)¶	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)¶	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="76" _type="ConsoleOutput" date="Fri Dec 03 11:03:04 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="82365" type="ConsoleOutput">
+    <outputString><![CDATA[LispToStringChecker3 did not pass completely:Expected strings:"(5 . 6)"actual string (NIL)%0.0
+
+Test execution time (ms):1
+LispToStringChecker4 did not pass completely:Expected strings:"(1 . (3 . 6))"actual string (NIL)%0.0
+
+Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)¶	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)¶	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)¶	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)¶	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)¶	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)¶	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)¶	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)¶	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)¶	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)¶	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)¶	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)¶	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)¶	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)¶	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)¶	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)¶	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)¶	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)¶	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)¶	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)¶	at bus.uigen.undo.AHistoryUndoer.ex"), Diff(INSERT,"LispToStringChecker3 did not pass completely:Expected strings:"(5 . 6)"actual string (NIL)%0.0¶¶Test execution time (ms):1¶LispToStringChecker4 did not pass completely:Exp"), Diff(EQUAL,"ec"), Diff(DELETE,"u"), Diff(EQUAL,"te"), Diff(DELETE,"(AHistoryUndoer.java:99)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)¶	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)¶	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)¶	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)¶	at java.desktop/java.awt.Component.processEvent(Component.java:6400)¶	at java.desktop/java.awt.Container.processEvent(Container.java:2263)¶	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)¶	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)¶	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)¶	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)"), Diff(INSERT,"d strings:"(1 . (3 . 6))"actual string (NIL)%0.0¶¶Test execution time (ms):1"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="77" _type="ConsoleOutput" date="Fri Dec 03 11:03:04 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="82868" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):0
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"LispToStringChecker3 did not pass completely:Expected strings:"(5 . 6)"actual string (NIL)%0.0¶¶Test execution time (ms):1¶LispToStringChecker4 did not pass completely:Expected strings:"(1 . (3 . 6))"actual string (NIL)%0.0¶"), Diff(INSERT,"Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"1"), Diff(INSERT,"0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="78" _type="ConsoleOutput" date="Fri Dec 03 11:03:05 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="83757" type="ConsoleOutput">
+    <outputString><![CDATA[A6CommonPropertiesInherited did not pass completely:See console trace about lines failing  this check%0.0
+
+Test execution time (ms):14
+A6CommonSignaturesAreInherited did not pass completely:See console trace about lines failing  this check%0.7861271676300579
+
+Test execution time (ms):10
+Test execution time (ms):4
+Test execution time (ms):4
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"A6CommonPropertiesInherited did not pass completely:See console trace about lines failing  this check%0.0¶¶"), Diff(EQUAL,"Test execution time (ms):1"), Diff(INSERT,"4"), Diff(EQUAL,"¶"), Diff(DELETE,"Test execution time (ms):1"), Diff(INSERT,"A6CommonSignaturesAreInherited did not pass completely:See console trace about lines failing  this check%0.7861271676300579¶"), Diff(EQUAL,"¶Test execution time (ms):1"), Diff(INSERT,"0"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"1"), Diff(INSERT,"4"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"0"), Diff(INSERT,"4"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="79" _type="ConsoleOutput" date="Fri Dec 03 11:03:05 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="83949" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):8
+Test execution time (ms):9
+Test execution time (ms):4
+Test execution time (ms):4
+F21A6NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0
+
+Test execution time (ms):3
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"A6CommonPropertiesInherited did not pass completely:See console trace about lines failing  this check%0.0¶"), Diff(INSERT,"Test execution time (ms):8¶Test execution time (ms):9¶Test execution time (ms):4"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"1"), Diff(EQUAL,"4¶"), Diff(DELETE,"A6CommonSignaturesAreInherited did not pass completely:See console trace about l"), Diff(INSERT,"F21A6NoCheckstyleWarnings did not pass completely:Warn"), Diff(EQUAL,"in"), Diff(DELETE,"e"), Diff(INSERT,"g"), Diff(EQUAL,"s f"), Diff(DELETE,"ailing  this check%0.7861271676300579¶¶Test execution time (ms):10¶Test execution time (ms):4"), Diff(INSERT,"ound in checkstyle text, see traced console output%0.0¶"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"4"), Diff(INSERT,"3"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="83" _type="PauseCommand" date="Fri Dec 03 11:03:13 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="91927">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[5709]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="82" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:03:13 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="91927" type="Run" />
+  <Command __id="85" _type="PauseCommand" date="Fri Dec 03 11:03:28 EST 2021" range="10s-20s" starttimestamp="1638547302020" timestamp="106591">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[14664]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="84" _type="ShellCommand" date="Fri Dec 03 11:03:28 EST 2021" starttimestamp="1638547302020" timestamp="106591" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="87" _type="PauseCommand" date="Fri Dec 03 11:05:33 EST 2021" range="2m-5m" starttimestamp="1638547302020" timestamp="231240">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[124649]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="86" _type="ShellCommand" date="Fri Dec 03 11:05:33 EST 2021" starttimestamp="1638547302020" timestamp="231240" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="89" _type="PauseCommand" date="Fri Dec 03 11:05:52 EST 2021" range="10s-20s" starttimestamp="1638547302020" timestamp="250957">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[19717]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="88" _type="ShellCommand" date="Fri Dec 03 11:05:52 EST 2021" starttimestamp="1638547302020" timestamp="250957" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="91" _type="PauseCommand" date="Fri Dec 03 11:05:59 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="257513">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[6556]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="90" _type="ShellCommand" date="Fri Dec 03 11:05:59 EST 2021" starttimestamp="1638547302020" timestamp="257513" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="93" _type="PauseCommand" date="Fri Dec 03 11:06:00 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="258656">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1142]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="92" _type="SelectTextCommand" caretOffset="1287" date="Fri Dec 03 11:06:00 EST 2021" end="1313" start="1287" starttimestamp="1638547302020" timestamp="258655" />
+  <Command __id="95" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Dec 03 11:06:01 EST 2021" starttimestamp="1638547302020" timestamp="259069" />
+  <Command __id="97" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Dec 03 11:06:01 EST 2021" starttimestamp="1638547302020" timestamp="259266" />
+  <Command __id="111" _type="PauseCommand" date="Fri Dec 03 11:06:04 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="261997">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1050]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="110" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:06:04 EST 2021" starttimestamp="1638547302020" timestamp="261997" />
+  <Command __id="112" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:06:04 EST 2021" starttimestamp="1638547302020" timestamp="262007" />
+  <Command __id="113" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:06:04 EST 2021" starttimestamp="1638547302020" timestamp="262008" />
+  <Command __id="114" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:06:04 EST 2021" starttimestamp="1638547302020" timestamp="262009" />
+  <Command __id="115" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:06:04 EST 2021" starttimestamp="1638547302020" timestamp="262010" />
+  <Command __id="116" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:06:04 EST 2021" starttimestamp="1638547302020" timestamp="262012" />
+  <Command __id="117" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:06:04 EST 2021" starttimestamp="1638547302020" timestamp="262012" />
+  <Command __id="118" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:06:04 EST 2021" starttimestamp="1638547302020" timestamp="262016" />
+  <Command __id="119" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:06:04 EST 2021" starttimestamp="1638547302020" timestamp="262017" />
+  <Command __id="120" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:06:04 EST 2021" starttimestamp="1638547302020" timestamp="262018" />
+  <Command __id="122" _type="PauseCommand" date="Fri Dec 03 11:06:07 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="265662">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[3644]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="121" _type="ShellCommand" date="Fri Dec 03 11:06:07 EST 2021" starttimestamp="1638547302020" timestamp="265662" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="124" _type="PauseCommand" date="Fri Dec 03 11:06:18 EST 2021" range="10s-20s" starttimestamp="1638547302020" timestamp="276076">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[10414]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="123" _type="ShellCommand" date="Fri Dec 03 11:06:18 EST 2021" starttimestamp="1638547302020" timestamp="276076" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="126" _type="PauseCommand" date="Fri Dec 03 11:06:28 EST 2021" range="10s-20s" starttimestamp="1638547302020" timestamp="286493">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[10417]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="125" _type="ShellCommand" date="Fri Dec 03 11:06:28 EST 2021" starttimestamp="1638547302020" timestamp="286493" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="128" _type="PauseCommand" date="Fri Dec 03 11:06:31 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="289234">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2741]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="127" _type="ShellCommand" date="Fri Dec 03 11:06:31 EST 2021" starttimestamp="1638547302020" timestamp="289234" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="130" _type="PauseCommand" date="Fri Dec 03 11:06:35 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="293673">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4439]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="132" _type="PauseCommand" date="Fri Dec 03 11:06:39 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="297689">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[4016]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="133" _type="MoveCaretCommand" caretOffset="1286" date="Fri Dec 03 11:06:39 EST 2021" docOffset="1378" starttimestamp="1638547302020" timestamp="297897" />
+  <Command __id="134" _type="ShellCommand" date="Fri Dec 03 11:06:39 EST 2021" starttimestamp="1638547302020" timestamp="297932" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="136" _type="PauseCommand" date="Fri Dec 03 11:06:41 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="299482">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1550]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="135" _type="ShellCommand" date="Fri Dec 03 11:06:41 EST 2021" starttimestamp="1638547302020" timestamp="299482" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="138" _type="PauseCommand" date="Fri Dec 03 11:06:44 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="302063">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2581]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="143" _type="PauseCommand" date="Fri Dec 03 11:07:22 EST 2021" range="20s-30s" starttimestamp="1638547302020" timestamp="340775">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[28684]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="142" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:07:22 EST 2021" starttimestamp="1638547302020" timestamp="340775" />
+  <Command __id="144" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:07:22 EST 2021" starttimestamp="1638547302020" timestamp="340784" />
+  <Command __id="145" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:07:22 EST 2021" starttimestamp="1638547302020" timestamp="340784" />
+  <Command __id="146" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:07:22 EST 2021" starttimestamp="1638547302020" timestamp="340787" />
+  <Command __id="147" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:07:22 EST 2021" starttimestamp="1638547302020" timestamp="340787" />
+  <Command __id="148" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:07:22 EST 2021" starttimestamp="1638547302020" timestamp="340789" />
+  <Command __id="149" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:07:22 EST 2021" starttimestamp="1638547302020" timestamp="340790" />
+  <Command __id="150" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:07:22 EST 2021" starttimestamp="1638547302020" timestamp="340796" />
+  <Command __id="151" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:07:22 EST 2021" starttimestamp="1638547302020" timestamp="340797" />
+  <Command __id="152" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:07:22 EST 2021" starttimestamp="1638547302020" timestamp="340800" />
+  <Command __id="157" _type="PauseCommand" date="Fri Dec 03 11:07:29 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="347280">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2212]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="156" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:07:29 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="347280" type="Run" />
+  <Command __id="159" _type="PauseCommand" date="Fri Dec 03 11:07:38 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="356803">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[9523]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="158" _type="ConsoleInput" date="Fri Dec 03 11:07:38 EST 2021" starttimestamp="1638547302020" timestamp="356803" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="160" _type="ConsoleOutput" date="Fri Dec 03 11:07:38 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="356911" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (COND ((NOT (CDR (X)) T) (T (FUNCALL ISLIST (CDR X)))))
+NIL
+NIL
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):8¶Test execution time (ms):9¶Test execution time (ms):4¶Test execution time (ms):4¶F21A6NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0"), Diff(INSERT,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))"), Diff(EQUAL,"¶"), Diff(INSERT,"5"), Diff(EQUAL,"¶"), Diff(DELETE,"Test execution time (ms):3"), Diff(INSERT,"LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X) (COND ((NOT (CDR (X)) T) (T (FUNCALL ISLIST (CDR X)))))¶NIL¶NIL¶T"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="175" _type="PauseCommand" date="Fri Dec 03 11:08:17 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="395327">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[4331]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="174" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:08:17 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="395327" type="Run" />
+  <Command __id="177" _type="PauseCommand" date="Fri Dec 03 11:08:18 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="396972">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[1645]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="176" _type="ConsoleOutput" date="Fri Dec 03 11:08:18 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="396972" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶"), Diff(DELETE,"LAMBDA (X) (COND ((NOT (CDR (X)) T) (T (FUNCALL ISLIST (CDR X)))))¶NIL¶NIL¶"), Diff(EQUAL,"T¶")]]]></diff>
+  </Command>
+  <Command __id="192" _type="PauseCommand" date="Fri Dec 03 11:08:44 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="422541">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1786]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="191" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:08:44 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="422541" type="Run" />
+  <Command __id="194" _type="PauseCommand" date="Fri Dec 03 11:08:46 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="424913">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[2371]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="193" _type="ExceptionCommand" date="Fri Dec 03 11:08:46 EST 2021" starttimestamp="1638547302020" timestamp="424912" type="Exception">
+    <exceptionString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (COND ((AND (ATOM (CDR (X)) (NOT (CDR (X)))) T) (T (FUNCALL ISLIST (CDR X)))))
+Exception in thread "main" java.lang.IllegalStateException: Too many arguments for operator 'atom'
+	at main.lisp.evaluator.basic.AtomEvaluator.eval(AtomEvaluator.java:20)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at logical.AndEvaluator.eval(AndEvaluator.java:20)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at expression.CondEvaluator.eval(CondEvaluator.java:17)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
+	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
+	at functional.FuncallEvaluator.evaluateLambda(FuncallEvaluator.java:55)
+	at functional.FuncallEvaluator.eval(FuncallEvaluator.java:35)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at expression.LoadEvaluator.eval(LoadEvaluator.java:31)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
+	at main.Main.main(Main.java:31)
+	at a5.RunLisp.main(RunLisp.java:21)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="195" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:08:46 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="424920" type="Run" />
+  <Command __id="196" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:08:46 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="424921" type="Run" />
+  <Command __id="211" _type="PauseCommand" date="Fri Dec 03 11:09:18 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="456747">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2246]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="210" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:09:18 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="456747" type="Run" />
+  <Command __id="212" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:09:18 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="456748" type="Run" />
+  <Command __id="214" _type="PauseCommand" date="Fri Dec 03 11:09:20 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="458472">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[1724]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="213" _type="ExceptionCommand" date="Fri Dec 03 11:09:20 EST 2021" starttimestamp="1638547302020" timestamp="458472" type="Exception">
+    <exceptionString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (COND ((AND (ATOM (CDR (X))) (NOT (CDR (X))) T) (T (FUNCALL ISLIST (CDR X)))))
+Exception in thread "main" java.lang.IllegalStateException: No evaluator registered for operator 'X'
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:14)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.lazy.basic.LazyCdrEvaluator.eval(LazyCdrEvaluator.java:24)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.basic.AtomEvaluator.eval(AtomEvaluator.java:23)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at logical.AndEvaluator.eval(AndEvaluator.java:20)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at expression.CondEvaluator.eval(CondEvaluator.java:17)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
+	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
+	at functional.FuncallEvaluator.evaluateLambda(FuncallEvaluator.java:55)
+	at functional.FuncallEvaluator.eval(FuncallEvaluator.java:35)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at expression.LoadEvaluator.eval(LoadEvaluator.java:31)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
+	at main.Main.main(Main.java:31)
+	at a5.RunLisp.main(RunLisp.java:21)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="215" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:09:20 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="458505" type="Run" />
+  <Command __id="216" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:09:20 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="458505" type="Run" />
+  <Command __id="234" _type="PauseCommand" date="Fri Dec 03 11:09:39 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="477920">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[1304]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="233" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:09:39 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="477920" type="Run" />
+  <Command __id="235" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:09:39 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="477920" type="Run" />
+  <Command __id="236" _type="ExceptionCommand" date="Fri Dec 03 11:09:39 EST 2021" starttimestamp="1638547302020" timestamp="477923" type="Exception">
+    <exceptionString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (COND ((AND (ATOM (CDR (X))) (NOT (CDR (X)))) T) (T (FUNCALL ISLIST (CDR X))))
+Exception in thread "main" java.lang.NullPointerException
+	at main.lisp.parser.BasicParser.parseLispSingle(BasicParser.java:62)
+	at main.lisp.parser.BasicParser.parseList(BasicParser.java:71)
+	at main.lisp.parser.BasicParser.parseList(BasicParser.java:77)
+	at main.lisp.parser.BasicParser.parseStart(BasicParser.java:53)
+	at main.lisp.parser.BasicParser.parse(BasicParser.java:42)
+	at main.lisp.parser.BasicParser.giveToken(BasicParser.java:158)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:79)
+	at expression.LoadEvaluator.eval(LoadEvaluator.java:31)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
+	at main.Main.main(Main.java:31)
+	at a5.RunLisp.main(RunLisp.java:21)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="238" _type="PauseCommand" date="Fri Dec 03 11:09:54 EST 2021" range="10s-20s" starttimestamp="1638547302020" timestamp="492389">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[14465]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="240" _type="PauseCommand" date="Fri Dec 03 11:10:25 EST 2021" range="30s-1m" starttimestamp="1638547302020" timestamp="523804">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[31416]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="239" _type="ShellCommand" date="Fri Dec 03 11:10:25 EST 2021" starttimestamp="1638547302020" timestamp="523804" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="242" _type="PauseCommand" date="Fri Dec 03 11:10:27 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="525089">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1285]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="241" _type="ShellCommand" date="Fri Dec 03 11:10:27 EST 2021" starttimestamp="1638547302020" timestamp="525089" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="244" _type="PauseCommand" date="Fri Dec 03 11:10:43 EST 2021" range="10s-20s" starttimestamp="1638547302020" timestamp="541883">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[16794]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="243" _type="ShellCommand" date="Fri Dec 03 11:10:43 EST 2021" starttimestamp="1638547302020" timestamp="541883" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="246" _type="PauseCommand" date="Fri Dec 03 11:10:45 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="543158">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1275]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="245" _type="ShellCommand" date="Fri Dec 03 11:10:45 EST 2021" starttimestamp="1638547302020" timestamp="543158" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="247" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:10:45 EST 2021" starttimestamp="1638547302020" timestamp="543353" />
+  <Command __id="248" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:10:45 EST 2021" starttimestamp="1638547302020" timestamp="543355" />
+  <Command __id="249" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:10:45 EST 2021" starttimestamp="1638547302020" timestamp="543457" />
+  <Command __id="250" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:10:45 EST 2021" starttimestamp="1638547302020" timestamp="543466" />
+  <Command __id="251" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:10:45 EST 2021" starttimestamp="1638547302020" timestamp="543467" />
+  <Command __id="252" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:10:45 EST 2021" starttimestamp="1638547302020" timestamp="543468" />
+  <Command __id="253" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:10:45 EST 2021" starttimestamp="1638547302020" timestamp="543469" />
+  <Command __id="254" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:10:45 EST 2021" starttimestamp="1638547302020" timestamp="543471" />
+  <Command __id="255" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:10:45 EST 2021" starttimestamp="1638547302020" timestamp="543471" />
+  <Command __id="256" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:10:45 EST 2021" starttimestamp="1638547302020" timestamp="543475" />
+  <Command __id="257" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:10:45 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="543486" type="Run" />
+  <Command __id="258" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:10:45 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="543486" type="Run" />
+  <Command __id="260" _type="PauseCommand" date="Fri Dec 03 11:10:48 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="546086">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[2600]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="259" _type="ConsoleInput" date="Fri Dec 03 11:10:48 EST 2021" starttimestamp="1638547302020" timestamp="546086" type="Exception">
+    <outputString><![CDATA[(not 5)
+]]></outputString>
+  </Command>
+  <Command __id="261" _type="ConsoleOutput" date="Fri Dec 03 11:10:48 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="546190" type="ConsoleOutput">
+    <outputString><![CDATA[NIL
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶T"), Diff(INSERT,"NIL"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="263" _type="PauseCommand" date="Fri Dec 03 11:10:51 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="549228">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3038]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="262" _type="ConsoleInput" date="Fri Dec 03 11:10:51 EST 2021" starttimestamp="1638547302020" timestamp="549228" type="Exception">
+    <outputString><![CDATA[(not 6)
+]]></outputString>
+  </Command>
+  <Command __id="264" _type="ConsoleOutput" date="Fri Dec 03 11:10:51 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="549332" type="ConsoleOutput">
+    <outputString><![CDATA[NIL
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"NIL¶")]]]></diff>
+  </Command>
+  <Command __id="266" _type="PauseCommand" date="Fri Dec 03 11:10:54 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="552659">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3327]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="265" _type="ConsoleInput" date="Fri Dec 03 11:10:54 EST 2021" starttimestamp="1638547302020" timestamp="552659" type="Exception">
+    <outputString><![CDATA[(not nil)
+]]></outputString>
+  </Command>
+  <Command __id="267" _type="ConsoleOutput" date="Fri Dec 03 11:10:54 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="552762" type="ConsoleOutput">
+    <outputString><![CDATA[T
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"NIL"), Diff(INSERT,"T"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="269" _type="PauseCommand" date="Fri Dec 03 11:11:02 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="560652">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[7890]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="271" _type="PauseCommand" date="Fri Dec 03 11:11:05 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="563234">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[2582]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="270" _type="ConsoleOutput" date="Fri Dec 03 11:11:05 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="563234" type="ConsoleOutput">
+    <outputString><![CDATA[(setq isList (lambda (X) (cond 
+							((not (cdr (X)) t)
+							(t (funcall isList (cdr X)))
+	
+						  ))))
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"T"), Diff(INSERT,"(setq isList (lambda (X) (cond ¶							((not (cdr (X)) t)¶							(t (funcall isList (cdr X)))¶	¶						  ))))"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="272" _type="ConsoleOutput" date="Fri Dec 03 11:11:06 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="563983" type="ConsoleOutput">
+    <outputString><![CDATA[LAMBDA (X) (COND ((NOT (CDR (X)) T) (T (FUNCALL ISLIST (CDR X)))))
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"(setq isList (lambda (X) (cond ¶							((not (cdr (X)) t)¶							(t (funcall isList (cdr X)))¶	¶						  "), Diff(INSERT,"LAMBDA (X) (COND ((NOT (CDR (X)) T) (T (FUNCALL ISLIST (CDR X)"), Diff(EQUAL,"))))¶")]]]></diff>
+  </Command>
+  <Command __id="274" _type="PauseCommand" date="Fri Dec 03 11:11:14 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="572117">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[8134]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="273" _type="ConsoleInput" date="Fri Dec 03 11:11:14 EST 2021" starttimestamp="1638547302020" timestamp="572117" type="Exception">
+    <outputString><![CDATA[(funcall isList Nil)
+]]></outputString>
+  </Command>
+  <Command __id="275" _type="ConsoleOutput" date="Fri Dec 03 11:11:14 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="572172" type="ConsoleOutput">
+    <outputString><![CDATA[NIL
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"LAMBDA (X) (COND ((NOT (CDR (X)) T) (T (FUNCALL ISLIST (CDR X)))))"), Diff(INSERT,"NIL"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="277" _type="PauseCommand" date="Fri Dec 03 11:11:25 EST 2021" range="10s-20s" starttimestamp="1638547302020" timestamp="583531">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[11359]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="276" _type="ConsoleInput" date="Fri Dec 03 11:11:25 EST 2021" starttimestamp="1638547302020" timestamp="583531" type="Exception">
+    <outputString><![CDATA[(cdr (nil))
+]]></outputString>
+  </Command>
+  <Command __id="278" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:11:25 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="583567" type="Run" />
+  <Command __id="279" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:11:25 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="583568" type="Run" />
+  <Command __id="280" _type="ExceptionCommand" date="Fri Dec 03 11:11:25 EST 2021" starttimestamp="1638547302020" timestamp="583635" type="Exception">
+    <exceptionString><![CDATA[Exception in thread "main" java.lang.IllegalStateException: Expression does not start with an operator
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:18)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.lazy.basic.LazyCdrEvaluator.eval(LazyCdrEvaluator.java:24)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
+	at main.Main.main(Main.java:31)
+	at a5.RunLisp.main(RunLisp.java:21)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="282" _type="PauseCommand" date="Fri Dec 03 11:11:39 EST 2021" range="10s-20s" starttimestamp="1638547302020" timestamp="597765">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[14129]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="281" _type="ShellCommand" date="Fri Dec 03 11:11:39 EST 2021" starttimestamp="1638547302020" timestamp="597764" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="283" _type="ShellCommand" date="Fri Dec 03 11:11:40 EST 2021" starttimestamp="1638547302020" timestamp="598756" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="284" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:11:41 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="599724" type="Run" />
+  <Command __id="285" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:11:41 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="599724" type="Run" />
+  <Command __id="286" _type="ShellCommand" date="Fri Dec 03 11:11:42 EST 2021" starttimestamp="1638547302020" timestamp="600003" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="287" _type="ShellCommand" date="Fri Dec 03 11:11:42 EST 2021" starttimestamp="1638547302020" timestamp="600077" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="289" _type="PauseCommand" date="Fri Dec 03 11:11:45 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="603446">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3369]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="288" _type="ConsoleInput" date="Fri Dec 03 11:11:45 EST 2021" starttimestamp="1638547302020" timestamp="603446" type="Exception">
+    <outputString><![CDATA[(cdr nil)
+]]></outputString>
+  </Command>
+  <Command __id="290" _type="ConsoleOutput" date="Fri Dec 03 11:11:45 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="603509" type="ConsoleOutput">
+    <outputString><![CDATA[NIL
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"NIL¶")]]]></diff>
+  </Command>
+  <Command __id="305" _type="PauseCommand" date="Fri Dec 03 11:11:52 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="610389">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[3075]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="304" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:11:52 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="610389" type="Run" />
+  <Command __id="307" _type="PauseCommand" date="Fri Dec 03 11:11:59 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="617226">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[6837]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="306" _type="ConsoleInput" date="Fri Dec 03 11:11:59 EST 2021" starttimestamp="1638547302020" timestamp="617226" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="308" _type="ConsoleOutput" date="Fri Dec 03 11:11:59 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="617296" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (COND ((NOT (CDR X) T) (T (FUNCALL ISLIST (CDR X)))))
+NIL
+NIL
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"NIL"), Diff(INSERT,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X) (COND ((NOT (CDR X) T) (T (FUNCALL ISLIST (CDR X)))))¶NIL¶NIL¶T"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="310" _type="PauseCommand" date="Fri Dec 03 11:12:09 EST 2021" range="10s-20s" starttimestamp="1638547302020" timestamp="627954">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[10658]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="309" _type="ConsoleInput" date="Fri Dec 03 11:12:09 EST 2021" starttimestamp="1638547302020" timestamp="627954" type="Exception">
+    <outputString><![CDATA[(cdr nil)
+]]></outputString>
+  </Command>
+  <Command __id="311" _type="ConsoleOutput" date="Fri Dec 03 11:12:10 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="628007" type="ConsoleOutput">
+    <outputString><![CDATA[NIL
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X) (COND ((NOT (CDR X) T) (T (FUNCALL ISLIST (CDR X)))))¶NIL¶NIL¶T"), Diff(INSERT,"NIL"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="313" _type="PauseCommand" date="Fri Dec 03 11:12:14 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="632326">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[4319]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="312" _type="ConsoleInput" date="Fri Dec 03 11:12:14 EST 2021" starttimestamp="1638547302020" timestamp="632326" type="Exception">
+    <outputString><![CDATA[(not (cdr nil))
+]]></outputString>
+  </Command>
+  <Command __id="314" _type="ConsoleOutput" date="Fri Dec 03 11:12:14 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="632430" type="ConsoleOutput">
+    <outputString><![CDATA[NIL
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"NIL¶")]]]></diff>
+  </Command>
+  <Command __id="316" _type="PauseCommand" date="Fri Dec 03 11:12:20 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="638123">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[5692]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="315" _type="ConsoleInput" date="Fri Dec 03 11:12:20 EST 2021" starttimestamp="1638547302020" timestamp="638122" type="Exception">
+    <outputString><![CDATA[(not nil)
+]]></outputString>
+  </Command>
+  <Command __id="317" _type="ConsoleOutput" date="Fri Dec 03 11:12:20 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="638226" type="ConsoleOutput">
+    <outputString><![CDATA[T
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"NIL"), Diff(INSERT,"T"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="319" _type="PauseCommand" date="Fri Dec 03 11:12:26 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="644697">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[6471]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="318" _type="ConsoleInput" date="Fri Dec 03 11:12:26 EST 2021" starttimestamp="1638547302020" timestamp="644697" type="Exception">
+    <outputString><![CDATA[(cdr nil)
+]]></outputString>
+  </Command>
+  <Command __id="320" _type="ConsoleOutput" date="Fri Dec 03 11:12:26 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="644751" type="ConsoleOutput">
+    <outputString><![CDATA[NIL
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"T"), Diff(INSERT,"NIL"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="322" _type="PauseCommand" date="Fri Dec 03 11:12:32 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="650087">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[5336]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="321" _type="ConsoleInput" date="Fri Dec 03 11:12:32 EST 2021" starttimestamp="1638547302020" timestamp="650087" type="Exception">
+    <outputString><![CDATA[(not (cdr nil))
+]]></outputString>
+  </Command>
+  <Command __id="323" _type="ConsoleOutput" date="Fri Dec 03 11:12:32 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="650140" type="ConsoleOutput">
+    <outputString><![CDATA[NIL
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"NIL¶")]]]></diff>
+  </Command>
+  <Command __id="325" _type="PauseCommand" date="Fri Dec 03 11:12:47 EST 2021" range="10s-20s" starttimestamp="1638547302020" timestamp="665733">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[15592]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="326" _type="MoveCaretCommand" caretOffset="0" date="Fri Dec 03 11:12:47 EST 2021" docOffset="0" starttimestamp="1638547302020" timestamp="665899" />
+  <Command __id="328" _type="PauseCommand" date="Fri Dec 03 11:12:48 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="666919">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1020]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="327" _type="MoveCaretCommand" caretOffset="391" date="Fri Dec 03 11:12:48 EST 2021" docOffset="590" starttimestamp="1638547302020" timestamp="666919" />
+  <DocumentChange __id="6" _type="Delete" date="Fri Dec 03 11:02:17 EST 2021" docASTNodeCount="226" docActiveCodeLength="1480" docExpressionCount="166" docLength="1654" endLine="43" length="29" offset="1401" repeat="5" startLine="43" starttimestamp="1638547302020" timestamp="35454" timestamp2="37232">
+    <text><![CDATA[ && !(this.getHead().isNIL())]]></text>
+  </DocumentChange>
+  <DocumentChange __id="94" _type="Delete" date="Fri Dec 03 11:06:01 EST 2021" docASTNodeCount="220" docActiveCodeLength="1453" docExpressionCount="160" docLength="1627" endLine="43" length="27" offset="1378" repeat="2" startLine="43" starttimestamp="1638547302020" timestamp="259053" timestamp2="259255">
+    <text><![CDATA[this.getHead().isAtom() && ]]></text>
+  </DocumentChange>
+  <Command __id="129" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 11:06:35 EST 2021" projectName="a5" starttimestamp="1638547302020" timestamp="293673">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="131" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 11:06:39 EST 2021" docASTNodeCount="220" docActiveCodeLength="1453" docExpressionCount="160" docLength="1627" projectName="a5" starttimestamp="1638547302020" timestamp="297689">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\evaluators\StringFormats.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package evaluators;¶import main.lisp.parser.terms.AbstractSExpression;¶import main.lisp.parser.terms.BasicExpression;¶import main.lisp.parser.terms.SExpression;¶public class StringFormats extends BasicExpression{¶¶	public StringFormats(SExpression head, SExpression tail) {¶		super(head, tail);¶	}¶	@Override¶	public String toString() {¶		if(this.isNIL()) {¶			return this.toStringAsSExpression();¶		}¶		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();¶	}¶	@Override¶	public String toStringAsSExpressionDeep() {¶		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";¶	}¶	¶	@Override¶	public String toStringAsSExpression() {¶		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";¶	}¶	@Override¶	public String toStringAsListHelperPublic() {¶		if (this.getTail().isNIL()) {¶			return this.getHead().toString();¶		}else {¶			return this.getHead().toString() + " " + ((AbstractSExpression) this.getTail()).toStringAsListHelperPublic();¶		}¶		¶	}¶	@Override¶	public String toStringAsList() {¶			// does the same thing as toStringas list deep....need to change¶			return "(" + this.toStringAsListHelperPublic() + ")";¶	}¶¶	@Override¶	public boolean isList() {¶		// if head is a non nil atom and tail is nil, is a list¶		if("), Diff(DELETE,"this.getHead().isAtom() && !(this.getHead().isNIL()) && "), Diff(EQUAL,"this.getTail().isNIL()) {¶			return true;¶			// if the tail is an atom but not nil, it is not a list¶		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {¶			return false;¶		} else ¶			return this.getTail().isList();¶		}¶¶}¶")]]]></diff>
+    <snapshot><![CDATA[package evaluators;
+import main.lisp.parser.terms.AbstractSExpression;
+import main.lisp.parser.terms.BasicExpression;
+import main.lisp.parser.terms.SExpression;
+public class StringFormats extends BasicExpression{
+
+	public StringFormats(SExpression head, SExpression tail) {
+		super(head, tail);
+	}
+	@Override
+	public String toString() {
+		if(this.isNIL()) {
+			return this.toStringAsSExpression();
+		}
+		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();
+	}
+	@Override
+	public String toStringAsSExpressionDeep() {
+		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";
+	}
+	
+	@Override
+	public String toStringAsSExpression() {
+		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";
+	}
+	@Override
+	public String toStringAsListHelperPublic() {
+		if (this.getTail().isNIL()) {
+			return this.getHead().toString();
+		}else {
+			return this.getHead().toString() + " " + ((AbstractSExpression) this.getTail()).toStringAsListHelperPublic();
+		}
+		
+	}
+	@Override
+	public String toStringAsList() {
+			// does the same thing as toStringas list deep....need to change
+			return "(" + this.toStringAsListHelperPublic() + ")";
+	}
+
+	@Override
+	public boolean isList() {
+		// if head is a non nil atom and tail is nil, is a list
+		if(this.getTail().isNIL()) {
+			return true;
+			// if the tail is an atom but not nil, it is not a list
+		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {
+			return false;
+		} else 
+			return this.getTail().isList();
+		}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="137" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 11:06:44 EST 2021" projectName="a5" starttimestamp="1638547302020" timestamp="302063">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="161" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 11:07:48 EST 2021" projectName="a5" starttimestamp="1638547302020" timestamp="366396">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="178" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 11:08:22 EST 2021" projectName="a5" starttimestamp="1638547302020" timestamp="400724">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="197" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 11:09:11 EST 2021" projectName="a5" starttimestamp="1638547302020" timestamp="449851">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="217" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 11:09:27 EST 2021" projectName="a5" starttimestamp="1638547302020" timestamp="465243">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="237" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 11:09:54 EST 2021" projectName="a5" starttimestamp="1638547302020" timestamp="492388">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="268" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 11:11:02 EST 2021" projectName="a5" starttimestamp="1638547302020" timestamp="560652">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="291" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 11:11:46 EST 2021" projectName="a5" starttimestamp="1638547302020" timestamp="604688">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="324" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 11:12:47 EST 2021" docASTNodeCount="94" docActiveCodeLength="601" docExpressionCount="68" docLength="601" projectName="a5" starttimestamp="1638547302020" timestamp="665732">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\logical\NotEvaluator.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package logical;
+
+import main.lisp.evaluator.Environment;
+import main.lisp.evaluator.Evaluator;
+import main.lisp.parser.terms.NilAtomicExpressionFactory;
+import main.lisp.parser.terms.SExpression;
+import main.lisp.parser.terms.TAtomicExpressionFactory;
+
+public class NotEvaluator implements Evaluator{
+
+	@Override
+	public SExpression eval(SExpression arg0, Environment arg1) {
+		SExpression expression = arg0.getTail();
+		if (expression.getHead().isNIL()) {
+			return TAtomicExpressionFactory.newInstance();
+		}else {
+			return NilAtomicExpressionFactory.newInstance();
+		}
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="331" _type="Insert" date="Fri Dec 03 11:12:52 EST 2021" docASTNodeCount="94" docActiveCodeLength="605" docExpressionCount="68" docLength="605" length="4" offset="460" repeat="4" starttimestamp="1638547302020" timestamp="670803" timestamp2="671082">
+    <text><![CDATA[evla]]></text>
+  </DocumentChange>
+  <DocumentChange __id="339" _type="Delete" date="Fri Dec 03 11:12:53 EST 2021" docASTNodeCount="94" docActiveCodeLength="603" docExpressionCount="68" docLength="603" endLine="13" length="2" offset="462" repeat="2" startLine="13" starttimestamp="1638547302020" timestamp="671665" timestamp2="671853">
+    <text><![CDATA[la]]></text>
+  </DocumentChange>
+  <Command __id="364" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:12:57 EST 2021" starttimestamp="1638547302020" timestamp="675362" />
+  <Command __id="365" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:12:57 EST 2021" starttimestamp="1638547302020" timestamp="675364" />
+  <Command __id="366" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:12:57 EST 2021" starttimestamp="1638547302020" timestamp="675415" />
+  <Command __id="368" _type="PauseCommand" date="Fri Dec 03 11:13:02 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="680815">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[5400]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Delete]]></next>
+  </Command>
+  <Command __id="369" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Dec 03 11:13:02 EST 2021" starttimestamp="1638547302020" timestamp="680821" />
+  <Command __id="371" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Dec 03 11:13:03 EST 2021" starttimestamp="1638547302020" timestamp="681319" />
+  <Command __id="373" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Dec 03 11:13:03 EST 2021" starttimestamp="1638547302020" timestamp="681348" />
+  <Command __id="375" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Dec 03 11:13:03 EST 2021" starttimestamp="1638547302020" timestamp="681381" />
+  <Command __id="377" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Dec 03 11:13:03 EST 2021" starttimestamp="1638547302020" timestamp="681413" />
+  <Command __id="379" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Dec 03 11:13:03 EST 2021" starttimestamp="1638547302020" timestamp="681533" />
+  <Command __id="381" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Dec 03 11:13:03 EST 2021" starttimestamp="1638547302020" timestamp="681715" />
+  <Command __id="383" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Dec 03 11:13:03 EST 2021" starttimestamp="1638547302020" timestamp="681896" />
+  <Command __id="385" _type="PauseCommand" date="Fri Dec 03 11:13:06 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="684058">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2162]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="384" _type="SelectTextCommand" caretOffset="260" date="Fri Dec 03 11:13:06 EST 2021" end="267" start="260" starttimestamp="1638547302020" timestamp="684058" />
+  <Command __id="387" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Dec 03 11:13:06 EST 2021" starttimestamp="1638547302020" timestamp="684315" />
+  <Command __id="389" _type="InsertStringCommand" date="Fri Dec 03 11:13:06 EST 2021" starttimestamp="1638547302020" timestamp="684777" timestamp2="684777">
+    <data><![CDATA[.]]></data>
+  </Command>
+  <Command __id="390" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="true" date="Fri Dec 03 11:13:06 EST 2021" start_end="START" starttimestamp="1638547302020" timestamp="684789" />
+  <Command __id="394" _type="PauseCommand" date="Fri Dec 03 11:13:08 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="686885">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[AssistCommand]]></prev>
+    <pause><![CDATA[2096]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[AssistCommand]]></next>
+  </Command>
+  <Command __id="393" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="false" date="Fri Dec 03 11:13:08 EST 2021" start_end="END" starttimestamp="1638547302020" timestamp="686885" />
+  <Command __id="396" _type="InsertStringCommand" date="Fri Dec 03 11:13:08 EST 2021" starttimestamp="1638547302020" timestamp="686976" timestamp2="686976">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="398" _type="InsertStringCommand" date="Fri Dec 03 11:13:09 EST 2021" starttimestamp="1638547302020" timestamp="687707" timestamp2="687707">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="400" _type="InsertStringCommand" date="Fri Dec 03 11:13:09 EST 2021" starttimestamp="1638547302020" timestamp="687770" timestamp2="687770">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="402" _type="InsertStringCommand" date="Fri Dec 03 11:13:09 EST 2021" starttimestamp="1638547302020" timestamp="687866" timestamp2="687866">
+    <data><![CDATA[g]]></data>
+  </Command>
+  <Command __id="404" _type="InsertStringCommand" date="Fri Dec 03 11:13:09 EST 2021" starttimestamp="1638547302020" timestamp="687968" timestamp2="687968">
+    <data><![CDATA[1]]></data>
+  </Command>
+  <Command __id="406" _type="InsertStringCommand" date="Fri Dec 03 11:13:10 EST 2021" starttimestamp="1638547302020" timestamp="688173" timestamp2="688173">
+    <data><![CDATA[,]]></data>
+  </Command>
+  <Command __id="408" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Dec 03 11:13:10 EST 2021" starttimestamp="1638547302020" timestamp="688799" />
+  <Command __id="409" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Fri Dec 03 11:13:11 EST 2021" starttimestamp="1638547302020" timestamp="689124" />
+  <Command __id="411" _type="InsertStringCommand" date="Fri Dec 03 11:13:11 EST 2021" starttimestamp="1638547302020" timestamp="689813" timestamp2="689813">
+    <data><![CDATA[.]]></data>
+  </Command>
+  <Command __id="412" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="true" date="Fri Dec 03 11:13:11 EST 2021" start_end="START" starttimestamp="1638547302020" timestamp="689826" />
+  <Command __id="431" _type="PauseCommand" date="Fri Dec 03 11:13:18 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="696734">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[4091]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="430" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:13:18 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="696734" type="Run" />
+  <Command __id="432" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:13:18 EST 2021" starttimestamp="1638547302020" timestamp="696740" />
+  <Command __id="433" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:13:18 EST 2021" starttimestamp="1638547302020" timestamp="696745" />
+  <Command __id="434" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:13:18 EST 2021" starttimestamp="1638547302020" timestamp="696746" />
+  <Command __id="435" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:13:18 EST 2021" starttimestamp="1638547302020" timestamp="696747" />
+  <Command __id="436" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:13:18 EST 2021" starttimestamp="1638547302020" timestamp="696747" />
+  <Command __id="437" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:13:18 EST 2021" starttimestamp="1638547302020" timestamp="696749" />
+  <Command __id="438" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:13:18 EST 2021" starttimestamp="1638547302020" timestamp="696749" />
+  <Command __id="439" _type="EclipseCommand" commandID="" date="Fri Dec 03 11:13:18 EST 2021" starttimestamp="1638547302020" timestamp="696752" />
+  <Command __id="441" _type="PauseCommand" date="Fri Dec 03 11:13:23 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="701613">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[4861]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="440" _type="ConsoleInput" date="Fri Dec 03 11:13:23 EST 2021" starttimestamp="1638547302020" timestamp="701613" type="Exception">
+    <outputString><![CDATA[(not T)
+]]></outputString>
+  </Command>
+  <Command __id="442" _type="ConsoleOutput" date="Fri Dec 03 11:13:23 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="701681" type="ConsoleOutput">
+    <outputString><![CDATA[NIL
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"NIL¶")]]]></diff>
+  </Command>
+  <Command __id="444" _type="PauseCommand" date="Fri Dec 03 11:13:25 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="703283">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1602]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="443" _type="ConsoleInput" date="Fri Dec 03 11:13:25 EST 2021" starttimestamp="1638547302020" timestamp="703283" type="Exception">
+    <outputString><![CDATA[(not nil)
+]]></outputString>
+  </Command>
+  <Command __id="445" _type="ConsoleOutput" date="Fri Dec 03 11:13:25 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="703387" type="ConsoleOutput">
+    <outputString><![CDATA[T
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"NIL"), Diff(INSERT,"T"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="447" _type="PauseCommand" date="Fri Dec 03 11:13:29 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="707606">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[4219]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="446" _type="ConsoleInput" date="Fri Dec 03 11:13:29 EST 2021" starttimestamp="1638547302020" timestamp="707606" type="Exception">
+    <outputString><![CDATA[(not (cdr nil))
+]]></outputString>
+  </Command>
+  <Command __id="448" _type="ConsoleOutput" date="Fri Dec 03 11:13:29 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="707663" type="ConsoleOutput">
+    <outputString><![CDATA[T
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"T¶")]]]></diff>
+  </Command>
+  <Command __id="450" _type="PauseCommand" date="Fri Dec 03 11:13:36 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="714933">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[7270]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="449" _type="ConsoleInput" date="Fri Dec 03 11:13:36 EST 2021" starttimestamp="1638547302020" timestamp="714933" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="451" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:13:37 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="715000" type="Run" />
+  <Command __id="452" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:13:37 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="715000" type="Run" />
+  <Command __id="453" _type="ExceptionCommand" date="Fri Dec 03 11:13:37 EST 2021" starttimestamp="1638547302020" timestamp="715004" type="Exception">
+    <exceptionString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (COND ((NOT (CDR X) T) (T (FUNCALL ISLIST (CDR X)))))
+Exception in thread "main" java.lang.IllegalStateException: Expression does not start with an operator
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:18)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at expression.CondEvaluator.eval(CondEvaluator.java:21)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
+	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
+	at functional.FuncallEvaluator.evaluateLambda(FuncallEvaluator.java:55)
+	at functional.FuncallEvaluator.eval(FuncallEvaluator.java:35)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at expression.LoadEvaluator.eval(LoadEvaluator.java:31)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
+	at main.Main.main(Main.java:31)
+	at a5.RunLisp.main(RunLisp.java:21)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="468" _type="PauseCommand" date="Fri Dec 03 11:14:20 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="758520">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2365]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="467" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:14:20 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="758520" type="Run" />
+  <Command __id="469" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:14:20 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="758520" type="Run" />
+  <Command __id="471" _type="PauseCommand" date="Fri Dec 03 11:14:26 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="764935">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[6415]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="470" _type="ConsoleInput" date="Fri Dec 03 11:14:26 EST 2021" starttimestamp="1638547302020" timestamp="764935" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="472" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:14:27 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="765034" type="Run" />
+  <Command __id="473" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:14:27 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="765035" type="Run" />
+  <Command __id="474" _type="ExceptionCommand" date="Fri Dec 03 11:14:27 EST 2021" starttimestamp="1638547302020" timestamp="765039" type="Exception">
+    <exceptionString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (COND ((NOT (CDR X)) T) (T (FUNCALL ISLIST (CDR X))))
+Exception in thread "main" java.lang.NullPointerException
+	at main.lisp.parser.BasicParser.parseLispSingle(BasicParser.java:62)
+	at main.lisp.parser.BasicParser.parseList(BasicParser.java:71)
+	at main.lisp.parser.BasicParser.parseList(BasicParser.java:77)
+	at main.lisp.parser.BasicParser.parseStart(BasicParser.java:53)
+	at main.lisp.parser.BasicParser.parse(BasicParser.java:42)
+	at main.lisp.parser.BasicParser.giveToken(BasicParser.java:158)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:79)
+	at expression.LoadEvaluator.eval(LoadEvaluator.java:31)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
+	at main.Main.main(Main.java:31)
+	at a5.RunLisp.main(RunLisp.java:21)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="489" _type="PauseCommand" date="Fri Dec 03 11:15:02 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="800250">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[3475]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="488" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:15:02 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="800250" type="Run" />
+  <Command __id="490" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:15:02 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="800251" type="Run" />
+  <Command __id="492" _type="PauseCommand" date="Fri Dec 03 11:15:06 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="804972">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[4720]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="491" _type="ConsoleInput" date="Fri Dec 03 11:15:06 EST 2021" starttimestamp="1638547302020" timestamp="804971" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="493" _type="ConsoleOutput" date="Fri Dec 03 11:15:07 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="805042" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (COND ((NOT (CDR X)) T) (T (FUNCALL ISLIST (CDR X))))
+T
+T
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X) (COND ((NOT (CDR X)) T) (T (FUNCALL ISLIST (CDR X))))¶T¶T¶"), Diff(EQUAL,"T¶")]]]></diff>
+  </Command>
+  <Command __id="508" _type="PauseCommand" date="Fri Dec 03 11:15:21 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="819632">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2927]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="507" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:15:21 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="819632" type="Run" />
+  <Command __id="510" _type="PauseCommand" date="Fri Dec 03 11:15:26 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="824401">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[4769]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="509" _type="ConsoleInput" date="Fri Dec 03 11:15:26 EST 2021" starttimestamp="1638547302020" timestamp="824401" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="511" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:15:26 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="824517" type="Run" />
+  <Command __id="512" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:15:26 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="824517" type="Run" />
+  <Command __id="513" _type="ExceptionCommand" date="Fri Dec 03 11:15:26 EST 2021" starttimestamp="1638547302020" timestamp="824522" type="Exception">
+    <exceptionString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (COND ((NOT (CDR X)) T) (T (FUNCALL ISLIST (CDR X))))
+T
+T
+Exception in thread "main" java.lang.IllegalStateException: Cannot apply operator 'cdr' to atomic expressions
+	at main.lisp.evaluator.lazy.basic.LazyCdrEvaluator.eval(LazyCdrEvaluator.java:31)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at logical.NotEvaluator.eval(NotEvaluator.java:14)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at expression.CondEvaluator.eval(CondEvaluator.java:17)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
+	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
+	at functional.FuncallEvaluator.evaluateLambda(FuncallEvaluator.java:55)
+	at functional.FuncallEvaluator.eval(FuncallEvaluator.java:35)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at expression.CondEvaluator.eval(CondEvaluator.java:21)
+	at expression.CondEvaluator.eval(CondEvaluator.java:26)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
+	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
+	at functional.FuncallEvaluator.evaluateLambda(FuncallEvaluator.java:55)
+	at functional.FuncallEvaluator.eval(FuncallEvaluator.java:35)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at expression.LoadEvaluator.eval(LoadEvaluator.java:31)
+	at main.lisp.evaluator.BasicExpressionEvaluator.eval(BasicExpressionEvaluator.java:16)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="542" _type="PauseCommand" date="Fri Dec 03 11:16:29 EST 2021" range="1s-2s" starttimestamp="1638547302020" timestamp="887243">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1862]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="541" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Dec 03 11:16:29 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638547302020" timestamp="887243" type="Run" />
+  <Command __id="544" _type="PauseCommand" date="Fri Dec 03 11:16:33 EST 2021" range="2s-5s" starttimestamp="1638547302020" timestamp="891898">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[4655]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="543" _type="ConsoleInput" date="Fri Dec 03 11:16:33 EST 2021" starttimestamp="1638547302020" timestamp="891898" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="545" _type="ConsoleOutput" date="Fri Dec 03 11:16:34 EST 2021" overflow="false" starttimestamp="1638547302020" timestamp="892002" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (COND ((AND (NOT (ATOM X)) (NOT (CDR X))) T) ((NOT (ATOM X)) (FUNCALL ISLIST (CDR X))) (T NIL))
+NIL
+T
+NIL
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X) (COND ("), Diff(INSERT,"(AND (NOT (ATOM X)) "), Diff(EQUAL,"(NOT (CDR X))"), Diff(INSERT,")"), Diff(EQUAL," T) ("), Diff(DELETE,"T"), Diff(INSERT,"(NOT (ATOM X))"), Diff(EQUAL," (FUNCALL ISLIST (CDR X)))"), Diff(DELETE,")¶T¶T"), Diff(INSERT," (T NIL))¶NIL¶T¶NIL"), Diff(EQUAL,"¶T¶")]]]></diff>
+  </Command>
+  <Command __id="547" _type="PauseCommand" date="Fri Dec 03 11:16:39 EST 2021" range="5s-10s" starttimestamp="1638547302020" timestamp="897666">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[5664]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="548" _type="ShellCommand" date="Fri Dec 03 11:16:39 EST 2021" starttimestamp="1638547302020" timestamp="897846" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="550" _type="PauseCommand" date="Fri Dec 03 11:16:58 EST 2021" range="10s-20s" starttimestamp="1638547302020" timestamp="916534">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[18688]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="549" _type="ShellCommand" date="Fri Dec 03 11:16:58 EST 2021" starttimestamp="1638547302020" timestamp="916534" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="551" _type="ShellCommand" date="Fri Dec 03 11:16:59 EST 2021" starttimestamp="1638547302020" timestamp="917426" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="553" _type="PauseCommand" date="Fri Dec 03 15:37:00 EST 2021" range=">1h" starttimestamp="1638547302020" timestamp="16518404">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[15600978]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="552" _type="ShellCommand" date="Fri Dec 03 15:37:00 EST 2021" starttimestamp="1638547302020" timestamp="16518404" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="554" _type="ShellCommand" date="Fri Dec 03 15:37:00 EST 2021" starttimestamp="1638547302020" timestamp="16518421" type="ECLIPSE_CLOSED" />
+  <Command __id="555" _type="ShellCommand" date="Fri Dec 03 15:37:01 EST 2021" starttimestamp="1638547302020" timestamp="16519397" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="557" _type="PauseCommand" date="Fri Dec 03 15:39:22 EST 2021" range="2m-5m" starttimestamp="1638547302020" timestamp="16660205">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[140808]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="556" _type="ShellCommand" date="Fri Dec 03 15:39:22 EST 2021" starttimestamp="1638547302020" timestamp="16660205" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="558" _type="ShellCommand" date="Fri Dec 03 15:39:22 EST 2021" starttimestamp="1638547302020" timestamp="16660279" type="ECLIPSE_LOST_FOCUS" />
+</Events>

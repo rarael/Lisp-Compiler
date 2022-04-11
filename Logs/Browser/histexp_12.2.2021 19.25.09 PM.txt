@@ -1,0 +1,49 @@
+12/2/2021 20:40:01 PM	GitHub	https://github.com/
+12/2/2021 20:40:06 PM	jdmar3-comp426/a99-ateam: a99-ateam created by GitHub Classroom	https://github.com/jdmar3-comp426/a99-ateam
+12/2/2021 20:39:54 PM	jdmar3-comp426/a05-rarael: a05-rarael created by GitHub Classroom	https://github.com/jdmar3-comp426/a05-rarael
+12/2/2021 20:39:57 PM	jdmar3-comp426/a05-rarael: a05-rarael created by GitHub Classroom	https://github.com/jdmar3-comp426/a05-rarael/actions
+12/2/2021 20:40:01 PM	Actions · jdmar3-comp426/a05-rarael	https://github.com/jdmar3-comp426/a05-rarael/actions/new
+12/2/2021 20:41:31 PM	Lectures - Google Drive	https://drive.google.com/drive/folders/14RRzusx6-WneUxkScwrdUR3MZFz_f1I9
+12/2/2021 20:41:43 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit?usp=drive_web&ouid=108989945004428762145&rtpof=true
+12/2/2021 20:41:43 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit?rtpof=true
+12/2/2021 20:41:45 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit
+12/2/2021 20:41:45 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p1
+12/2/2021 20:41:46 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p2
+12/2/2021 20:41:47 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p3
+12/2/2021 20:42:18 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p4
+12/2/2021 20:42:22 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p5
+12/2/2021 20:42:25 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p6
+12/2/2021 20:42:43 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p7
+12/2/2021 20:42:57 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p8
+12/2/2021 20:43:05 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p9
+12/2/2021 20:43:17 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p10
+12/2/2021 20:43:21 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p11
+12/2/2021 20:41:40 PM	6-Lisp-SExpression-2.pptx - Google Slides	https://docs.google.com/presentation/d/18s9XyQLzpKplzYPtUOfjnVNQvShXxWj-/edit?usp=drive_web&ouid=108989945004428762145&rtpof=true
+12/2/2021 20:41:40 PM	6-Lisp-SExpression-2.pptx - Google Slides	https://docs.google.com/presentation/d/18s9XyQLzpKplzYPtUOfjnVNQvShXxWj-/edit?rtpof=true
+12/2/2021 20:41:43 PM	6-Lisp-SExpression-2.pptx - Google Slides	https://docs.google.com/presentation/d/18s9XyQLzpKplzYPtUOfjnVNQvShXxWj-/edit
+12/2/2021 20:41:45 PM	6-Lisp-SExpression-2.pptx - Google Slides	https://docs.google.com/presentation/d/18s9XyQLzpKplzYPtUOfjnVNQvShXxWj-/edit#slide=id.p1
+12/2/2021 20:40:56 PM	College essay - Google Docs	https://docs.google.com/document/d/1-gpiVTBpcC5sjrH_JgYOrivVzlh89VL4aWV6TRJCSCA/edit?usp=drive_web&ouid=108989945004428762145
+12/2/2021 20:40:57 PM	College essay - Google Docs	https://docs.google.com/document/d/1-gpiVTBpcC5sjrH_JgYOrivVzlh89VL4aWV6TRJCSCA/edit
+12/2/2021 20:55:00 PM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p10
+12/2/2021 21:08:19 PM	Slack | general | COMP 311 Fall 2021	https://app.slack.com/client/T0257QJV5E1/C0257QK05HT
+12/2/2021 21:11:03 PM	Lecture Slides - Google Drive	https://drive.google.com/drive/folders/1elz_HwtGcJDd_1--NRME07vLrWIS1B1_
+12/2/2021 21:08:25 PM	Slack | exam | COMP 311 Fall 2021	https://app.slack.com/client/T0257QJV5E1/C02FTHD1USD
+12/2/2021 21:09:14 PM	Rough Draft of Final - Google Docs	https://docs.google.com/document/d/1sHpKkP03jZIMO6_Qwj5sR4hKK-S4wcfOmJBWsBbnLfw/edit?usp=sharing
+12/2/2021 21:09:17 PM	Rough Draft of Final - Google Docs	https://docs.google.com/document/d/1sHpKkP03jZIMO6_Qwj5sR4hKK-S4wcfOmJBWsBbnLfw/edit
+12/2/2021 21:09:34 PM	Rough Draft of Final - Google Docs	https://docs.google.com/document/d/1sHpKkP03jZIMO6_Qwj5sR4hKK-S4wcfOmJBWsBbnLfw/edit#heading=h.1dbtpt5uzeno
+12/2/2021 21:09:34 PM	Rough Draft of Final - Google Docs	https://docs.google.com/document/d/1sHpKkP03jZIMO6_Qwj5sR4hKK-S4wcfOmJBWsBbnLfw/edit#
+12/2/2021 21:10:27 PM	Rough Draft of Final - Google Docs	https://docs.google.com/document/d/1sHpKkP03jZIMO6_Qwj5sR4hKK-S4wcfOmJBWsBbnLfw/edit#heading=h.y4mm5f6cfumx
+12/2/2021 21:20:59 PM	Rough Draft of Final - Google Docs	https://docs.google.com/document/d/1sHpKkP03jZIMO6_Qwj5sR4hKK-S4wcfOmJBWsBbnLfw/edit#
+12/2/2021 21:21:11 PM	Rough Draft of Final - Google Docs	https://docs.google.com/document/d/1sHpKkP03jZIMO6_Qwj5sR4hKK-S4wcfOmJBWsBbnLfw/edit#heading=h.y4mm5f6cfumx
+12/2/2021 21:24:25 PM	Rough Draft of Final - Google Docs	https://docs.google.com/document/d/1sHpKkP03jZIMO6_Qwj5sR4hKK-S4wcfOmJBWsBbnLfw/edit#
+12/2/2021 21:27:54 PM	Rough Draft of Final - Google Docs	https://docs.google.com/document/d/1sHpKkP03jZIMO6_Qwj5sR4hKK-S4wcfOmJBWsBbnLfw/edit#heading=h.y4mm5f6cfumx
+12/2/2021 21:30:23 PM	Rough Draft of Final - Google Docs	https://docs.google.com/document/d/1sHpKkP03jZIMO6_Qwj5sR4hKK-S4wcfOmJBWsBbnLfw/edit#
+12/2/2021 21:30:23 PM	Rough Draft of Final - Google Docs	https://docs.google.com/document/d/1sHpKkP03jZIMO6_Qwj5sR4hKK-S4wcfOmJBWsBbnLfw/edit#heading=h.y4mm5f6cfumx
+12/2/2021 21:37:25 PM	COMP 550 Fall 2021	https://comp550fa21.cs.unc.edu/
+12/2/2021 21:37:31 PM	Grades for Onyen: rarael; Name: Mccormick, Sarah	https://comp550fa21.cs.unc.edu/grades
+12/2/2021 21:36:10 PM	Rough Draft of Final - Google Docs	https://docs.google.com/document/d/1sHpKkP03jZIMO6_Qwj5sR4hKK-S4wcfOmJBWsBbnLfw/edit#
+12/2/2021 21:37:25 PM		https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=hZJdb4IwFIb%2FCum9FEoc2AiJ04uZuEmE7WI3S6nH2QRa1lP28e%2BH4py7cdd9P877pFMUTd3yWef2egNvHaDzPptaIz8%2BpKSzmhuBCrkWDSB3khez%2BxVnfsBba5yRpibeDBGsU0bPjcauAVuAfVcSHjerlOyda5FTKk3TjsfBTrDQl%2Bh3Wvqw7WixV1VlanB7H9HQQzqj%2Bbooibfoz1FaHIJ%2FY3rR2au2Le2v2KkaTsYNbJUF6WhRrIm3XKTkJYBQ3iRhJBO5m7BAxJGYjMciqapJXCVJ1MsQO1hqdEK7lLCAhaOQjYKoDBiPYs7iZ%2BLlp7G3Sm%2BVfr1OphpEyO%2FKMh8NY57A4nFILyDZ9MCXH4vtBfHrseIHM8n%2BgYpnqFN60TTUtvyhj14uclMr%2BeXN6tp8zC0IBykJCc0Gy99fkX0D&RelayState=ss%3Amem%3A16267f83a44de4c6b504e440a976cd83ccd02f648c52cd395cb94fdd03153db0&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=rlYwKj%2BcnpZhmyzjscEHPp%2ByorqmZx3%2FMMvgWh3gdsITZOoNBnW7vqe0LXgmYYPRxtj6C8L4HROkN4h9rKSqqVZLbBK5FeIY6w%2FQGkjqLbOcYTLBFO0Rbwi04kqexXwk0R9LPg04wyQs%2Frxg7z8O6FwQU8ChhXcZQXEjAZgK1MOjc5aODW86EgXR3xKHvxjmy4hLhzwSFGAVkV7C%2BDSwGabnjy1wvLPvPqId9F60xidG53OflvxKrjzWolpf6Y9lK%2FzNxCGQbMA3atV1MdWXRB1MW2gZJL7CTbUAxX4zxoSy2sbL8GCKskMGgEThS8yF9RzREAi5KB8XCa5zrrgyhotub4i94Ef%2B2ugb%2FodiBicBkbkmaPAchv%2BrnIACUxiOVZt3kLgtCli6CxShCnbyqH%2B3u%2FS0ufz7P2DGRRBi9JYAeOilHbcgvWgCr7T5r3VURAsQgxw8dc50kwhcqtZoIFiXh1RqG5cs%2Fcn%2BqhvE5q3aY4g%2FHTXrUkhTLWZl45Dw
+12/2/2021 22:00:04 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/portal/site/~rarael
+12/2/2021 22:00:08 PM	Sakai @ UNC-Chapel Hill : COMP524.001.FA21 : Announcements	https://sakai.unc.edu/portal/site/a7e92904-8c33-4c09-862e-9db03c7d94a3
+12/2/2021 22:00:11 PM	Sakai @ UNC-Chapel Hill : COMP524.001.FA21 : Gradebook	https://sakai.unc.edu/portal/site/a7e92904-8c33-4c09-862e-9db03c7d94a3/tool/27bc213c-0073-4f92-9169-edb18fc2487d
+12/2/2021 22:00:04 PM		https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJdb4IwFIb%2FCum9tKAm2AgJ04uZuI0I28VulgLH0ay0rKfs498PxRmXLF73%2Fej75CxRtKrjae8avYP3HtB5X63SyI8PMemt5kagRK5FC8hdxfP0bstDn%2FHOGmcqo4iXIoJ10uiV0di3YHOwH7KCx902Jo1zHXJKUbwJ6fe68qHuad7IsjQKXOMjGnoIDWn2kBfEWw%2B%2FkFoc8i7caM5eWXd0KN9LBSfjDmppoXI0zx%2BIt1nH5KWazxf7cCZEEAHbR3VZTucQRqysFzWLytkgQ%2Bxho9EJ7WISsjCYBOGETQs25YxxNnsmXnbaeCN1LfXrdSDlKEJ%2BWxTZZBzzBBaPQwYBSZYHrPxYbC9AX48Vv3RJ8j9LPLNc0ouCsa3j90PiZp0ZJatvL1XKfK4sCAcxCQhNRsvfG0h%2BAA%3D%3D&RelayState=ss%3Amem%3A7db464f98a57f605fb22652c3dc5a23343c7f14931ae0a51c8ffdf306981c7a9&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=UrpnH54PsCD7PnTA3%2BgWn%2FSjO4KqVp2n1AoFJfLY8Pm8FJJVbm1U8tNZiIdnBCy%2FpqGWUe%2BdfUewvzKRK2VUGCLc77MvchamIUa50sIvdUTuoqsbGn6ytFaXazZTMS6akdIkbnsFR3xe6fY9cnD9M4gLOREZKZuFUHfEGXovDedw2wKe6Yua012SDJXv0a9OJtDHS%2Bpag5Tjo1sDlM6Cp1dJopfcbZdiu%2FXiGZcB3ztUjMMMw2sumSl87mvHx%2Bh1n%2FGFSszA0kgCjJ0X5iHULJCtuRJEEU21VNYEl7ZOH%2FE5pYKp%2BC78RskRkHUFpBF3IVFKS0yILaVJXv8qfAEBKA%3D%3D

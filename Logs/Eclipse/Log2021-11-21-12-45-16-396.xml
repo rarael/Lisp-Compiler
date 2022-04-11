@@ -1,0 +1,77 @@
+<Events startTimestamp="1637516716396" logVersion="1.0.0.202108012048">
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="259" date="Sun Nov 21 12:45:16 EST 2021" docOffset="537" starttimestamp="1637516716396" timestamp="494" />
+  <Command __id="29" _type="PauseCommand" date="Sun Nov 21 12:45:32 EST 2021" range="2s-5s" starttimestamp="1637516716396" timestamp="15670">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[4870]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[PasteCommand]]></next>
+  </Command>
+  <Command __id="28" _type="PasteCommand" date="Sun Nov 21 12:45:32 EST 2021" starttimestamp="1637516716396" timestamp="15670" />
+  <Command __id="30" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Sun Nov 21 12:45:32 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637516716396" timestamp="16059" type="Run" />
+  <Command __id="31" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Sun Nov 21 12:45:32 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637516716396" timestamp="16060" type="Run" />
+  <Command __id="32" _type="ExceptionCommand" date="Sun Nov 21 12:45:32 EST 2021" starttimestamp="1637516716396" timestamp="16062" type="Exception">
+    <exceptionString><![CDATA[Exception in thread "main" java.lang.IllegalStateException: Expression does not start with an operator
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:33)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
+	at main.Main.main(Main.java:31)
+	at a5.RunLisp.main(RunLisp.java:21)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="34" _type="PauseCommand" date="Sun Nov 21 12:45:36 EST 2021" range="2s-5s" starttimestamp="1637516716396" timestamp="20468">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[4406]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="33" _type="MoveCaretCommand" caretOffset="248" date="Sun Nov 21 12:45:36 EST 2021" docOffset="526" starttimestamp="1637516716396" timestamp="20468" />
+  <Command __id="36" _type="InsertStringCommand" date="Sun Nov 21 12:45:37 EST 2021" starttimestamp="1637516716396" timestamp="21465" timestamp2="21465">
+    <data><![CDATA[.]]></data>
+  </Command>
+  <Command __id="37" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="true" date="Sun Nov 21 12:45:38 EST 2021" start_end="START" starttimestamp="1637516716396" timestamp="21874" />
+  <Command __id="42" _type="PauseCommand" date="Sun Nov 21 12:45:40 EST 2021" range="1s-2s" starttimestamp="1637516716396" timestamp="23741">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[AssistCommand]]></prev>
+    <pause><![CDATA[1867]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[AssistCommand]]></next>
+  </Command>
+  <Command __id="41" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="false" date="Sun Nov 21 12:45:40 EST 2021" start_end="END" starttimestamp="1637516716396" timestamp="23741" />
+  <Command __id="44" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Sun Nov 21 12:45:41 EST 2021" starttimestamp="1637516716396" timestamp="24746" />
+  <Command __id="46" _type="InsertStringCommand" date="Sun Nov 21 12:45:41 EST 2021" starttimestamp="1637516716396" timestamp="25319" timestamp2="25319">
+    <data><![CDATA[H]]></data>
+  </Command>
+  <Command __id="48" _type="InsertStringCommand" date="Sun Nov 21 12:45:41 EST 2021" starttimestamp="1637516716396" timestamp="25420" timestamp2="25420">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="50" _type="InsertStringCommand" date="Sun Nov 21 12:45:41 EST 2021" starttimestamp="1637516716396" timestamp="25501" timestamp2="25501">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="52" _type="InsertStringCommand" date="Sun Nov 21 12:45:42 EST 2021" starttimestamp="1637516716396" timestamp="25615" timestamp2="25615">
+    <data><![CDATA[d]]></data>
+  </Command>
+  <Command __id="54" _type="InsertStringCommand" date="Sun Nov 21 12:45:42 EST 2021" starttimestamp="1637516716396" timestamp="25911" timestamp2="25911">
+    <data><![CDATA[(]]></data>
+  </Command>
+  <Command __id="56" _type="InsertStringCommand" date="Sun Nov 21 12:45:42 EST 2021" starttimestamp="1637516716396" timestamp="26451" timestamp2="26451">
+    <data><![CDATA[)]]></data>
+  </Command>
+  <Command __id="58" _type="InsertStringCommand" date="Sun Nov 21 12:45:43 EST 2021" starttimestamp="1637516716396" timestamp="26922" timestamp2="26922">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="59" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Sun Nov 21 12:45:43 EST 2021" starttimestamp="1637516716396" timestamp="27382" />
+  <Command __id="60" _type="EclipseCommand" commandID="" date="Sun Nov 21 12:45:43 EST 2021" starttimestamp="1637516716396" timestamp="27454" />
+  <Command __id="61" _type="EclipseCommand" commandID="" date="Sun Nov 21 12:45:43 EST 2021" starttimestamp="1637516716396" timestamp="27460" />
+  <Command __id="62" _type="EclipseCommand" commandID="" date="Sun Nov 21 12:45:43 EST 2021" starttimestamp="1637516716396" timestamp="27461" />
+  <Command __id="63" _type="EclipseCommand" commandID="" date="Sun Nov 21 12:45:43 EST 2021" starttimestamp="1637516716396" timestamp="27463" />
+  <Command __id="64" _type="EclipseCommand" commandID="" date="Sun Nov 21 12:45:43 EST 2021" starttimestamp="1637516716396" timestamp="27464" />
+  <Command __id="65" _type="EclipseCommand" commandID="" date="Sun Nov 21 12:45:43 EST 2021" starttimestamp="1637516716396" timestamp="27467" />
+  <Command __id="66" _type="EclipseCommand" commandID="" date="Sun Nov 21 12:45:43 EST 2021" starttimestamp="1637516716396" timestamp="27467" />
+  <Command __id="67" _type="EclipseCommand" commandID="" date="Sun Nov 21 12:45:43 EST 2021" starttimestamp="1637516716396" timestamp="27470" />
+  <Command __id="68" _type="EclipseCommand" commandID="" date="Sun Nov 21 12:45:43 EST 2021" starttimestamp="1637516716396" timestamp="27471" />
+  <Command __id="69" _type="EclipseCommand" commandID="" date="Sun Nov 21 12:45:43 EST 2021" starttimestamp="1637516716396" timestamp="27493" />
+</Events>

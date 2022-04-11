@@ -1,0 +1,68 @@
+<Events startTimestamp="1636239418720" logVersion="1.0.0.202108012048">
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Sat Nov 06 18:57:02 EDT 2021" docASTNodeCount="130" docActiveCodeLength="697" docExpressionCount="94" docLength="697" projectName="a5" starttimestamp="1636239418720" timestamp="3541">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\main\lisp\parser\terms\EvalEvaluator.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package main.lisp.parser.terms;
+
+import main.lisp.evaluator.Environment;
+import main.lisp.evaluator.Evaluator;
+import main.lisp.parser.terms.IdentifierAtom;
+public class EvalEvaluator implements Evaluator{
+
+	public SExpression eval(SExpression arg0, Environment arg1) {
+		SExpression current = arg0.getTail();
+		SExpression evaluated =  current;
+		while (!current.getTail().isAtom() && !current.getTail().getTail().isNIL()) {
+			evaluated = current.getHead().eval(arg1);
+			current = evaluated.getTail();
+		}
+		return evaluated.getHead().eval(arg1);
+	}
+	
+	public SExpression helper(SExpression arg0, Environment arg1) {
+		return arg0.getTail().getHead().eval(arg1);
+	}
+	
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="1" _type="SelectTextCommand" caretOffset="553" date="Sat Nov 06 18:57:02 EDT 2021" end="601" start="553" starttimestamp="1636239418720" timestamp="3693" />
+  <Command __id="2" _type="SelectTextCommand" caretOffset="483" date="Sat Nov 06 18:57:02 EDT 2021" end="601" start="483" starttimestamp="1636239418720" timestamp="4068" />
+  <Command __id="4" _type="EclipseCommand" commandID="org.eclipse.ui.edit.delete" date="Sat Nov 06 18:57:03 EDT 2021" starttimestamp="1636239418720" timestamp="4901" />
+  <Command __id="7" _type="PauseCommand" date="Sat Nov 06 18:57:04 EDT 2021" range="1s-2s" starttimestamp="1636239418720" timestamp="6110">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1206]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="6" _type="EclipseCommand" commandID="org.eclipse.ui.edit.delete" date="Sat Nov 06 18:57:04 EDT 2021" starttimestamp="1636239418720" timestamp="6107" />
+  <Command __id="9" _type="PauseCommand" date="Sat Nov 06 18:57:06 EDT 2021" range="2s-5s" starttimestamp="1636239418720" timestamp="8184">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2077]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Delete]]></next>
+  </Command>
+  <Command __id="10" _type="EclipseCommand" commandID="org.eclipse.ui.edit.delete" date="Sat Nov 06 18:57:06 EDT 2021" starttimestamp="1636239418720" timestamp="8194" />
+  <Command __id="15" _type="PauseCommand" date="Sat Nov 06 18:57:10 EDT 2021" range="1s-2s" starttimestamp="1636239418720" timestamp="11868">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1345]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="14" _type="EclipseCommand" commandID="" date="Sat Nov 06 18:57:10 EDT 2021" starttimestamp="1636239418720" timestamp="11867" />
+  <Command __id="16" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Sat Nov 06 18:57:10 EDT 2021" starttimestamp="1636239418720" timestamp="11886" />
+  <Command __id="17" _type="EclipseCommand" commandID="" date="Sat Nov 06 18:57:10 EDT 2021" starttimestamp="1636239418720" timestamp="11944" />
+  <Command __id="18" _type="EclipseCommand" commandID="" date="Sat Nov 06 18:57:10 EDT 2021" starttimestamp="1636239418720" timestamp="11946" />
+  <Command __id="19" _type="EclipseCommand" commandID="" date="Sat Nov 06 18:57:10 EDT 2021" starttimestamp="1636239418720" timestamp="12061" />
+  <Command __id="20" _type="EclipseCommand" commandID="" date="Sat Nov 06 18:57:10 EDT 2021" starttimestamp="1636239418720" timestamp="12115" />
+  <Command __id="21" _type="EclipseCommand" commandID="" date="Sat Nov 06 18:57:10 EDT 2021" starttimestamp="1636239418720" timestamp="12118" />
+  <Command __id="22" _type="EclipseCommand" commandID="" date="Sat Nov 06 18:57:10 EDT 2021" starttimestamp="1636239418720" timestamp="12120" />
+  <Command __id="23" _type="EclipseCommand" commandID="" date="Sat Nov 06 18:57:10 EDT 2021" starttimestamp="1636239418720" timestamp="12127" />
+  <Command __id="24" _type="EclipseCommand" commandID="" date="Sat Nov 06 18:57:10 EDT 2021" starttimestamp="1636239418720" timestamp="12128" />
+  <Command __id="25" _type="EclipseCommand" commandID="" date="Sat Nov 06 18:57:10 EDT 2021" starttimestamp="1636239418720" timestamp="12163" />
+  <Command __id="26" _type="ShellCommand" date="Sat Nov 06 18:57:11 EDT 2021" starttimestamp="1636239418720" timestamp="12689" type="ECLIPSE_LOST_FOCUS" />
+</Events>

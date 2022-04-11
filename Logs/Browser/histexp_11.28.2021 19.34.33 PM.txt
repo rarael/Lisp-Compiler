@@ -1,0 +1,13 @@
+11/28/2021 19:41:03 PM	Lectures - Google Drive	https://drive.google.com/drive/folders/14RRzusx6-WneUxkScwrdUR3MZFz_f1I9
+11/28/2021 19:40:41 PM	Lecture Slides - Google Drive	https://drive.google.com/drive/folders/1elz_HwtGcJDd_1--NRME07vLrWIS1B1_
+11/28/2021 19:41:16 PM	11-Lisp-FunctionExpression-2.pptx - Google Slides	https://docs.google.com/presentation/d/1vT1IF0qxAWfaai-a2G4LDGIVSc-Emcv-/edit?usp=drive_web&ouid=108989945004428762145&rtpof=true
+11/28/2021 19:41:16 PM	11-Lisp-FunctionExpression-2.pptx - Google Slides	https://docs.google.com/presentation/d/1vT1IF0qxAWfaai-a2G4LDGIVSc-Emcv-/edit?rtpof=true
+11/28/2021 19:41:17 PM	11-Lisp-FunctionExpression-2.pptx - Google Slides	https://docs.google.com/presentation/d/1vT1IF0qxAWfaai-a2G4LDGIVSc-Emcv-/edit
+11/28/2021 19:41:18 PM	11-Lisp-FunctionExpression-2.pptx - Google Slides	https://docs.google.com/presentation/d/1vT1IF0qxAWfaai-a2G4LDGIVSc-Emcv-/edit#slide=id.p2
+11/28/2021 19:41:19 PM	11-Lisp-FunctionExpression-2.pptx - Google Slides	https://docs.google.com/presentation/d/1vT1IF0qxAWfaai-a2G4LDGIVSc-Emcv-/edit#slide=id.p3
+11/28/2021 19:41:20 PM	11-Lisp-FunctionExpression-2.pptx - Google Slides	https://docs.google.com/presentation/d/1vT1IF0qxAWfaai-a2G4LDGIVSc-Emcv-/edit#slide=id.p4
+11/28/2021 19:41:20 PM	11-Lisp-FunctionExpression-2.pptx - Google Slides	https://docs.google.com/presentation/d/1vT1IF0qxAWfaai-a2G4LDGIVSc-Emcv-/edit#slide=id.p5
+11/28/2021 19:41:21 PM	11-Lisp-FunctionExpression-2.pptx - Google Slides	https://docs.google.com/presentation/d/1vT1IF0qxAWfaai-a2G4LDGIVSc-Emcv-/edit#slide=id.p6
+11/28/2021 19:41:22 PM	11-Lisp-FunctionExpression-2.pptx - Google Slides	https://docs.google.com/presentation/d/1vT1IF0qxAWfaai-a2G4LDGIVSc-Emcv-/edit#slide=id.p7
+11/28/2021 19:38:20 PM	imports in eclipse can't be resolved error - Google Search	https://www.google.com/search?q=imports+in+eclipse+can%27t+be+resolved+error&oq=imports+in+eclipse+can%27t+be+resolved+error&aqs=chrome..69i57.8073j0j7&sourceid=chrome&ie=UTF-8
+11/28/2021 19:38:21 PM	java - Eclipse error: "The import XXX cannot be resolved" - Stack Overflow	https://stackoverflow.com/questions/4322893/eclipse-error-the-import-xxx-cannot-be-resolved

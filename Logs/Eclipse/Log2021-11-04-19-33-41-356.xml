@@ -1,0 +1,87 @@
+<Events startTimestamp="1636068821356" logVersion="1.0.0.202108012048">
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="111" date="Thu Nov 04 19:33:41 EDT 2021" docOffset="155" starttimestamp="1636068821356" timestamp="250" />
+  <Command __id="3" _type="PauseCommand" date="Thu Nov 04 19:33:45 EDT 2021" range="2s-5s" starttimestamp="1636068821356" timestamp="3673">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3419]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="5" _type="MoveCaretCommand" caretOffset="153" date="Thu Nov 04 19:33:45 EDT 2021" docOffset="203" starttimestamp="1636068821356" timestamp="4133" />
+  <Command __id="6" _type="MoveCaretCommand" caretOffset="111" date="Thu Nov 04 19:33:45 EDT 2021" docOffset="155" starttimestamp="1636068821356" timestamp="4135" />
+  <Command __id="8" _type="PauseCommand" date="Thu Nov 04 19:34:20 EDT 2021" range="30s-1m" starttimestamp="1636068821356" timestamp="38768">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[34633]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="7" _type="MoveCaretCommand" caretOffset="782" date="Thu Nov 04 19:34:20 EDT 2021" docOffset="826" starttimestamp="1636068821356" timestamp="38768" />
+  <Command __id="10" _type="PauseCommand" date="Thu Nov 04 19:34:22 EDT 2021" range="1s-2s" starttimestamp="1636068821356" timestamp="40647">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1878]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Insert]]></next>
+  </Command>
+  <Command __id="11" _type="InsertStringCommand" date="Thu Nov 04 19:34:22 EDT 2021" starttimestamp="1636068821356" timestamp="40656" timestamp2="40656">
+    <data><![CDATA[A]]></data>
+  </Command>
+  <Command __id="13" _type="InsertStringCommand" date="Thu Nov 04 19:34:22 EDT 2021" starttimestamp="1636068821356" timestamp="40735" timestamp2="40735">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="15" _type="InsertStringCommand" date="Thu Nov 04 19:34:23 EDT 2021" starttimestamp="1636068821356" timestamp="41697" timestamp2="41697">
+    <data><![CDATA[L]]></data>
+  </Command>
+  <Command __id="17" _type="InsertStringCommand" date="Thu Nov 04 19:34:23 EDT 2021" starttimestamp="1636068821356" timestamp="41837" timestamp2="41837">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="19" _type="InsertStringCommand" date="Thu Nov 04 19:34:23 EDT 2021" starttimestamp="1636068821356" timestamp="41960" timestamp2="41960">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="21" _type="InsertStringCommand" date="Thu Nov 04 19:34:23 EDT 2021" starttimestamp="1636068821356" timestamp="42061" timestamp2="42061">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="23" _type="PauseCommand" date="Thu Nov 04 19:38:10 EDT 2021" range="2m-5m" starttimestamp="1636068821356" timestamp="269010">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[226948]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="22" _type="ShellCommand" date="Thu Nov 04 19:38:10 EDT 2021" starttimestamp="1636068821356" timestamp="269009" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="25" _type="PauseCommand" date="Thu Nov 04 19:40:37 EDT 2021" range="2m-5m" starttimestamp="1636068821356" timestamp="415690">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[146681]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="24" _type="ShellCommand" date="Thu Nov 04 19:40:37 EDT 2021" starttimestamp="1636068821356" timestamp="415690" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="27" _type="PauseCommand" date="Thu Nov 04 19:40:38 EDT 2021" range="1s-2s" starttimestamp="1636068821356" timestamp="416772">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1082]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="26" _type="ShellCommand" date="Thu Nov 04 19:40:38 EDT 2021" starttimestamp="1636068821356" timestamp="416772" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="29" _type="PauseCommand" date="Thu Nov 04 20:37:52 EDT 2021" range="30m-1h" starttimestamp="1636068821356" timestamp="3850734">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3433962]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="28" _type="ShellCommand" date="Thu Nov 04 20:37:52 EDT 2021" starttimestamp="1636068821356" timestamp="3850734" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="30" _type="ShellCommand" date="Thu Nov 04 20:37:52 EDT 2021" starttimestamp="1636068821356" timestamp="3851469" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="32" _type="PauseCommand" date="Thu Nov 04 20:38:33 EDT 2021" range="30s-1m" starttimestamp="1636068821356" timestamp="3892089">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[40620]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="31" _type="ShellCommand" date="Thu Nov 04 20:38:33 EDT 2021" starttimestamp="1636068821356" timestamp="3892089" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="33" _type="ShellCommand" date="Thu Nov 04 20:38:33 EDT 2021" starttimestamp="1636068821356" timestamp="3892208" type="ECLIPSE_LOST_FOCUS" />
+</Events>

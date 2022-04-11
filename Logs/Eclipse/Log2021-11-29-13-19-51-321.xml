@@ -1,0 +1,1372 @@
+<Events startTimestamp="1638209991321" logVersion="1.0.0.202108012048">
+  <Command __id="1" _type="ShellCommand" date="Mon Nov 29 13:19:55 EST 2021" starttimestamp="1638209991321" timestamp="4339" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="4" _type="PauseCommand" date="Mon Nov 29 13:20:03 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="11743">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[7404]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="5" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:20:03 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="12211" />
+  <Command __id="7" _type="PauseCommand" date="Mon Nov 29 13:24:48 EST 2021" range="2m-5m" starttimestamp="1638209991321" timestamp="297202">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[284991]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="8" _type="ShellCommand" date="Mon Nov 29 13:24:49 EST 2021" starttimestamp="1638209991321" timestamp="298190" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="10" _type="PauseCommand" date="Mon Nov 29 13:24:51 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="300256">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2066]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="9" _type="ShellCommand" date="Mon Nov 29 13:24:51 EST 2021" starttimestamp="1638209991321" timestamp="300256" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="12" _type="PauseCommand" date="Mon Nov 29 13:25:02 EST 2021" range="10s-20s" starttimestamp="1638209991321" timestamp="311209">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[10953]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="11" _type="ShellCommand" date="Mon Nov 29 13:25:02 EST 2021" starttimestamp="1638209991321" timestamp="311209" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="13" _type="ShellCommand" date="Mon Nov 29 13:25:03 EST 2021" starttimestamp="1638209991321" timestamp="311900" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="15" _type="ShellCommand" date="Mon Nov 29 13:25:03 EST 2021" starttimestamp="1638209991321" timestamp="312029" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="16" _type="ShellCommand" date="Mon Nov 29 13:25:03 EST 2021" starttimestamp="1638209991321" timestamp="312457" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="18" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:25:04 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="312701" />
+  <Command __id="20" _type="PauseCommand" date="Mon Nov 29 13:25:56 EST 2021" range="30s-1m" starttimestamp="1638209991321" timestamp="365441">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[52740]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="23" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:25:58 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="366679" />
+  <Command __id="25" _type="PauseCommand" date="Mon Nov 29 13:26:45 EST 2021" range="30s-1m" starttimestamp="1638209991321" timestamp="414579">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[47900]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="24" _type="ShellCommand" date="Mon Nov 29 13:26:45 EST 2021" starttimestamp="1638209991321" timestamp="414579" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="27" _type="PauseCommand" date="Mon Nov 29 13:26:47 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="415870">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1291]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="26" _type="ShellCommand" date="Mon Nov 29 13:26:47 EST 2021" starttimestamp="1638209991321" timestamp="415870" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="29" _type="PauseCommand" date="Mon Nov 29 13:26:50 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="419294">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3423]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="30" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:26:50 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="419369" />
+  <Command __id="32" _type="PauseCommand" date="Mon Nov 29 13:26:52 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="421183">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1814]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="31" _type="ShellCommand" date="Mon Nov 29 13:26:52 EST 2021" starttimestamp="1638209991321" timestamp="421183" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="34" _type="PauseCommand" date="Mon Nov 29 13:27:11 EST 2021" range="10s-20s" starttimestamp="1638209991321" timestamp="439963">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[18780]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="33" _type="ShellCommand" date="Mon Nov 29 13:27:11 EST 2021" starttimestamp="1638209991321" timestamp="439963" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="36" _type="PauseCommand" date="Mon Nov 29 13:27:13 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="442374">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2410]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="38" _type="PauseCommand" date="Mon Nov 29 13:29:49 EST 2021" range="2m-5m" starttimestamp="1638209991321" timestamp="598159">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[155786]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="37" _type="ShellCommand" date="Mon Nov 29 13:29:49 EST 2021" starttimestamp="1638209991321" timestamp="598159" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="53" _type="PauseCommand" date="Mon Nov 29 13:31:35 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="704458">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[6446]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="52" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:31:35 EST 2021" starttimestamp="1638209991321" timestamp="704458" />
+  <Command __id="54" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:31:35 EST 2021" starttimestamp="1638209991321" timestamp="704473" />
+  <Command __id="55" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:31:35 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="704524" type="Run" />
+  <Command __id="56" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:31:35 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="704524" type="Run" />
+  <Command __id="57" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Nov 29 13:31:36 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638209991321" timestamp="704780" type="Run" />
+  <Command __id="58" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Nov 29 13:31:36 EST 2021" kind="StepInto" projectName="(Unknown)" starttimestamp="1638209991321" timestamp="704830" type="Run" />
+  <Command __id="59" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Nov 29 13:31:36 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638209991321" timestamp="704975" type="Run" />
+  <Command __id="60" _type="ConsoleOutput" date="Mon Nov 29 13:31:36 EST 2021" overflow="false" starttimestamp="1638209991321" timestamp="705079" type="ConsoleOutput">
+    <outputString><![CDATA[JRE Oracle Corporation/11.0.12 is not supported, advanced source lookup disabled: Unsupported class file major version 55.
+]]></outputString>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="64" _type="PauseCommand" date="Mon Nov 29 13:31:52 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="720723">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[9576]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="63" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:31:52 EST 2021" starttimestamp="1638209991321" timestamp="720723" />
+  <Command __id="65" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:31:52 EST 2021" starttimestamp="1638209991321" timestamp="720727" />
+  <Command __id="66" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:31:52 EST 2021" starttimestamp="1638209991321" timestamp="720727" />
+  <Command __id="67" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:31:52 EST 2021" starttimestamp="1638209991321" timestamp="720728" />
+  <Command __id="68" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:31:52 EST 2021" starttimestamp="1638209991321" timestamp="720729" />
+  <Command __id="69" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:31:52 EST 2021" starttimestamp="1638209991321" timestamp="720730" />
+  <Command __id="70" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:31:52 EST 2021" starttimestamp="1638209991321" timestamp="720730" />
+  <Command __id="71" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:31:52 EST 2021" starttimestamp="1638209991321" timestamp="720733" />
+  <Command __id="72" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:31:52 EST 2021" starttimestamp="1638209991321" timestamp="720733" />
+  <Command __id="73" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:31:52 EST 2021" starttimestamp="1638209991321" timestamp="720734" />
+  <Command __id="75" _type="PauseCommand" date="Mon Nov 29 13:31:58 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="727069">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[6335]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="74" _type="ConsoleInput" date="Mon Nov 29 13:31:58 EST 2021" starttimestamp="1638209991321" timestamp="727069" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="77" _type="PauseCommand" date="Mon Nov 29 13:32:00 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="728938">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ConsoleInput]]></prev>
+    <pause><![CDATA[1869]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="78" _type="MoveCaretCommand" caretOffset="570" date="Mon Nov 29 13:32:00 EST 2021" docOffset="904" starttimestamp="1638209991321" timestamp="729103" />
+  <Command __id="85" _type="PauseCommand" date="Mon Nov 29 13:32:06 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="734949">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[3118]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="84" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:32:06 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="734949" type="Run" />
+  <Command __id="86" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:32:06 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="734950" type="Run" />
+  <Command __id="88" _type="PauseCommand" date="Mon Nov 29 13:32:14 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="742832">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[7882]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="87" _type="ConsoleInput" date="Mon Nov 29 13:32:14 EST 2021" starttimestamp="1638209991321" timestamp="742832" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="89" _type="ConsoleOutput" date="Mon Nov 29 13:32:14 EST 2021" overflow="false" starttimestamp="1638209991321" timestamp="742943" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"JRE Oracle Corporation/11.0.12 is not supported, advanced source lookup disabled: Unsupported class file major version 55."), Diff(INSERT,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶T"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="91" _type="PauseCommand" date="Mon Nov 29 13:32:20 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="748767">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[5824]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="93" _type="PauseCommand" date="Mon Nov 29 13:32:22 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="751225">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[2458]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="92" _type="ShellCommand" date="Mon Nov 29 13:32:22 EST 2021" starttimestamp="1638209991321" timestamp="751225" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="108" _type="PauseCommand" date="Mon Nov 29 13:33:23 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="811754">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[4533]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="107" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:33:23 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="811754" type="Run" />
+  <Command __id="110" _type="PauseCommand" date="Mon Nov 29 13:33:32 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="820803">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[9049]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="109" _type="ConsoleInput" date="Mon Nov 29 13:33:32 EST 2021" starttimestamp="1638209991321" timestamp="820803" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="111" _type="ConsoleOutput" date="Mon Nov 29 13:33:32 EST 2021" overflow="false" starttimestamp="1638209991321" timestamp="820865" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶T¶")]]]></diff>
+  </Command>
+  <Command __id="113" _type="PauseCommand" date="Mon Nov 29 13:33:35 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="824121">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3256]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="115" _type="PauseCommand" date="Mon Nov 29 13:34:49 EST 2021" range="1m-2m" starttimestamp="1638209991321" timestamp="898161">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[74040]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="114" _type="ShellCommand" date="Mon Nov 29 13:34:49 EST 2021" starttimestamp="1638209991321" timestamp="898161" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="135" _type="PauseCommand" date="Mon Nov 29 13:35:04 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="913321">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[1415]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="134" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:35:04 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="913321" type="Run" />
+  <Command __id="136" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:35:04 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="913322" type="Run" />
+  <Command __id="138" _type="PauseCommand" date="Mon Nov 29 13:35:12 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="921280">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[7958]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="137" _type="ConsoleInput" date="Mon Nov 29 13:35:12 EST 2021" starttimestamp="1638209991321" timestamp="921280" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="139" _type="ConsoleOutput" date="Mon Nov 29 13:35:12 EST 2021" overflow="false" starttimestamp="1638209991321" timestamp="921382" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶T¶")]]]></diff>
+  </Command>
+  <Command __id="159" _type="PauseCommand" date="Mon Nov 29 13:35:24 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="932855">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[1878]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="158" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:35:24 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="932854" type="Run" />
+  <Command __id="160" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:35:24 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="932855" type="Run" />
+  <Command __id="169" _type="PauseCommand" date="Mon Nov 29 13:35:34 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="943276">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[1899]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="168" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:35:34 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="943276" type="Run" />
+  <Command __id="170" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:35:34 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="943277" type="Run" />
+  <Command __id="172" _type="PauseCommand" date="Mon Nov 29 13:35:47 EST 2021" range="10s-20s" starttimestamp="1638209991321" timestamp="956052">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[12774]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="171" _type="ConsoleInput" date="Mon Nov 29 13:35:47 EST 2021" starttimestamp="1638209991321" timestamp="956051" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="173" _type="ConsoleOutput" date="Mon Nov 29 13:35:47 EST 2021" overflow="false" starttimestamp="1638209991321" timestamp="956153" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (OR (AND (ATOM X) (NOT (AND (COND (CAR X)) (COND (CDR X)))) (AND (ATOM (CDR X)) (NOT (COND (CDR X))))))
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶"), Diff(INSERT,"LAMBDA (X) (OR (AND (ATOM X) (NOT (AND (COND (CAR X)) (COND (CDR X)))) (AND (ATOM (CDR X)) (NOT (COND (CDR X))))))¶"), Diff(EQUAL,"T¶")]]]></diff>
+  </Command>
+  <Command __id="188" _type="PauseCommand" date="Mon Nov 29 13:36:09 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="977881">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[5124]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="187" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:36:09 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="977881" type="Run" />
+  <Command __id="190" _type="PauseCommand" date="Mon Nov 29 13:36:14 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="982709">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[4828]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="189" _type="ConsoleInput" date="Mon Nov 29 13:36:14 EST 2021" starttimestamp="1638209991321" timestamp="982709" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="191" _type="ConsoleOutput" date="Mon Nov 29 13:36:14 EST 2021" overflow="false" starttimestamp="1638209991321" timestamp="982822" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (OR (AND (ATOM X) (NOT (AND (COND (CAR X)) (COND (CDR X)))) (AND (ATOM (CDR X)) (NOT (COND (CDR X))))))
+NIL
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X) (OR (AND (ATOM X) (NOT (AND (COND (CAR X)) (COND (CDR X)))) (AND (ATOM (CDR X)) (NOT (COND (CDR X))))))¶"), Diff(INSERT,"NIL¶"), Diff(EQUAL,"T¶")]]]></diff>
+  </Command>
+  <Command __id="206" _type="PauseCommand" date="Mon Nov 29 13:36:26 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="994899">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2319]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="205" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:36:26 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="994899" type="Run" />
+  <Command __id="208" _type="PauseCommand" date="Mon Nov 29 13:36:34 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="1002813">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[7914]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="207" _type="ConsoleInput" date="Mon Nov 29 13:36:34 EST 2021" starttimestamp="1638209991321" timestamp="1002813" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="209" _type="ConsoleOutput" date="Mon Nov 29 13:36:34 EST 2021" overflow="false" starttimestamp="1638209991321" timestamp="1002915" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (OR (AND (ATOM X) (NOT (AND (COND (CAR X)) (COND (CDR X)))) (AND (ATOM (CDR X)) (NOT (COND (CDR X))))))
+NIL
+NIL
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X) (OR (AND (ATOM X) (NOT (AND (COND (CAR X)) (COND (CDR X)))) (AND (ATOM (CDR X)) (NOT (COND (CDR X))))))¶NIL¶"), Diff(INSERT,"NIL¶"), Diff(EQUAL,"T¶")]]]></diff>
+  </Command>
+  <Command __id="211" _type="PauseCommand" date="Mon Nov 29 13:36:36 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1005551">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2636]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="213" _type="PauseCommand" date="Mon Nov 29 13:36:45 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="1014659">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[9108]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="212" _type="ShellCommand" date="Mon Nov 29 13:36:45 EST 2021" starttimestamp="1638209991321" timestamp="1014659" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="228" _type="PauseCommand" date="Mon Nov 29 13:36:56 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="1025232">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1978]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="227" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:36:56 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1025232" type="Run" />
+  <Command __id="230" _type="PauseCommand" date="Mon Nov 29 13:37:01 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1030052">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[4820]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="229" _type="ConsoleInput" date="Mon Nov 29 13:37:01 EST 2021" starttimestamp="1638209991321" timestamp="1030052" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="231" _type="ConsoleOutput" date="Mon Nov 29 13:37:01 EST 2021" overflow="false" starttimestamp="1638209991321" timestamp="1030153" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (OR (AND (ATOM X) (NOT (AND (COND (CAR X)) (COND (CDR X)))) (AND (ATOM (CDR X)) (NOT (COND (CDR X))))))
+NIL
+NIL
+NIL
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X) (OR (AND (ATOM X) (NOT (AND (COND (CAR X)) (COND (CDR X)))) (AND (ATOM (CDR X)) (NOT (COND (CDR X))))))¶NIL¶NIL¶"), Diff(INSERT,"NIL¶"), Diff(EQUAL,"T¶")]]]></diff>
+  </Command>
+  <Command __id="233" _type="PauseCommand" date="Mon Nov 29 13:37:12 EST 2021" range="10s-20s" starttimestamp="1638209991321" timestamp="1040725">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[10572]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="235" _type="PauseCommand" date="Mon Nov 29 13:37:15 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1044588">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[3863]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="236" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:37:16 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="1044745" />
+  <Command __id="240" _type="PauseCommand" date="Mon Nov 29 13:37:25 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="1054050">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[5682]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="239" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:37:25 EST 2021" starttimestamp="1638209991321" timestamp="1054050" />
+  <Command __id="241" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:37:25 EST 2021" starttimestamp="1638209991321" timestamp="1054054" />
+  <Command __id="242" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:37:25 EST 2021" starttimestamp="1638209991321" timestamp="1054054" />
+  <Command __id="243" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:37:25 EST 2021" starttimestamp="1638209991321" timestamp="1054054" />
+  <Command __id="244" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:37:25 EST 2021" starttimestamp="1638209991321" timestamp="1054055" />
+  <Command __id="245" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:37:25 EST 2021" starttimestamp="1638209991321" timestamp="1054055" />
+  <Command __id="246" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:37:25 EST 2021" starttimestamp="1638209991321" timestamp="1054055" />
+  <Command __id="247" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:37:25 EST 2021" starttimestamp="1638209991321" timestamp="1054057" />
+  <Command __id="248" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:37:25 EST 2021" starttimestamp="1638209991321" timestamp="1054057" />
+  <Command __id="249" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:37:25 EST 2021" starttimestamp="1638209991321" timestamp="1054058" />
+  <Command __id="254" _type="PauseCommand" date="Mon Nov 29 13:37:30 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1058679">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2756]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="253" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:37:30 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1058679" type="Run" />
+  <Command __id="256" _type="PauseCommand" date="Mon Nov 29 13:37:34 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1063573">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[4894]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="255" _type="ConsoleInput" date="Mon Nov 29 13:37:34 EST 2021" starttimestamp="1638209991321" timestamp="1063573" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="257" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Nov 29 13:37:34 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638209991321" timestamp="1063635" type="Debug" />
+  <Command __id="258" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:37:34 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1063635" type="Run" />
+  <Command __id="259" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Nov 29 13:37:34 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638209991321" timestamp="1063635" type="Debug" />
+  <Command __id="260" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:37:34 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1063636" type="Run" />
+  <Command __id="261" _type="ExceptionCommand" date="Mon Nov 29 13:37:34 EST 2021" starttimestamp="1638209991321" timestamp="1063639" type="Exception">
+    <exceptionString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (OR (AND (ATOM (CAR X)) (NOT (AND (COND (CAR X)) (COND (CDR X)))) (AND (ATOM (CDR X)) (NOT (COND (CDR X))))))
+NIL
+Exception in thread "main" java.lang.IllegalStateException: Cannot apply operator 'car' to atomic expressions
+	at main.lisp.evaluator.lazy.basic.LazyCarEvaluator.eval(LazyCarEvaluator.java:29)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:50)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:25)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.basic.AtomEvaluator.eval(AtomEvaluator.java:23)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:50)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:25)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at logical.AndEvaluator.eval(AndEvaluator.java:19)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:50)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:25)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at logical.OrEvaluator.eval(OrEvaluator.java:20)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:50)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:25)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.evaluator.function.BasicLambda.doEval(BasicLambda.java:75)
+	at main.lisp.parser.terms.AbstractAtom.eval(AbstractAtom.java:22)
+	at functional.FuncallEvaluator.evaluateLambda(FuncallEvaluator.java:65)
+	at functional.FuncallEvaluator.eval(FuncallEvaluator.java:32)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:50)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:25)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at expression.LoadEvaluator.eval(LoadEvaluator.java:31)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:50)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:25)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
+	at main.Main.main(Main.java:31)
+	at a5.RunLisp.main(RunLisp.java:21)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="263" _type="PauseCommand" date="Mon Nov 29 13:38:13 EST 2021" range="30s-1m" starttimestamp="1638209991321" timestamp="1101789">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[38150]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="264" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:38:13 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="1101939" />
+  <Command __id="266" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:38:13 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="1102632" />
+  <Command __id="268" _type="MoveCaretCommand" caretOffset="570" date="Mon Nov 29 13:38:14 EST 2021" docOffset="904" starttimestamp="1638209991321" timestamp="1103440" />
+  <Command __id="3" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:20:03 EST 2021" docASTNodeCount="233" docActiveCodeLength="1509" docExpressionCount="173" docLength="1683" projectName="a5" starttimestamp="1638209991321" timestamp="11743">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\evaluators\StringFormats.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package evaluators;
+import main.lisp.parser.terms.AbstractSExpression;
+import main.lisp.parser.terms.BasicExpression;
+import main.lisp.parser.terms.SExpression;
+public class StringFormats extends BasicExpression{
+
+	public StringFormats(SExpression head, SExpression tail) {
+		super(head, tail);
+	}
+	@Override
+	public String toString() {
+		if(this.isNIL()) {
+			return this.toStringAsSExpression();
+		}
+		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();
+	}
+	@Override
+	public String toStringAsSExpressionDeep() {
+		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";
+	}
+	
+	@Override
+	public String toStringAsSExpression() {
+		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";
+	}
+	@Override
+	public String toStringAsListHelperPublic() {
+		if (this.getTail().isNIL()) {
+			return this.getHead().toString();
+		}else {
+			return this.getHead().toString() + " " + ((AbstractSExpression) this.getTail()).toStringAsListHelperPublic();
+		}
+		
+	}
+	@Override
+	public String toStringAsList() {
+			// does the same thing as toStringas list deep....need to change
+			return "(" + this.toStringAsListHelperPublic() + ")";
+	}
+
+	@Override
+	public boolean isList() {
+		// if head is a non nil atom and tail is nil, is a list
+		if(this.getHead().isAtom() && !(this.getHead().isNIL()) && this.getTail().isNIL()) {
+			return true;
+			// if the tail is an atom but not nil, it is not a list
+		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {
+			return false;
+		} else 
+			return this.getTail().isList();
+		}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="6" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:24:48 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="297202">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="14" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:25:03 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="311919">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="17" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:25:03 EST 2021" docASTNodeCount="233" docActiveCodeLength="1509" docExpressionCount="173" docLength="1683" projectName="a5" starttimestamp="1638209991321" timestamp="312580">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\evaluators\StringFormats.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package evaluators;¶import main.lisp.parser.terms.AbstractSExpression;¶import main.lisp.parser.terms.BasicExpression;¶import main.lisp.parser.terms.SExpression;¶public class StringFormats extends BasicExpression{¶¶	public StringFormats(SExpression head, SExpression tail) {¶		super(head, tail);¶	}¶	@Override¶	public String toString() {¶		if(this.isNIL()) {¶			return this.toStringAsSExpression();¶		}¶		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();¶	}¶	@Override¶	public String toStringAsSExpressionDeep() {¶		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";¶	}¶	¶	@Override¶	public String toStringAsSExpression() {¶		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";¶	}¶	@Override¶	public String toStringAsListHelperPublic() {¶		if (this.getTail().isNIL()) {¶			return this.getHead().toString();¶		}else {¶			return this.getHead().toString() + " " + ((AbstractSExpression) this.getTail()).toStringAsListHelperPublic();¶		}¶		¶	}¶	@Override¶	public String toStringAsList() {¶			// does the same thing as toStringas list deep....need to change¶			return "(" + this.toStringAsListHelperPublic() + ")";¶	}¶¶	@Override¶	public boolean isList() {¶		// if head is a non nil atom and tail is nil, is a list¶		if(this.getHead().isAtom() && !(this.getHead().isNIL()) && this.getTail().isNIL()) {¶			return true;¶			// if the tail is an atom but not nil, it is not a list¶		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {¶			return false;¶		} else ¶			return this.getTail().isList();¶		}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="19" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:25:56 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="365441">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="21" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:25:57 EST 2021" docASTNodeCount="233" docActiveCodeLength="1509" docExpressionCount="173" docLength="1683" projectName="a5" starttimestamp="1638209991321" timestamp="366291">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\evaluators\StringFormats.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package evaluators;¶import main.lisp.parser.terms.AbstractSExpression;¶import main.lisp.parser.terms.BasicExpression;¶import main.lisp.parser.terms.SExpression;¶public class StringFormats extends BasicExpression{¶¶	public StringFormats(SExpression head, SExpression tail) {¶		super(head, tail);¶	}¶	@Override¶	public String toString() {¶		if(this.isNIL()) {¶			return this.toStringAsSExpression();¶		}¶		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();¶	}¶	@Override¶	public String toStringAsSExpressionDeep() {¶		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";¶	}¶	¶	@Override¶	public String toStringAsSExpression() {¶		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";¶	}¶	@Override¶	public String toStringAsListHelperPublic() {¶		if (this.getTail().isNIL()) {¶			return this.getHead().toString();¶		}else {¶			return this.getHead().toString() + " " + ((AbstractSExpression) this.getTail()).toStringAsListHelperPublic();¶		}¶		¶	}¶	@Override¶	public String toStringAsList() {¶			// does the same thing as toStringas list deep....need to change¶			return "(" + this.toStringAsListHelperPublic() + ")";¶	}¶¶	@Override¶	public boolean isList() {¶		// if head is a non nil atom and tail is nil, is a list¶		if(this.getHead().isAtom() && !(this.getHead().isNIL()) && this.getTail().isNIL()) {¶			return true;¶			// if the tail is an atom but not nil, it is not a list¶		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {¶			return false;¶		} else ¶			return this.getTail().isList();¶		}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="22" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:25:57 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="366364">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="28" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:26:50 EST 2021" docASTNodeCount="233" docActiveCodeLength="1509" docExpressionCount="173" docLength="1683" projectName="a5" starttimestamp="1638209991321" timestamp="419293">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\evaluators\StringFormats.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package evaluators;¶import main.lisp.parser.terms.AbstractSExpression;¶import main.lisp.parser.terms.BasicExpression;¶import main.lisp.parser.terms.SExpression;¶public class StringFormats extends BasicExpression{¶¶	public StringFormats(SExpression head, SExpression tail) {¶		super(head, tail);¶	}¶	@Override¶	public String toString() {¶		if(this.isNIL()) {¶			return this.toStringAsSExpression();¶		}¶		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();¶	}¶	@Override¶	public String toStringAsSExpressionDeep() {¶		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";¶	}¶	¶	@Override¶	public String toStringAsSExpression() {¶		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";¶	}¶	@Override¶	public String toStringAsListHelperPublic() {¶		if (this.getTail().isNIL()) {¶			return this.getHead().toString();¶		}else {¶			return this.getHead().toString() + " " + ((AbstractSExpression) this.getTail()).toStringAsListHelperPublic();¶		}¶		¶	}¶	@Override¶	public String toStringAsList() {¶			// does the same thing as toStringas list deep....need to change¶			return "(" + this.toStringAsListHelperPublic() + ")";¶	}¶¶	@Override¶	public boolean isList() {¶		// if head is a non nil atom and tail is nil, is a list¶		if(this.getHead().isAtom() && !(this.getHead().isNIL()) && this.getTail().isNIL()) {¶			return true;¶			// if the tail is an atom but not nil, it is not a list¶		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {¶			return false;¶		} else ¶			return this.getTail().isList();¶		}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="35" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:27:13 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="442373">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="61" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:31:42 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="711147">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="76" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:32:00 EST 2021" docASTNodeCount="297" docActiveCodeLength="1971" docExpressionCount="209" docLength="2074" projectName="a5" starttimestamp="1638209991321" timestamp="728938">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\evaluators\LambdaSExpressionEvaluator.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package evaluators;
+
+import java.util.Optional;
+
+import main.lisp.evaluator.BasicExpressionEvaluator;
+import main.lisp.evaluator.BuiltinOperationManagerSingleton;
+import main.lisp.evaluator.Environment;
+import main.lisp.evaluator.Evaluator;
+import main.lisp.evaluator.function.Lambda;
+import main.lisp.parser.terms.IdentifierAtom;
+import main.lisp.parser.terms.SExpression;
+
+public class LambdaSExpressionEvaluator extends BasicExpressionEvaluator {
+	@Override
+	public SExpression eval(SExpression expr, Environment environment) {
+		// evaluates lambda first
+		if (!expr.getHead().isAtom()) {
+			SExpression eval = basicEvaluator(expr.getHead(), environment);
+			if (eval instanceof Lambda) {
+				Environment childEnvironment = environment.newChild();
+				return evaluateLambda((Lambda) eval, childEnvironment, environment, expr.getTail());
+			}
+		}
+			// when it is not a lambda
+			return basicEvaluator(expr, environment);
+		}
+	
+	// produces your lambda evaluation
+	public SExpression evaluateLambda(Lambda lambda, Environment childEnvironment, Environment environment, SExpression current) {
+		IdentifierAtom[] argNames = lambda.getArgumentNames();
+		for(int i = 0; i < argNames.length; i++) {
+			if (current.isAtom()) {
+				childEnvironment.assign(argNames[i], current);
+			} else {
+				childEnvironment.assign(argNames[i], current.getHead().eval(environment));
+				current = current.getTail();
+			}
+		}
+	return lambda.eval(childEnvironment);
+	}
+	
+	// basic evaluator
+	public SExpression basicEvaluator(SExpression expr, Environment environment) {
+		if (expr.getHead() instanceof IdentifierAtom) {
+			String operator = ((IdentifierAtom)expr.getHead()).getValue();
+			Evaluator eval = BuiltinOperationManagerSingleton.get().getEvaluator(operator);
+			if (eval == null) {
+				throw new IllegalStateException("No evaluator registered for operator '" + operator + "'");
+			}
+			return eval.eval(expr, environment);
+		} else {
+			throw new IllegalStateException("Expression does not start with an operator");
+		}
+	}
+}
+
+]]></snapshot>
+  </Command>
+  <Command __id="90" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:32:20 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="748767">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="112" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:33:35 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="824121">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="140" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:35:18 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="927228">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="174" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:35:55 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="963712">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="192" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:36:17 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="986534">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="210" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:36:36 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="1005551">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="232" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:37:12 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="1040725">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="234" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:37:15 EST 2021" docASTNodeCount="233" docActiveCodeLength="1509" docExpressionCount="173" docLength="1683" projectName="a5" starttimestamp="1638209991321" timestamp="1044588">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\evaluators\StringFormats.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package evaluators;¶import main.lisp.parser.terms.AbstractSExpression;¶import main.lisp.parser.terms.BasicExpression;¶import main.lisp.parser.terms.SExpression;¶public class StringFormats extends BasicExpression{¶¶	public StringFormats(SExpression head, SExpression tail) {¶		super(head, tail);¶	}¶	@Override¶	public String toString() {¶		if(this.isNIL()) {¶			return this.toStringAsSExpression();¶		}¶		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();¶	}¶	@Override¶	public String toStringAsSExpressionDeep() {¶		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";¶	}¶	¶	@Override¶	public String toStringAsSExpression() {¶		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";¶	}¶	@Override¶	public String toStringAsListHelperPublic() {¶		if (this.getTail().isNIL()) {¶			return this.getHead().toString();¶		}else {¶			return this.getHead().toString() + " " + ((AbstractSExpression) this.getTail()).toStringAsListHelperPublic();¶		}¶		¶	}¶	@Override¶	public String toStringAsList() {¶			// does the same thing as toStringas list deep....need to change¶			return "(" + this.toStringAsListHelperPublic() + ")";¶	}¶¶	@Override¶	public boolean isList() {¶		// if head is a non nil atom and tail is nil, is a list¶		if(this.getHead().isAtom() && !(this.getHead().isNIL()) && this.getTail().isNIL()) {¶			return true;¶			// if the tail is an atom but not nil, it is not a list¶		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {¶			return false;¶		} else ¶			return this.getTail().isList();¶		}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="237" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:37:19 EST 2021" projectName="a5" starttimestamp="1638209991321" timestamp="1048368">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="250" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:37:27 EST 2021" docASTNodeCount="233" docActiveCodeLength="1509" docExpressionCount="173" docLength="1683" projectName="a5" starttimestamp="1638209991321" timestamp="1055833">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\evaluators\StringFormats.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package evaluators;¶import main.lisp.parser.terms.AbstractSExpression;¶import main.lisp.parser.terms.BasicExpression;¶import main.lisp.parser.terms.SExpression;¶public class StringFormats extends BasicExpression{¶¶	public StringFormats(SExpression head, SExpression tail) {¶		super(head, tail);¶	}¶	@Override¶	public String toString() {¶		if(this.isNIL()) {¶			return this.toStringAsSExpression();¶		}¶		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();¶	}¶	@Override¶	public String toStringAsSExpressionDeep() {¶		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";¶	}¶	¶	@Override¶	public String toStringAsSExpression() {¶		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";¶	}¶	@Override¶	public String toStringAsListHelperPublic() {¶		if (this.getTail().isNIL()) {¶			return this.getHead().toString();¶		}else {¶			return this.getHead().toString() + " " + ((AbstractSExpression) this.getTail()).toStringAsListHelperPublic();¶		}¶		¶	}¶	@Override¶	public String toStringAsList() {¶			// does the same thing as toStringas list deep....need to change¶			return "(" + this.toStringAsListHelperPublic() + ")";¶	}¶¶	@Override¶	public boolean isList() {¶		// if head is a non nil atom and tail is nil, is a list¶		if(this.getHead().isAtom() && !(this.getHead().isNIL()) && this.getTail().isNIL()) {¶			return true;¶			// if the tail is an atom but not nil, it is not a list¶		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {¶			return false;¶		} else ¶			return this.getTail().isList();¶		}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="262" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:38:13 EST 2021" docASTNodeCount="1" docActiveCodeLength="0" docExpressionCount="0" docLength="0" projectName="a5" starttimestamp="1638209991321" timestamp="1101789">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\evaluators\LambdaEvaluator.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[]]></snapshot>
+  </Command>
+  <Command __id="265" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:38:13 EST 2021" docASTNodeCount="233" docActiveCodeLength="1509" docExpressionCount="173" docLength="1683" projectName="a5" starttimestamp="1638209991321" timestamp="1102555">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\evaluators\StringFormats.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package evaluators;¶import main.lisp.parser.terms.AbstractSExpression;¶import main.lisp.parser.terms.BasicExpression;¶import main.lisp.parser.terms.SExpression;¶public class StringFormats extends BasicExpression{¶¶	public StringFormats(SExpression head, SExpression tail) {¶		super(head, tail);¶	}¶	@Override¶	public String toString() {¶		if(this.isNIL()) {¶			return this.toStringAsSExpression();¶		}¶		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();¶	}¶	@Override¶	public String toStringAsSExpressionDeep() {¶		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";¶	}¶	¶	@Override¶	public String toStringAsSExpression() {¶		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";¶	}¶	@Override¶	public String toStringAsListHelperPublic() {¶		if (this.getTail().isNIL()) {¶			return this.getHead().toString();¶		}else {¶			return this.getHead().toString() + " " + ((AbstractSExpression) this.getTail()).toStringAsListHelperPublic();¶		}¶		¶	}¶	@Override¶	public String toStringAsList() {¶			// does the same thing as toStringas list deep....need to change¶			return "(" + this.toStringAsListHelperPublic() + ")";¶	}¶¶	@Override¶	public boolean isList() {¶		// if head is a non nil atom and tail is nil, is a list¶		if(this.getHead().isAtom() && !(this.getHead().isNIL()) && this.getTail().isNIL()) {¶			return true;¶			// if the tail is an atom but not nil, it is not a list¶		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {¶			return false;¶		} else ¶			return this.getTail().isList();¶		}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="267" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:38:14 EST 2021" docASTNodeCount="297" docActiveCodeLength="1971" docExpressionCount="209" docLength="2074" projectName="a5" starttimestamp="1638209991321" timestamp="1103364">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\evaluators\LambdaSExpressionEvaluator.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package evaluators;¶¶import java.util.Optional;¶¶import main.lisp.evaluator.BasicExpressionEvaluator;¶import main.lisp.evaluator.BuiltinOperationManagerSingleton;¶import main.lisp.evaluator.Environment;¶import main.lisp.evaluator.Evaluator;¶import main.lisp.evaluator.function.Lambda;¶import main.lisp.parser.terms.IdentifierAtom;¶import main.lisp.parser.terms.SExpression;¶¶public class LambdaSExpressionEvaluator extends BasicExpressionEvaluator {¶	@Override¶	public SExpression eval(SExpression expr, Environment environment) {¶		// evaluates lambda first¶		if (!expr.getHead().isAtom()) {¶			SExpression eval = basicEvaluator(expr.getHead(), environment);¶			if (eval instanceof Lambda) {¶				Environment childEnvironment = environment.newChild();¶				return evaluateLambda((Lambda) eval, childEnvironment, environment, expr.getTail());¶			}¶		}¶			// when it is not a lambda¶			return basicEvaluator(expr, environment);¶		}¶	¶	// produces your lambda evaluation¶	public SExpression evaluateLambda(Lambda lambda, Environment childEnvironment, Environment environment, SExpression current) {¶		IdentifierAtom[] argNames = lambda.getArgumentNames();¶		for(int i = 0; i < argNames.length; i++) {¶			if (current.isAtom()) {¶				childEnvironment.assign(argNames[i], current);¶			} else {¶				childEnvironment.assign(argNames[i], current.getHead().eval(environment));¶				current = current.getTail();¶			}¶		}¶	return lambda.eval(childEnvironment);¶	}¶	¶	// basic evaluator¶	public SExpression basicEvaluator(SExpression expr, Environment environment) {¶		if (expr.getHead() instanceof IdentifierAtom) {¶			String operator = ((IdentifierAtom)expr.getHead()).getValue();¶			Evaluator eval = BuiltinOperationManagerSingleton.get().getEvaluator(operator);¶			if (eval == null) {¶				throw new IllegalStateException("No evaluator registered for operator '" + operator + "'");¶			}¶			return eval.eval(expr, environment);¶		} else {¶			throw new IllegalStateException("Expression does not start with an operator");¶		}¶	}¶}¶¶")]]]></diff>
+  </Command>
+  <Command __id="270" _type="PauseCommand" date="Mon Nov 29 13:38:18 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1107634">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[4194]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="269" _type="DiffBasedFileOpenCommand" date="Mon Nov 29 13:38:18 EST 2021" docASTNodeCount="1" docActiveCodeLength="0" docExpressionCount="0" docLength="0" projectName="a5" starttimestamp="1638209991321" timestamp="1107634">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\evaluators\LambdaEvaluator.java]]></filePath>
+    <diff><![CDATA[[]]]></diff>
+  </Command>
+  <Command __id="271" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:38:19 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="1107749" />
+  <Command __id="273" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:38:19 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="1108631" />
+  <Command __id="275" _type="PauseCommand" date="Mon Nov 29 13:38:25 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="1114218">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[5587]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="276" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:38:25 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="1114327" />
+  <Command __id="278" _type="PauseCommand" date="Mon Nov 29 13:38:27 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="1115824">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1497]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="279" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:38:27 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="1115897" />
+  <Command __id="294" _type="PauseCommand" date="Mon Nov 29 13:38:51 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1140527">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2677]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="293" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:38:51 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1140527" type="Run" />
+  <Command __id="295" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:38:51 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1140528" type="Run" />
+  <Command __id="297" _type="PauseCommand" date="Mon Nov 29 13:39:01 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="1149689">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[9161]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="296" _type="ConsoleInput" date="Mon Nov 29 13:39:01 EST 2021" starttimestamp="1638209991321" timestamp="1149689" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="298" _type="ConsoleOutput" date="Mon Nov 29 13:39:01 EST 2021" overflow="false" starttimestamp="1638209991321" timestamp="1149792" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (OR (AND (NOT (ATOM X)) (ATOM (CAR X)) (NOT (AND (COND (CAR X)) (COND (CDR X)))) (AND (ATOM (CDR X)) (NOT (COND (CDR X))))))
+NIL
+NIL
+NIL
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X) (OR (AND "), Diff(INSERT,"(NOT "), Diff(EQUAL,"(ATOM X)"), Diff(INSERT,") (ATOM (CAR X))"), Diff(EQUAL," (NOT (AND (COND (CAR X)) (COND (CDR X)))) (AND (ATOM (CDR X)) (NOT (COND (CDR X))))))¶NIL¶NIL¶NIL¶T¶")]]]></diff>
+  </Command>
+  <Command __id="300" _type="PauseCommand" date="Mon Nov 29 13:39:26 EST 2021" range="20s-30s" starttimestamp="1638209991321" timestamp="1175558">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[25766]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="301" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:39:27 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="1175702" />
+  <Command __id="303" _type="PauseCommand" date="Mon Nov 29 13:39:49 EST 2021" range="20s-30s" starttimestamp="1638209991321" timestamp="1198212">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[22510]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="302" _type="ShellCommand" date="Mon Nov 29 13:39:49 EST 2021" starttimestamp="1638209991321" timestamp="1198212" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="305" _type="PauseCommand" date="Mon Nov 29 13:39:52 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1201122">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2910]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="304" _type="ShellCommand" date="Mon Nov 29 13:39:52 EST 2021" starttimestamp="1638209991321" timestamp="1201122" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="320" _type="PauseCommand" date="Mon Nov 29 13:40:40 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1249331">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[3551]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="319" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:40:40 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1249331" type="Run" />
+  <Command __id="322" _type="PauseCommand" date="Mon Nov 29 13:40:46 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="1255258">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[5927]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="321" _type="ConsoleInput" date="Mon Nov 29 13:40:46 EST 2021" starttimestamp="1638209991321" timestamp="1255258" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="323" _type="ConsoleOutput" date="Mon Nov 29 13:40:46 EST 2021" overflow="false" starttimestamp="1638209991321" timestamp="1255360" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (OR (AND (NOT (ATOM X)) (ATOM (CAR X)) (AND (COND (CAR X)) (COND (CDR X))) (AND (ATOM (CDR X)) (NOT (COND (CDR X))))))
+NIL
+NIL
+NIL
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X) (OR (AND (NOT (ATOM X)) (ATOM (CAR X))"), Diff(DELETE," (NOT"), Diff(EQUAL," (AND (COND (CAR X)) (COND (CDR X)))"), Diff(DELETE,")"), Diff(EQUAL," (AND (ATOM (CDR X)) (NOT (COND (CDR X))))))¶NIL¶NIL¶NIL¶T¶")]]]></diff>
+  </Command>
+  <Command __id="349" _type="PauseCommand" date="Mon Nov 29 13:42:01 EST 2021" range="10s-20s" starttimestamp="1638209991321" timestamp="1329965">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[14506]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="348" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:42:01 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1329965" type="Run" />
+  <Command __id="351" _type="PauseCommand" date="Mon Nov 29 13:42:07 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="1336616">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[6651]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="350" _type="ConsoleInput" date="Mon Nov 29 13:42:07 EST 2021" starttimestamp="1638209991321" timestamp="1336616" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="352" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Nov 29 13:42:07 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638209991321" timestamp="1336667" type="Debug" />
+  <Command __id="353" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:42:07 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1336667" type="Run" />
+  <Command __id="354" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Nov 29 13:42:07 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638209991321" timestamp="1336667" type="Debug" />
+  <Command __id="355" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:42:07 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1336667" type="Run" />
+  <Command __id="356" _type="ExceptionCommand" date="Mon Nov 29 13:42:08 EST 2021" starttimestamp="1638209991321" timestamp="1336719" type="Exception">
+    <exceptionString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (OR (AND (NOT (ATOM X)) (ATOM (CAR X)) (AND (COND (CAR X)) (NOT (COND (CDR X))))) (AND (ATOM (CDR X)) (NOT (COND (CDR X)))))
+Exception in thread "main" java.lang.NullPointerException
+	at main.lisp.parser.BasicParser.parseLispSingle(BasicParser.java:62)
+	at main.lisp.parser.BasicParser.parseList(BasicParser.java:71)
+	at main.lisp.parser.BasicParser.parseList(BasicParser.java:77)
+	at main.lisp.parser.BasicParser.parseStart(BasicParser.java:53)
+	at main.lisp.parser.BasicParser.parse(BasicParser.java:42)
+	at main.lisp.parser.BasicParser.giveToken(BasicParser.java:158)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:79)
+	at expression.LoadEvaluator.eval(LoadEvaluator.java:31)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:50)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:25)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
+	at main.Main.main(Main.java:31)
+	at a5.RunLisp.main(RunLisp.java:21)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="371" _type="PauseCommand" date="Mon Nov 29 13:42:32 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1361614">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2141]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="370" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:42:32 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1361614" type="Run" />
+  <Command __id="372" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:42:32 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1361614" type="Run" />
+  <Command __id="374" _type="PauseCommand" date="Mon Nov 29 13:42:39 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="1367720">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[6106]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="373" _type="ConsoleInput" date="Mon Nov 29 13:42:39 EST 2021" starttimestamp="1638209991321" timestamp="1367720" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="375" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Nov 29 13:42:39 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638209991321" timestamp="1367791" type="Debug" />
+  <Command __id="376" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:42:39 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1367791" type="Run" />
+  <Command __id="377" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Nov 29 13:42:39 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638209991321" timestamp="1367791" type="Debug" />
+  <Command __id="378" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:42:39 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1367791" type="Run" />
+  <Command __id="379" _type="ExceptionCommand" date="Mon Nov 29 13:42:39 EST 2021" starttimestamp="1638209991321" timestamp="1367793" type="Exception">
+    <exceptionString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (OR (AND (NOT (ATOM X)) (ATOM (CAR X)) (AND (COND (CAR X)) (NOT (COND (CDR X))))) (AND (ATOM (CDR X)) (NOT (COND (CDR X)))))
+Exception in thread "main" java.lang.NullPointerException
+	at main.lisp.parser.BasicParser.parseLispSingle(BasicParser.java:62)
+	at main.lisp.parser.BasicParser.parseList(BasicParser.java:71)
+	at main.lisp.parser.BasicParser.parseList(BasicParser.java:77)
+	at main.lisp.parser.BasicParser.parseStart(BasicParser.java:53)
+	at main.lisp.parser.BasicParser.parse(BasicParser.java:42)
+	at main.lisp.parser.BasicParser.giveToken(BasicParser.java:158)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:79)
+	at expression.LoadEvaluator.eval(LoadEvaluator.java:31)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:50)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:25)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
+	at main.Main.main(Main.java:31)
+	at a5.RunLisp.main(RunLisp.java:21)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="394" _type="PauseCommand" date="Mon Nov 29 13:42:46 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="1374725">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1401]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="393" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:42:46 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1374725" type="Run" />
+  <Command __id="395" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:42:46 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1374725" type="Run" />
+  <Command __id="399" _type="PauseCommand" date="Mon Nov 29 13:42:53 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1382599">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ConsoleInput]]></prev>
+    <pause><![CDATA[2924]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="398" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:42:53 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1382599" type="Run" />
+  <Command __id="401" _type="PauseCommand" date="Mon Nov 29 13:42:58 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1387277">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[4678]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="400" _type="ConsoleInput" date="Mon Nov 29 13:42:58 EST 2021" starttimestamp="1638209991321" timestamp="1387277" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="402" _type="ConsoleOutput" date="Mon Nov 29 13:42:58 EST 2021" overflow="false" starttimestamp="1638209991321" timestamp="1387389" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (OR (AND (NOT (ATOM X)) (ATOM (CAR X)) (AND (COND (CAR X)) (NOT (COND (CDR X))))) (AND (ATOM (CDR X)) (NOT (COND (CDR X)))))
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X) (OR (AND (NOT (ATOM X)) (ATOM (CAR X)) (AND (COND (CAR X))"), Diff(INSERT," (NOT"), Diff(EQUAL," (COND (CDR X)))"), Diff(INSERT,"))"), Diff(EQUAL," (AND (ATOM (CDR X)) (NOT (COND (CDR X)))))"), Diff(DELETE,")¶NIL¶NIL¶NIL"), Diff(EQUAL,"¶T¶")]]]></diff>
+  </Command>
+  <Command __id="404" _type="PauseCommand" date="Mon Nov 29 13:43:00 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="1388941">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1552]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="406" _type="PauseCommand" date="Mon Nov 29 13:43:02 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1391671">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[2730]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="407" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:43:03 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="1391796" />
+  <Command __id="409" _type="PauseCommand" date="Mon Nov 29 13:43:04 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="1393298">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1502]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="410" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:43:04 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="1393374" />
+  <Command __id="412" _type="PauseCommand" date="Mon Nov 29 13:43:05 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="1394526">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1152]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="413" _type="MoveCaretCommand" caretOffset="570" date="Mon Nov 29 13:43:05 EST 2021" docOffset="904" starttimestamp="1638209991321" timestamp="1394610" />
+  <Command __id="415" _type="PauseCommand" date="Mon Nov 29 13:43:07 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="1396375">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1765]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="416" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:43:07 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="1396463" />
+  <Command __id="431" _type="PauseCommand" date="Mon Nov 29 13:43:20 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="1408811">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1987]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="430" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:43:20 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1408811" type="Run" />
+  <Command __id="433" _type="PauseCommand" date="Mon Nov 29 13:43:28 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="1417318">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[8507]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="432" _type="ConsoleInput" date="Mon Nov 29 13:43:28 EST 2021" starttimestamp="1638209991321" timestamp="1417318" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="434" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Nov 29 13:43:28 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638209991321" timestamp="1417387" type="Debug" />
+  <Command __id="435" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:43:28 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1417387" type="Run" />
+  <Command __id="436" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Nov 29 13:43:28 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638209991321" timestamp="1417387" type="Debug" />
+  <Command __id="437" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:43:28 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1417387" type="Run" />
+  <Command __id="438" _type="ExceptionCommand" date="Mon Nov 29 13:43:28 EST 2021" starttimestamp="1638209991321" timestamp="1417389" type="Exception">
+    <exceptionString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (OR (AND (NOT (ATOM X)) (ATOM (CAR X)) (AND (COND (CAR X)) (NOT (COND (CDR X))))) (AND (ATOM (CDR X)) (NOT (COND (CDR X)))))
+Exception in thread "main" java.lang.NullPointerException
+	at main.lisp.parser.BasicParser.parseLispSingle(BasicParser.java:62)
+	at main.lisp.parser.BasicParser.parseList(BasicParser.java:71)
+	at main.lisp.parser.BasicParser.parseList(BasicParser.java:77)
+	at main.lisp.parser.BasicParser.parseStart(BasicParser.java:53)
+	at main.lisp.parser.BasicParser.parse(BasicParser.java:42)
+	at main.lisp.parser.BasicParser.giveToken(BasicParser.java:158)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:79)
+	at expression.LoadEvaluator.eval(LoadEvaluator.java:31)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:50)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:25)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
+	at main.Main.main(Main.java:31)
+	at a5.RunLisp.main(RunLisp.java:21)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="464" _type="PauseCommand" date="Mon Nov 29 13:44:30 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1478974">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2359]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="463" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:44:30 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1478974" type="Run" />
+  <Command __id="465" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:44:30 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1478974" type="Run" />
+  <Command __id="467" _type="PauseCommand" date="Mon Nov 29 13:44:35 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="1484096">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[5122]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="466" _type="ConsoleInput" date="Mon Nov 29 13:44:35 EST 2021" starttimestamp="1638209991321" timestamp="1484096" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="468" _type="ExceptionCommand" date="Mon Nov 29 13:44:35 EST 2021" starttimestamp="1638209991321" timestamp="1484158" type="Exception">
+    <exceptionString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (OR (AND (NOT (ATOM X)) (ATOM (CAR X)) (AND (COND (CAR X)) (COND (CDR X)))) (AND (ATOM (CDR X)) (NOT (COND (CDR X)))))
+Exception in thread "main" java.lang.NullPointerException
+	at main.lisp.parser.BasicParser.parseLispSingle(BasicParser.java:62)
+	at main.lisp.parser.BasicParser.parseList(BasicParser.java:71)
+	at main.lisp.parser.BasicParser.parseList(BasicParser.java:77)
+	at main.lisp.parser.BasicParser.parseStart(BasicParser.java:53)
+	at main.lisp.parser.BasicParser.parse(BasicParser.java:42)
+	at main.lisp.parser.BasicParser.giveToken(BasicParser.java:158)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:79)
+	at expression.LoadEvaluator.eval(LoadEvaluator.java:31)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:50)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:25)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
+	at main.Main.main(Main.java:31)
+	at a5.RunLisp.main(RunLisp.java:21)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="469" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Nov 29 13:44:35 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638209991321" timestamp="1484170" type="Debug" />
+  <Command __id="470" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:44:35 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1484170" type="Run" />
+  <Command __id="471" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Nov 29 13:44:35 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638209991321" timestamp="1484170" type="Debug" />
+  <Command __id="472" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:44:35 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1484170" type="Run" />
+  <Command __id="474" _type="PauseCommand" date="Mon Nov 29 13:44:49 EST 2021" range="10s-20s" starttimestamp="1638209991321" timestamp="1498264">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[14094]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="473" _type="ShellCommand" date="Mon Nov 29 13:44:49 EST 2021" starttimestamp="1638209991321" timestamp="1498264" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="476" _type="PauseCommand" date="Mon Nov 29 13:44:56 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="1505060">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[6796]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="475" _type="ShellCommand" date="Mon Nov 29 13:44:56 EST 2021" starttimestamp="1638209991321" timestamp="1505060" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="478" _type="PauseCommand" date="Mon Nov 29 13:45:45 EST 2021" range="30s-1m" starttimestamp="1638209991321" timestamp="1554122">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[49062]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="479" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:45:45 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="1554232" />
+  <Command __id="481" _type="PauseCommand" date="Mon Nov 29 13:45:47 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="1556010">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1778]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="482" _type="MoveCaretCommand" caretOffset="0" date="Mon Nov 29 13:45:47 EST 2021" docOffset="0" starttimestamp="1638209991321" timestamp="1556083" />
+  <Command __id="484" _type="PauseCommand" date="Mon Nov 29 13:45:58 EST 2021" range="10s-20s" starttimestamp="1638209991321" timestamp="1567135">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[11052]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="483" _type="ShellCommand" date="Mon Nov 29 13:45:58 EST 2021" starttimestamp="1638209991321" timestamp="1567135" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="511" _type="PauseCommand" date="Mon Nov 29 13:48:35 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="1724107">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1649]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="510" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:48:35 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1724107" type="Run" />
+  <Command __id="512" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 13:48:35 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638209991321" timestamp="1724107" type="Run" />
+  <Command __id="514" _type="PauseCommand" date="Mon Nov 29 13:48:43 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="1732108">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[8001]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="513" _type="ConsoleInput" date="Mon Nov 29 13:48:43 EST 2021" starttimestamp="1638209991321" timestamp="1732108" type="Exception">
+    <outputString><![CDATA[(load "test2.lisp")
+]]></outputString>
+  </Command>
+  <Command __id="515" _type="ConsoleOutput" date="Mon Nov 29 13:48:43 EST 2021" overflow="false" starttimestamp="1638209991321" timestamp="1732211" type="ConsoleOutput">
+    <outputString><![CDATA[29
+42
+42
+29
+42
+42
+42
+42
+LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))
+5
+LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))
+#<FUNCTION :LAMBDA (Y) (* X Y)>
+LAMBDA (X) (COND (AND (NOT (ATOM X)) (ATOM (CAR X)) (AND (COND (CAR X)) (COND (CDR X)))) (AND (ATOM (CDR X)) (NOT (COND (CDR X)))) (T (FUNCALL ISLIST (CDR X))))
+T
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"29¶42¶42¶29¶42¶42¶42¶42¶LAMBDA (X Y Z) (OR (AND (>= X 13) (<= Y 30) (<= Z 30)) (AND (>= X 6) (<= Y 30) (<= Z 10)) (AND (>= X 27) (<= Y 30) (<= Z 50)) (AND (>= X 13) (<= Y 15) (<= Z 50)) (AND (>= X 13) (<= Y 120) (<= Z 10)) (AND (>= X 27) (<= Y 120) (<= Z 30)) (AND (>= X 6) (<= Y 15) (<= Z 30)))¶5¶LAMBDA (X) (FUNCTION (LAMBDA (Y) (* X Y)))¶#<FUNCTION :LAMBDA (Y) (* X Y)>¶LAMBDA (X) ("), Diff(DELETE,"OR"), Diff(INSERT,"COND"), Diff(EQUAL," (AND (NOT (ATOM X)) (ATOM (CAR X)) (AND (COND (CAR X))"), Diff(DELETE," (NOT"), Diff(EQUAL," (COND (CDR X))))"), Diff(DELETE,")"), Diff(EQUAL," (AND (ATOM (CDR X)) (NOT (COND (CDR X))))"), Diff(INSERT," (T (FUNCALL ISLIST (CDR X)))"), Diff(EQUAL,")¶T¶")]]]></diff>
+  </Command>
+  <Command __id="517" _type="PauseCommand" date="Mon Nov 29 13:48:53 EST 2021" range="10s-20s" starttimestamp="1638209991321" timestamp="1742333">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[10122]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="516" _type="ShellCommand" date="Mon Nov 29 13:48:53 EST 2021" starttimestamp="1638209991321" timestamp="1742333" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="519" _type="PauseCommand" date="Mon Nov 29 13:49:39 EST 2021" range="30s-1m" starttimestamp="1638209991321" timestamp="1788466">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[46133]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="518" _type="ShellCommand" date="Mon Nov 29 13:49:39 EST 2021" starttimestamp="1638209991321" timestamp="1788466" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="521" _type="PauseCommand" date="Mon Nov 29 13:49:49 EST 2021" range="5s-10s" starttimestamp="1638209991321" timestamp="1798272">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[9806]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="520" _type="ShellCommand" date="Mon Nov 29 13:49:49 EST 2021" starttimestamp="1638209991321" timestamp="1798272" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="523" _type="PauseCommand" date="Mon Nov 29 13:49:51 EST 2021" range="1s-2s" starttimestamp="1638209991321" timestamp="1799776">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1504]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="522" _type="ShellCommand" date="Mon Nov 29 13:49:51 EST 2021" starttimestamp="1638209991321" timestamp="1799776" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="524" _type="ShellCommand" date="Mon Nov 29 13:49:52 EST 2021" starttimestamp="1638209991321" timestamp="1800762" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="540" _type="PauseCommand" date="Mon Nov 29 13:50:29 EST 2021" range="2s-5s" starttimestamp="1638209991321" timestamp="1837859">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[4685]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="539" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:50:29 EST 2021" starttimestamp="1638209991321" timestamp="1837859" />
+  <Command __id="541" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:50:29 EST 2021" starttimestamp="1638209991321" timestamp="1837862" />
+  <Command __id="542" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:50:29 EST 2021" starttimestamp="1638209991321" timestamp="1837863" />
+  <Command __id="543" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:50:29 EST 2021" starttimestamp="1638209991321" timestamp="1837863" />
+  <Command __id="544" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:50:29 EST 2021" starttimestamp="1638209991321" timestamp="1837863" />
+  <Command __id="545" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:50:29 EST 2021" starttimestamp="1638209991321" timestamp="1837864" />
+  <Command __id="546" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:50:29 EST 2021" starttimestamp="1638209991321" timestamp="1837864" />
+  <Command __id="547" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:50:29 EST 2021" starttimestamp="1638209991321" timestamp="1837866" />
+  <Command __id="548" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:50:29 EST 2021" starttimestamp="1638209991321" timestamp="1837866" />
+  <Command __id="549" _type="EclipseCommand" commandID="" date="Mon Nov 29 13:50:29 EST 2021" starttimestamp="1638209991321" timestamp="1837867" />

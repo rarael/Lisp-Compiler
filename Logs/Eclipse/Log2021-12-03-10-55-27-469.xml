@@ -1,0 +1,8 @@
+<Events startTimestamp="1638546927469" logVersion="1.0.0.202108012048">
+  <Command __id="3" _type="PauseCommand" date="Fri Dec 03 10:55:29 EST 2021" range="1s-2s" starttimestamp="1638546927469" timestamp="2095">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1812]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>

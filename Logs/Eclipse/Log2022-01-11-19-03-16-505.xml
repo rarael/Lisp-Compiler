@@ -1,0 +1,12 @@
+<Events startTimestamp="1641945796505" logVersion="1.0.0.202108012048">
+  <Command __id="78" _type="PauseCommand" date="Tue Jan 11 19:06:12 EST 2022" range="2s-5s" starttimestamp="1641945796505" timestamp="176360">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2567]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="77" _type="ShellCommand" date="Tue Jan 11 19:06:12 EST 2022" starttimestamp="1641945796505" timestamp="176359" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="79" _type="EclipseCommand" commandID="" date="Tue Jan 11 19:06:13 EST 2022" starttimestamp="1641945796505" timestamp="176507" />
+  <Command __id="80" _type="EclipseCommand" commandID="" date="Tue Jan 11 19:06:13 EST 2022" starttimestamp="1641945796505" timestamp="176512" />
+</Events>

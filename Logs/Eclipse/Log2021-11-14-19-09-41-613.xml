@@ -1,0 +1,67 @@
+<Events startTimestamp="1636934981613" logVersion="1.0.0.202108012048">
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="327" date="Sun Nov 14 19:09:42 EST 2021" docOffset="749" starttimestamp="1636934981613" timestamp="470" />
+  <Command __id="3" _type="PauseCommand" date="Sun Nov 14 19:09:47 EST 2021" range="5s-10s" starttimestamp="1636934981613" timestamp="6292">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[5810]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="4" _type="MoveCaretCommand" caretOffset="0" date="Sun Nov 14 19:09:48 EST 2021" docOffset="0" starttimestamp="1636934981613" timestamp="6696" />
+  <Command __id="6" _type="PauseCommand" date="Sun Nov 14 19:09:50 EST 2021" range="2s-5s" starttimestamp="1636934981613" timestamp="9247">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2551]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="5" _type="MoveCaretCommand" caretOffset="46" date="Sun Nov 14 19:09:50 EST 2021" docOffset="46" starttimestamp="1636934981613" timestamp="9247" />
+  <Command __id="8" _type="PauseCommand" date="Sun Nov 14 19:10:14 EST 2021" range="20s-30s" starttimestamp="1636934981613" timestamp="33154">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[23906]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="7" _type="SelectTextCommand" caretOffset="537" date="Sun Nov 14 19:10:14 EST 2021" end="541" start="537" starttimestamp="1636934981613" timestamp="33153" />
+  <Command __id="10" _type="PauseCommand" date="Sun Nov 14 19:10:16 EST 2021" range="1s-2s" starttimestamp="1636934981613" timestamp="34638">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[1485]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Replace]]></next>
+  </Command>
+  <Command __id="11" _type="InsertStringCommand" date="Sun Nov 14 19:10:16 EST 2021" starttimestamp="1636934981613" timestamp="34692" timestamp2="34692">
+    <data><![CDATA[g]]></data>
+  </Command>
+  <Command __id="13" _type="InsertStringCommand" date="Sun Nov 14 19:10:16 EST 2021" starttimestamp="1636934981613" timestamp="34722" timestamp2="34722">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="15" _type="InsertStringCommand" date="Sun Nov 14 19:10:16 EST 2021" starttimestamp="1636934981613" timestamp="34840" timestamp2="34840">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="17" _type="InsertStringCommand" date="Sun Nov 14 19:10:16 EST 2021" starttimestamp="1636934981613" timestamp="34952" timestamp2="34952">
+    <data><![CDATA[d]]></data>
+  </Command>
+  <Command __id="19" _type="InsertStringCommand" date="Sun Nov 14 19:10:16 EST 2021" starttimestamp="1636934981613" timestamp="35229" timestamp2="35229">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="21" _type="PauseCommand" date="Sun Nov 14 19:10:19 EST 2021" range="2s-5s" starttimestamp="1636934981613" timestamp="38279">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[3050]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Delete]]></next>
+  </Command>
+  <Command __id="22" _type="UndoCommand" date="Sun Nov 14 19:10:19 EST 2021" starttimestamp="1636934981613" timestamp="38295" />
+  <Command __id="24" _type="UndoCommand" date="Sun Nov 14 19:10:20 EST 2021" starttimestamp="1636934981613" timestamp="39073" />
+  <Command __id="25" _type="SelectTextCommand" caretOffset="527" date="Sun Nov 14 19:10:21 EST 2021" end="527" start="526" starttimestamp="1636934981613" timestamp="39898" />
+  <Command __id="27" _type="PauseCommand" date="Sun Nov 14 19:10:23 EST 2021" range="1s-2s" starttimestamp="1636934981613" timestamp="41553">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[1655]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="26" _type="ShellCommand" date="Sun Nov 14 19:10:23 EST 2021" starttimestamp="1636934981613" timestamp="41553" type="ECLIPSE_LOST_FOCUS" />
+</Events>

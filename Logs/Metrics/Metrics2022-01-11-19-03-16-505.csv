@@ -1,0 +1,3 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+1,,Tue Jan 11 19:05:47 EST 2022,GreetingClass.java,1641945947410,25455,0,(F)9,0.0,0.0,0.0,100.0,0.0,0.0,0.36,0.0,0.0,0.36,0.0,0.0,0.0,0.0,[]
+,/modelData/A0UserStudy2010.arff,Tue Jan 11 19:05:47 EST 2022,GreetingClass.java, 1641945947410

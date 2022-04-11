@@ -1,0 +1,6 @@
+<Events startTimestamp="1640074211169" logVersion="1.0.0.202108012048">
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Tue Dec 21 03:10:11 EST 2021" projectName="a5" starttimestamp="1640074211169" timestamp="319">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+</Events>

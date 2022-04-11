@@ -1,0 +1,250 @@
+<Events startTimestamp="1638541364878" logVersion="1.0.0.202108012048">
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Fri Dec 03 09:22:45 EST 2021" projectName="a5" starttimestamp="1638541364878" timestamp="382">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\test2.lisp]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="2" _type="PauseCommand" date="Fri Dec 03 09:23:00 EST 2021" range="10s-20s" starttimestamp="1638541364878" timestamp="15318">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[14931]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="3" _type="MoveCaretCommand" caretOffset="0" date="Fri Dec 03 09:23:00 EST 2021" docOffset="0" starttimestamp="1638541364878" timestamp="15844" />
+  <Command __id="5" _type="PauseCommand" date="Fri Dec 03 09:23:20 EST 2021" range="10s-20s" starttimestamp="1638541364878" timestamp="35587">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[19742]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="4" _type="ShellCommand" date="Fri Dec 03 09:23:20 EST 2021" starttimestamp="1638541364878" timestamp="35586" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="7" _type="PauseCommand" date="Fri Dec 03 09:23:24 EST 2021" range="2s-5s" starttimestamp="1638541364878" timestamp="39894">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4308]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6" _type="ShellCommand" date="Fri Dec 03 09:23:24 EST 2021" starttimestamp="1638541364878" timestamp="39894" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="8" _type="ShellCommand" date="Fri Dec 03 09:23:24 EST 2021" starttimestamp="1638541364878" timestamp="40119" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="10" _type="PauseCommand" date="Fri Dec 03 09:23:31 EST 2021" range="5s-10s" starttimestamp="1638541364878" timestamp="47068">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[6949]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="9" _type="ShellCommand" date="Fri Dec 03 09:23:31 EST 2021" starttimestamp="1638541364878" timestamp="47068" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="11" _type="SelectTextCommand" caretOffset="410" date="Fri Dec 03 09:23:31 EST 2021" end="411" start="410" starttimestamp="1638541364878" timestamp="47121" />
+  <Command __id="12" _type="MoveCaretCommand" caretOffset="641" date="Fri Dec 03 09:23:32 EST 2021" docOffset="1020" starttimestamp="1638541364878" timestamp="47964" />
+  <Command __id="13" _type="MoveCaretCommand" caretOffset="574" date="Fri Dec 03 09:23:33 EST 2021" docOffset="953" starttimestamp="1638541364878" timestamp="48518" />
+  <Command __id="15" _type="PauseCommand" date="Fri Dec 03 09:23:35 EST 2021" range="1s-2s" starttimestamp="1638541364878" timestamp="50329">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1810]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="14" _type="MoveCaretCommand" caretOffset="591" date="Fri Dec 03 09:23:35 EST 2021" docOffset="970" starttimestamp="1638541364878" timestamp="50328" />
+  <Command __id="17" _type="PauseCommand" date="Fri Dec 03 09:23:40 EST 2021" range="5s-10s" starttimestamp="1638541364878" timestamp="55431">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[5103]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="16" _type="SelectTextCommand" caretOffset="291" date="Fri Dec 03 09:23:40 EST 2021" end="291" start="276" starttimestamp="1638541364878" timestamp="55431" />
+  <Command __id="18" _type="MoveCaretCommand" caretOffset="393" date="Fri Dec 03 09:23:40 EST 2021" docOffset="772" starttimestamp="1638541364878" timestamp="55790" />
+  <Command __id="20" _type="PauseCommand" date="Fri Dec 03 09:23:43 EST 2021" range="2s-5s" starttimestamp="1638541364878" timestamp="58374">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2583]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="19" _type="SelectTextCommand" caretOffset="481" date="Fri Dec 03 09:23:43 EST 2021" end="481" start="472" starttimestamp="1638541364878" timestamp="58373" />
+  <Command __id="22" _type="PauseCommand" date="Fri Dec 03 09:23:44 EST 2021" range="1s-2s" starttimestamp="1638541364878" timestamp="59461">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[1088]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="21" _type="MoveCaretCommand" caretOffset="1517" date="Fri Dec 03 09:23:44 EST 2021" docOffset="1896" starttimestamp="1638541364878" timestamp="59461" />
+  <Command __id="24" _type="PauseCommand" date="Fri Dec 03 09:23:45 EST 2021" range="1s-2s" starttimestamp="1638541364878" timestamp="61099">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1638]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="23" _type="SelectTextCommand" caretOffset="1274" date="Fri Dec 03 09:23:45 EST 2021" end="1483" start="1274" starttimestamp="1638541364878" timestamp="61099" />
+  <Command __id="25" _type="MoveCaretCommand" caretOffset="1520" date="Fri Dec 03 09:23:46 EST 2021" docOffset="1899" starttimestamp="1638541364878" timestamp="61597" />
+  <Command __id="27" _type="PauseCommand" date="Fri Dec 03 09:23:56 EST 2021" range="5s-10s" starttimestamp="1638541364878" timestamp="71571">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[9974]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="26" _type="SelectTextCommand" caretOffset="654" date="Fri Dec 03 09:23:56 EST 2021" end="654" start="626" starttimestamp="1638541364878" timestamp="71571" />
+  <Command __id="28" _type="MoveCaretCommand" caretOffset="748" date="Fri Dec 03 09:23:57 EST 2021" docOffset="1127" starttimestamp="1638541364878" timestamp="72194" />
+  <Command __id="30" _type="PauseCommand" date="Fri Dec 03 09:24:08 EST 2021" range="10s-20s" starttimestamp="1638541364878" timestamp="83725">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[11531]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="31" _type="MoveCaretCommand" caretOffset="0" date="Fri Dec 03 09:24:08 EST 2021" docOffset="0" starttimestamp="1638541364878" timestamp="83993" />
+  <Command __id="33" _type="PauseCommand" date="Fri Dec 03 09:24:29 EST 2021" range="20s-30s" starttimestamp="1638541364878" timestamp="104309">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[20315]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="32" _type="SelectTextCommand" caretOffset="786" date="Fri Dec 03 09:24:29 EST 2021" end="798" start="786" starttimestamp="1638541364878" timestamp="104308" />
+  <Command __id="35" _type="PauseCommand" date="Fri Dec 03 09:24:33 EST 2021" range="2s-5s" starttimestamp="1638541364878" timestamp="108403">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[4095]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="34" _type="SelectTextCommand" caretOffset="829" date="Fri Dec 03 09:24:33 EST 2021" end="846" start="829" starttimestamp="1638541364878" timestamp="108403" />
+  <Command __id="37" _type="PauseCommand" date="Fri Dec 03 09:24:38 EST 2021" range="2s-5s" starttimestamp="1638541364878" timestamp="113349">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[4945]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="36" _type="MoveCaretCommand" caretOffset="1053" date="Fri Dec 03 09:24:38 EST 2021" docOffset="1489" starttimestamp="1638541364878" timestamp="113348" />
+  <Command __id="39" _type="PauseCommand" date="Fri Dec 03 09:24:40 EST 2021" range="2s-5s" starttimestamp="1638541364878" timestamp="115424">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2076]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="38" _type="SelectTextCommand" caretOffset="1341" date="Fri Dec 03 09:24:40 EST 2021" end="1341" start="943" starttimestamp="1638541364878" timestamp="115424" />
+  <Command __id="40" _type="MoveCaretCommand" caretOffset="1527" date="Fri Dec 03 09:24:40 EST 2021" docOffset="1963" starttimestamp="1638541364878" timestamp="115791" />
+  <Command __id="42" _type="PauseCommand" date="Fri Dec 03 09:24:45 EST 2021" range="2s-5s" starttimestamp="1638541364878" timestamp="120517">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[4726]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="41" _type="SelectTextCommand" caretOffset="979" date="Fri Dec 03 09:24:45 EST 2021" end="979" start="943" starttimestamp="1638541364878" timestamp="120517" />
+  <Command __id="44" _type="PauseCommand" date="Fri Dec 03 09:24:51 EST 2021" range="5s-10s" starttimestamp="1638541364878" timestamp="126330">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[5813]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="43" _type="MoveCaretCommand" caretOffset="979" date="Fri Dec 03 09:24:51 EST 2021" docOffset="1415" starttimestamp="1638541364878" timestamp="126330" />
+  <Command __id="46" _type="PauseCommand" date="Fri Dec 03 09:24:53 EST 2021" range="2s-5s" starttimestamp="1638541364878" timestamp="128374">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2044]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="45" _type="SelectTextCommand" caretOffset="971" date="Fri Dec 03 09:24:53 EST 2021" end="979" start="971" starttimestamp="1638541364878" timestamp="128374" />
+  <Command __id="48" _type="PauseCommand" date="Fri Dec 03 09:25:00 EST 2021" range="5s-10s" starttimestamp="1638541364878" timestamp="135376">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[7002]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="47" _type="MoveCaretCommand" caretOffset="1571" date="Fri Dec 03 09:25:00 EST 2021" docOffset="2007" starttimestamp="1638541364878" timestamp="135376" />
+  <Command __id="50" _type="PauseCommand" date="Fri Dec 03 09:25:02 EST 2021" range="1s-2s" starttimestamp="1638541364878" timestamp="137339">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1963]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="49" _type="SelectTextCommand" caretOffset="1561" date="Fri Dec 03 09:25:02 EST 2021" end="1574" start="1561" starttimestamp="1638541364878" timestamp="137339" />
+  <Command __id="52" _type="PauseCommand" date="Fri Dec 03 09:25:04 EST 2021" range="2s-5s" starttimestamp="1638541364878" timestamp="139566">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[2227]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="51" _type="MoveCaretCommand" caretOffset="1552" date="Fri Dec 03 09:25:04 EST 2021" docOffset="1988" starttimestamp="1638541364878" timestamp="139566" />
+  <Command __id="54" _type="PauseCommand" date="Fri Dec 03 09:25:31 EST 2021" range="20s-30s" starttimestamp="1638541364878" timestamp="166956">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[27390]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="53" _type="ShellCommand" date="Fri Dec 03 09:25:31 EST 2021" starttimestamp="1638541364878" timestamp="166956" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="56" _type="PauseCommand" date="Fri Dec 03 09:25:37 EST 2021" range="5s-10s" starttimestamp="1638541364878" timestamp="172318">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[5362]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="55" _type="ShellCommand" date="Fri Dec 03 09:25:37 EST 2021" starttimestamp="1638541364878" timestamp="172318" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="57" _type="MoveCaretCommand" caretOffset="1294" date="Fri Dec 03 09:25:37 EST 2021" docOffset="1730" starttimestamp="1638541364878" timestamp="172356" />
+  <Command __id="59" _type="PauseCommand" date="Fri Dec 03 09:25:40 EST 2021" range="2s-5s" starttimestamp="1638541364878" timestamp="175789">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3433]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="58" _type="SelectTextCommand" caretOffset="728" date="Fri Dec 03 09:25:40 EST 2021" end="728" start="683" starttimestamp="1638541364878" timestamp="175789" />
+  <Command __id="60" _type="MoveCaretCommand" caretOffset="729" date="Fri Dec 03 09:25:40 EST 2021" docOffset="1165" starttimestamp="1638541364878" timestamp="176086" />
+  <Command __id="62" _type="PauseCommand" date="Fri Dec 03 09:25:42 EST 2021" range="1s-2s" starttimestamp="1638541364878" timestamp="177615">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1529]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="61" _type="SelectTextCommand" caretOffset="706" date="Fri Dec 03 09:25:42 EST 2021" end="727" start="706" starttimestamp="1638541364878" timestamp="177615" />
+  <Command __id="64" _type="PauseCommand" date="Fri Dec 03 09:25:44 EST 2021" range="1s-2s" starttimestamp="1638541364878" timestamp="179566">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[1951]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="63" _type="ShellCommand" date="Fri Dec 03 09:25:44 EST 2021" starttimestamp="1638541364878" timestamp="179566" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="66" _type="PauseCommand" date="Fri Dec 03 09:26:33 EST 2021" range="30s-1m" starttimestamp="1638541364878" timestamp="228204">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[48637]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="65" _type="ShellCommand" date="Fri Dec 03 09:26:33 EST 2021" starttimestamp="1638541364878" timestamp="228203" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="67" _type="MoveCaretCommand" caretOffset="19" date="Fri Dec 03 09:26:33 EST 2021" docOffset="19" starttimestamp="1638541364878" timestamp="228253" />
+  <Command __id="69" _type="PauseCommand" date="Fri Dec 03 09:26:35 EST 2021" range="2s-5s" starttimestamp="1638541364878" timestamp="230278">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2025]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="68" _type="ShellCommand" date="Fri Dec 03 09:26:35 EST 2021" starttimestamp="1638541364878" timestamp="230278" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="71" _type="PauseCommand" date="Fri Dec 03 09:26:40 EST 2021" range="2s-5s" starttimestamp="1638541364878" timestamp="235188">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4909]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="70" _type="ShellCommand" date="Fri Dec 03 09:26:40 EST 2021" starttimestamp="1638541364878" timestamp="235187" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="72" _type="ShellCommand" date="Fri Dec 03 09:26:41 EST 2021" starttimestamp="1638541364878" timestamp="236170" type="ECLIPSE_LOST_FOCUS" />
+</Events>

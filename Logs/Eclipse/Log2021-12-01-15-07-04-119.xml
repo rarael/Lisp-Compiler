@@ -1,0 +1,152 @@
+<Events startTimestamp="1638389224119" logVersion="1.0.0.202108012048">
+  <Command __id="1" _type="SelectTextCommand" caretOffset="2162" date="Wed Dec 01 15:07:04 EST 2021" end="2162" start="2124" starttimestamp="1638389224119" timestamp="271" />
+  <Command __id="3" _type="PauseCommand" date="Wed Dec 01 15:07:06 EST 2021" range="2s-5s" starttimestamp="1638389224119" timestamp="2695">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[2401]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="2" _type="ShellCommand" date="Wed Dec 01 15:07:06 EST 2021" starttimestamp="1638389224119" timestamp="2672" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="5" _type="PauseCommand" date="Wed Dec 01 15:07:07 EST 2021" range="1s-2s" starttimestamp="1638389224119" timestamp="3876">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1204]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="4" _type="ShellCommand" date="Wed Dec 01 15:07:07 EST 2021" starttimestamp="1638389224119" timestamp="3876" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="10" _type="PauseCommand" date="Wed Dec 01 15:07:15 EST 2021" range="2s-5s" starttimestamp="1638389224119" timestamp="11822">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[BreakPointCommand]]></prev>
+    <pause><![CDATA[2891]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="9" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Wed Dec 01 15:07:15 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638389224119" timestamp="11822" type="Run" />
+  <Command __id="11" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Wed Dec 01 15:07:15 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638389224119" timestamp="11822" type="Run" />
+  <Command __id="12" _type="ProgramExecutionEvent" className="(Unknown)" date="Wed Dec 01 15:07:16 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638389224119" timestamp="12064" type="Run" />
+  <Command __id="13" _type="ProgramExecutionEvent" className="(Unknown)" date="Wed Dec 01 15:07:16 EST 2021" kind="StepInto" projectName="(Unknown)" starttimestamp="1638389224119" timestamp="12115" type="Run" />
+  <Command __id="14" _type="ProgramExecutionEvent" className="(Unknown)" date="Wed Dec 01 15:07:16 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638389224119" timestamp="12280" type="Run" />
+  <Command __id="15" _type="ConsoleOutput" date="Wed Dec 01 15:07:16 EST 2021" overflow="false" starttimestamp="1638389224119" timestamp="12332" type="ConsoleOutput">
+    <outputString><![CDATA[JRE Oracle Corporation/11.0.12 is not supported, advanced source lookup disabled: Unsupported class file major version 55.
+]]></outputString>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="122" _type="PauseCommand" date="Wed Dec 01 15:08:36 EST 2021" range="1s-2s" starttimestamp="1638389224119" timestamp="92392">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[1604]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="121" _type="ProgramExecutionEvent" className="(Unknown)" date="Wed Dec 01 15:08:36 EST 2021" kind="StepInto" projectName="(Unknown)" starttimestamp="1638389224119" timestamp="92392" type="Run" />
+  <Command __id="129" _type="PauseCommand" date="Wed Dec 01 15:08:42 EST 2021" range="1s-2s" starttimestamp="1638389224119" timestamp="98529">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1131]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="128" _type="ProgramExecutionEvent" className="(Unknown)" date="Wed Dec 01 15:08:42 EST 2021" kind="StepInto" projectName="(Unknown)" starttimestamp="1638389224119" timestamp="98529" type="Run" />
+  <Command __id="131" _type="PauseCommand" date="Wed Dec 01 15:08:58 EST 2021" range="10s-20s" starttimestamp="1638389224119" timestamp="114421">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[15892]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="132" _type="SelectTextCommand" caretOffset="1124" date="Wed Dec 01 15:08:58 EST 2021" end="1124" start="187" starttimestamp="1638389224119" timestamp="114525" />
+  <Command __id="133" _type="MoveCaretCommand" caretOffset="935" date="Wed Dec 01 15:08:59 EST 2021" docOffset="1229" starttimestamp="1638389224119" timestamp="115349" />
+  <Command __id="135" _type="PauseCommand" date="Wed Dec 01 15:09:08 EST 2021" range="5s-10s" starttimestamp="1638389224119" timestamp="123947">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[8598]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="136" _type="MoveCaretCommand" caretOffset="971" date="Wed Dec 01 15:09:08 EST 2021" docOffset="1295" starttimestamp="1638389224119" timestamp="124015" />
+  <Command __id="138" _type="PauseCommand" date="Wed Dec 01 15:09:10 EST 2021" range="1s-2s" starttimestamp="1638389224119" timestamp="125938">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1923]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="139" _type="MoveCaretCommand" caretOffset="935" date="Wed Dec 01 15:09:10 EST 2021" docOffset="1229" starttimestamp="1638389224119" timestamp="126059" />
+  <Command __id="141" _type="PauseCommand" date="Wed Dec 01 15:09:11 EST 2021" range="1s-2s" starttimestamp="1638389224119" timestamp="127741">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1682]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="140" _type="ShellCommand" date="Wed Dec 01 15:09:11 EST 2021" starttimestamp="1638389224119" timestamp="127741" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="143" _type="PauseCommand" date="Wed Dec 01 15:09:13 EST 2021" range="1s-2s" starttimestamp="1638389224119" timestamp="129167">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1426]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="142" _type="ShellCommand" date="Wed Dec 01 15:09:13 EST 2021" starttimestamp="1638389224119" timestamp="129167" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="146" _type="MoveCaretCommand" caretOffset="935" date="Wed Dec 01 15:09:13 EST 2021" docOffset="1229" starttimestamp="1638389224119" timestamp="129417" />
+  <Command __id="147" _type="MoveCaretCommand" caretOffset="442" date="Wed Dec 01 15:09:13 EST 2021" docOffset="723" starttimestamp="1638389224119" timestamp="129431" />
+  <Command __id="149" _type="PauseCommand" date="Wed Dec 01 15:09:18 EST 2021" range="2s-5s" starttimestamp="1638389224119" timestamp="134199">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[4768]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="148" _type="SelectTextCommand" caretOffset="534" date="Wed Dec 01 15:09:18 EST 2021" end="544" start="534" starttimestamp="1638389224119" timestamp="134199" />
+  <Command __id="150" _type="CopyCommand" date="Wed Dec 01 15:09:18 EST 2021" starttimestamp="1638389224119" timestamp="134824" />
+  <Command __id="152" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Dec 01 15:09:19 EST 2021" starttimestamp="1638389224119" timestamp="135095" />
+  <Command __id="154" _type="PauseCommand" date="Wed Dec 01 15:09:21 EST 2021" range="2s-5s" starttimestamp="1638389224119" timestamp="137432">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2337]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="153" _type="ShellCommand" date="Wed Dec 01 15:09:21 EST 2021" starttimestamp="1638389224119" timestamp="137432" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="174" _type="PauseCommand" date="Wed Dec 01 15:09:42 EST 2021" range="10s-20s" starttimestamp="1638389224119" timestamp="158453">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[18196]]></pause>
+    <nextType><![CDATA[Terminate]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="173" _type="EclipseCommand" commandID="org.eclipse.debug.ui.commands.Terminate" date="Wed Dec 01 15:09:42 EST 2021" starttimestamp="1638389224119" timestamp="158453" />
+  <Command __id="175" _type="ProgramExecutionEvent" className="(Unknown)" date="Wed Dec 01 15:09:42 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638389224119" timestamp="158465" type="Debug" />
+  <Command __id="176" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Wed Dec 01 15:09:42 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638389224119" timestamp="158466" type="Run" />
+  <Command __id="177" _type="ProgramExecutionEvent" className="(Unknown)" date="Wed Dec 01 15:09:42 EST 2021" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1638389224119" timestamp="158466" type="Debug" />
+  <Command __id="178" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Wed Dec 01 15:09:42 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638389224119" timestamp="158466" type="Run" />
+  <Command __id="179" _type="EclipseCommand" commandID="" date="Wed Dec 01 15:09:42 EST 2021" starttimestamp="1638389224119" timestamp="158560" />
+  <Command __id="180" _type="EclipseCommand" commandID="" date="Wed Dec 01 15:09:42 EST 2021" starttimestamp="1638389224119" timestamp="158566" />
+  <Command __id="182" _type="PauseCommand" date="Wed Dec 01 15:09:49 EST 2021" range="5s-10s" starttimestamp="1638389224119" timestamp="165645">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[7079]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="181" _type="EclipseCommand" commandID="org.eclipse.ui.views.showView" date="Wed Dec 01 15:09:49 EST 2021" starttimestamp="1638389224119" timestamp="165645" />
+  <Command __id="184" _type="PauseCommand" date="Wed Dec 01 15:09:51 EST 2021" range="1s-2s" starttimestamp="1638389224119" timestamp="167138">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1493]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="183" _type="ShellCommand" date="Wed Dec 01 15:09:51 EST 2021" starttimestamp="1638389224119" timestamp="167138" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="185" _type="ShellCommand" date="Wed Dec 01 15:09:52 EST 2021" starttimestamp="1638389224119" timestamp="168001" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="187" _type="PauseCommand" date="Wed Dec 01 15:09:57 EST 2021" range="5s-10s" starttimestamp="1638389224119" timestamp="173012">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[5011]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="186" _type="ShellCommand" date="Wed Dec 01 15:09:57 EST 2021" starttimestamp="1638389224119" timestamp="173012" type="ECLIPSE_LOST_FOCUS" />
+</Events>

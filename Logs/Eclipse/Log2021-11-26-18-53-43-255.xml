@@ -1,0 +1,413 @@
+<Events startTimestamp="1637970823255" logVersion="1.0.0.202108012048">
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="357" date="Fri Nov 26 18:53:43 EST 2021" docOffset="579" starttimestamp="1637970823255" timestamp="341" />
+  <Command __id="3" _type="PauseCommand" date="Fri Nov 26 18:53:46 EST 2021" range="2s-5s" starttimestamp="1637970823255" timestamp="3031">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2687]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="2" _type="ShellCommand" date="Fri Nov 26 18:53:46 EST 2021" starttimestamp="1637970823255" timestamp="3028" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="4" _type="MoveCaretCommand" caretOffset="286" date="Fri Nov 26 18:53:46 EST 2021" docOffset="508" starttimestamp="1637970823255" timestamp="3068" />
+  <Command __id="6" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:47 EST 2021" starttimestamp="1637970823255" timestamp="4051" />
+  <Command __id="8" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:47 EST 2021" starttimestamp="1637970823255" timestamp="4358" />
+  <Command __id="10" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:48 EST 2021" starttimestamp="1637970823255" timestamp="4857" />
+  <Command __id="12" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:48 EST 2021" starttimestamp="1637970823255" timestamp="4890" />
+  <Command __id="14" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:48 EST 2021" starttimestamp="1637970823255" timestamp="4924" />
+  <Command __id="16" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:48 EST 2021" starttimestamp="1637970823255" timestamp="4956" />
+  <Command __id="18" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:48 EST 2021" starttimestamp="1637970823255" timestamp="4990" />
+  <Command __id="20" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:48 EST 2021" starttimestamp="1637970823255" timestamp="5022" />
+  <Command __id="22" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:48 EST 2021" starttimestamp="1637970823255" timestamp="5060" />
+  <Command __id="24" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:48 EST 2021" starttimestamp="1637970823255" timestamp="5089" />
+  <Command __id="26" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:48 EST 2021" starttimestamp="1637970823255" timestamp="5120" />
+  <Command __id="28" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:48 EST 2021" starttimestamp="1637970823255" timestamp="5152" />
+  <Command __id="30" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:48 EST 2021" starttimestamp="1637970823255" timestamp="5345" />
+  <Command __id="32" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:53:48 EST 2021" starttimestamp="1637970823255" timestamp="5549" />
+  <Command __id="34" _type="InsertStringCommand" date="Fri Nov 26 18:53:49 EST 2021" starttimestamp="1637970823255" timestamp="5790" timestamp2="5790">
+    <data><![CDATA[c]]></data>
+  </Command>
+  <Command __id="36" _type="InsertStringCommand" date="Fri Nov 26 18:53:49 EST 2021" starttimestamp="1637970823255" timestamp="5912" timestamp2="5912">
+    <data><![CDATA[u]]></data>
+  </Command>
+  <Command __id="38" _type="InsertStringCommand" date="Fri Nov 26 18:53:49 EST 2021" starttimestamp="1637970823255" timestamp="6035" timestamp2="6035">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="40" _type="InsertStringCommand" date="Fri Nov 26 18:53:49 EST 2021" starttimestamp="1637970823255" timestamp="6208" timestamp2="6208">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="42" _type="InsertStringCommand" date="Fri Nov 26 18:53:49 EST 2021" starttimestamp="1637970823255" timestamp="6288" timestamp2="6288">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="44" _type="InsertStringCommand" date="Fri Nov 26 18:53:49 EST 2021" starttimestamp="1637970823255" timestamp="6410" timestamp2="6410">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="46" _type="InsertStringCommand" date="Fri Nov 26 18:53:49 EST 2021" starttimestamp="1637970823255" timestamp="6504" timestamp2="6504">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="48" _type="InsertStringCommand" date="Fri Nov 26 18:53:50 EST 2021" starttimestamp="1637970823255" timestamp="6754" timestamp2="6754">
+    <data><![CDATA[.]]></data>
+  </Command>
+  <Command __id="49" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="true" date="Fri Nov 26 18:53:50 EST 2021" start_end="START" starttimestamp="1637970823255" timestamp="7092" />
+  <Command __id="54" _type="PauseCommand" date="Fri Nov 26 18:53:53 EST 2021" range="2s-5s" starttimestamp="1637970823255" timestamp="9874">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[AssistCommand]]></prev>
+    <pause><![CDATA[2782]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Delete]]></next>
+  </Command>
+  <Command __id="59" _type="PauseCommand" date="Fri Nov 26 18:53:54 EST 2021" range="1s-2s" starttimestamp="1637970823255" timestamp="10973">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[Delete]]></prev>
+    <pause><![CDATA[1099]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[AssistCommand]]></next>
+  </Command>
+  <Command __id="58" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="false" date="Fri Nov 26 18:53:54 EST 2021" start_end="END" starttimestamp="1637970823255" timestamp="10973" />
+  <Command __id="61" _type="InsertStringCommand" date="Fri Nov 26 18:53:54 EST 2021" starttimestamp="1637970823255" timestamp="10997" timestamp2="10997">
+    <data><![CDATA[.]]></data>
+  </Command>
+  <Command __id="62" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="true" date="Fri Nov 26 18:53:54 EST 2021" start_end="START" starttimestamp="1637970823255" timestamp="11006" />
+  <Command __id="64" _type="PauseCommand" date="Fri Nov 26 18:53:56 EST 2021" range="2s-5s" starttimestamp="1637970823255" timestamp="13376">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[AssistCommand]]></prev>
+    <pause><![CDATA[2370]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Insert]]></next>
+  </Command>
+  <Command __id="67" _type="PauseCommand" date="Fri Nov 26 18:53:57 EST 2021" range="1s-2s" starttimestamp="1637970823255" timestamp="14425">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[Insert]]></prev>
+    <pause><![CDATA[1049]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Delete]]></next>
+  </Command>
+  <Command __id="69" _type="PauseCommand" date="Fri Nov 26 18:53:58 EST 2021" range="1s-2s" starttimestamp="1637970823255" timestamp="15546">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[Delete]]></prev>
+    <pause><![CDATA[1121]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Insert]]></next>
+  </Command>
+  <Command __id="100" _type="PauseCommand" date="Fri Nov 26 18:54:11 EST 2021" range="5s-10s" starttimestamp="1637970823255" timestamp="28200">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[7619]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="99" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:54:11 EST 2021" starttimestamp="1637970823255" timestamp="28198" />
+  <Command __id="101" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:54:11 EST 2021" starttimestamp="1637970823255" timestamp="28210" />
+  <Command __id="102" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:54:11 EST 2021" starttimestamp="1637970823255" timestamp="28210" />
+  <Command __id="103" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:54:11 EST 2021" starttimestamp="1637970823255" timestamp="28213" />
+  <Command __id="104" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:54:11 EST 2021" starttimestamp="1637970823255" timestamp="28214" />
+  <Command __id="105" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:54:11 EST 2021" starttimestamp="1637970823255" timestamp="28216" />
+  <Command __id="106" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:54:11 EST 2021" starttimestamp="1637970823255" timestamp="28217" />
+  <Command __id="107" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:54:11 EST 2021" starttimestamp="1637970823255" timestamp="28221" />
+  <Command __id="108" _type="ProgramExecutionEvent" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:54:11 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970823255" timestamp="28234" type="Run" />
+  <Command __id="109" _type="RunCommand" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:54:11 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970823255" timestamp="28234" type="Run" />
+  <Command __id="111" _type="PauseCommand" date="Fri Nov 26 18:54:13 EST 2021" range="2s-5s" starttimestamp="1637970823255" timestamp="30445">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[2211]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="110" _type="ShellCommand" date="Fri Nov 26 18:54:13 EST 2021" starttimestamp="1637970823255" timestamp="30445" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="113" _type="PauseCommand" date="Fri Nov 26 18:54:16 EST 2021" range="2s-5s" starttimestamp="1637970823255" timestamp="32745">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2300]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="112" _type="ExceptionCommand" date="Fri Nov 26 18:54:16 EST 2021" starttimestamp="1637970823255" timestamp="32745" type="Exception">
+    <exceptionString><![CDATA[Test execution time (ms):15
+Test execution time (ms):4
+Test execution time (ms):7
+Test execution time (ms):59
+java.lang.IllegalStateException: No evaluator registered for operator 'ISLIST'
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:55)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="114" _type="ConsoleOutput" date="Fri Nov 26 18:54:16 EST 2021" overflow="false" starttimestamp="1637970823255" timestamp="32877" type="ConsoleOutput">
+    <outputString><![CDATA[	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4556)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+]]></outputString>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="116" _type="PauseCommand" date="Fri Nov 26 18:54:22 EST 2021" range="5s-10s" starttimestamp="1637970823255" timestamp="39109">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[6232]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="115" _type="ShellCommand" date="Fri Nov 26 18:54:22 EST 2021" starttimestamp="1637970823255" timestamp="39109" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="118" _type="PauseCommand" date="Fri Nov 26 18:54:52 EST 2021" range="30s-1m" starttimestamp="1637970823255" timestamp="69144">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[30035]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="117" _type="MoveCaretCommand" caretOffset="361" date="Fri Nov 26 18:54:52 EST 2021" docOffset="583" starttimestamp="1637970823255" timestamp="69144" />
+  <Command __id="120" _type="PauseCommand" date="Fri Nov 26 18:54:53 EST 2021" range="1s-2s" starttimestamp="1637970823255" timestamp="70417">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1273]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="119" _type="MoveCaretCommand" caretOffset="280" date="Fri Nov 26 18:54:53 EST 2021" docOffset="502" starttimestamp="1637970823255" timestamp="70417" />
+  <Command __id="165" _type="PauseCommand" date="Fri Nov 26 18:55:07 EST 2021" range="2s-5s" starttimestamp="1637970823255" timestamp="84479">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3806]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="164" _type="RunCommand" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:55:07 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970823255" timestamp="84479" type="Run" />
+  <Command __id="166" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:55:07 EST 2021" starttimestamp="1637970823255" timestamp="84509" />
+  <Command __id="167" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:55:07 EST 2021" starttimestamp="1637970823255" timestamp="84515" />
+  <Command __id="168" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:55:07 EST 2021" starttimestamp="1637970823255" timestamp="84515" />
+  <Command __id="169" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:55:07 EST 2021" starttimestamp="1637970823255" timestamp="84517" />
+  <Command __id="170" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:55:07 EST 2021" starttimestamp="1637970823255" timestamp="84517" />
+  <Command __id="171" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:55:07 EST 2021" starttimestamp="1637970823255" timestamp="84519" />
+  <Command __id="172" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:55:07 EST 2021" starttimestamp="1637970823255" timestamp="84519" />
+  <Command __id="173" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:55:07 EST 2021" starttimestamp="1637970823255" timestamp="84523" />
+  <Command __id="175" _type="PauseCommand" date="Fri Nov 26 18:55:09 EST 2021" range="2s-5s" starttimestamp="1637970823255" timestamp="86655">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2132]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="174" _type="ShellCommand" date="Fri Nov 26 18:55:09 EST 2021" starttimestamp="1637970823255" timestamp="86655" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="177" _type="PauseCommand" date="Fri Nov 26 18:55:11 EST 2021" range="1s-2s" starttimestamp="1637970823255" timestamp="88392">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1737]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="176" _type="ConsoleOutput" date="Fri Nov 26 18:55:11 EST 2021" overflow="false" starttimestamp="1637970823255" timestamp="88392" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):15
+Test execution time (ms):4
+Test execution time (ms):7
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)¶	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)¶	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)¶	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)¶	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)¶	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)¶	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)¶	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)¶	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)¶	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)¶	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)¶	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)¶	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)¶	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)¶	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)¶	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)¶	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)¶	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)¶	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)¶	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)¶	at java.desktop/java.awt.Component.processEvent(Component.java:6400)¶	at java.desktop/java.awt.Container.processEvent(Container.java:2263)¶	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)¶	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)¶	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)¶	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)¶	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4556)¶	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)"), Diff(INSERT,"Test execution time (ms):15¶Test execution time (ms):4¶Test execution time (ms):7"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="178" _type="ExceptionCommand" date="Fri Nov 26 18:55:11 EST 2021" starttimestamp="1637970823255" timestamp="88449" type="Exception">
+    <exceptionString><![CDATA[Test execution time (ms):60
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:148)
+	at a5.VariableEval.eval(VariableEval.java:20)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="180" _type="PauseCommand" date="Fri Nov 26 18:55:16 EST 2021" range="5s-10s" starttimestamp="1637970823255" timestamp="93532">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[5083]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="179" _type="ShellCommand" date="Fri Nov 26 18:55:16 EST 2021" starttimestamp="1637970823255" timestamp="93532" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="181" _type="MoveCaretCommand" caretOffset="453" date="Fri Nov 26 18:55:17 EST 2021" docOffset="675" starttimestamp="1637970823255" timestamp="94471" />
+  <Command __id="183" _type="PauseCommand" date="Fri Nov 26 18:55:28 EST 2021" range="10s-20s" starttimestamp="1637970823255" timestamp="104860">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[10389]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="184" _type="MoveCaretCommand" caretOffset="1611" date="Fri Nov 26 18:55:28 EST 2021" docOffset="1945" starttimestamp="1637970823255" timestamp="104958" />
+  <Command __id="186" _type="PauseCommand" date="Fri Nov 26 18:56:00 EST 2021" range="30s-1m" starttimestamp="1637970823255" timestamp="137661">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[32703]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="187" _type="MoveCaretCommand" caretOffset="453" date="Fri Nov 26 18:56:00 EST 2021" docOffset="675" starttimestamp="1637970823255" timestamp="137734" />
+  <Command __id="189" _type="PauseCommand" date="Fri Nov 26 18:56:09 EST 2021" range="5s-10s" starttimestamp="1637970823255" timestamp="145778">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[8044]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="190" _type="MoveCaretCommand" caretOffset="1611" date="Fri Nov 26 18:56:09 EST 2021" docOffset="1945" starttimestamp="1637970823255" timestamp="145849" />
+  <Command __id="192" _type="PauseCommand" date="Fri Nov 26 18:56:27 EST 2021" range="10s-20s" starttimestamp="1637970823255" timestamp="164660">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[18811]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="193" _type="MoveCaretCommand" caretOffset="453" date="Fri Nov 26 18:56:27 EST 2021" docOffset="675" starttimestamp="1637970823255" timestamp="164738" />
+  <Command __id="200" _type="PauseCommand" date="Fri Nov 26 18:56:36 EST 2021" range="2s-5s" starttimestamp="1637970823255" timestamp="172997">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[3120]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="199" _type="ProgramExecutionEvent" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:56:36 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970823255" timestamp="172997" type="Run" />
+  <Command __id="201" _type="ProgramExecutionEvent" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:56:36 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970823255" timestamp="172997" type="Run" />
+  <Command __id="203" _type="PauseCommand" date="Fri Nov 26 18:56:39 EST 2021" range="2s-5s" starttimestamp="1637970823255" timestamp="176275">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[3278]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="202" _type="ShellCommand" date="Fri Nov 26 18:56:39 EST 2021" starttimestamp="1637970823255" timestamp="176275" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="205" _type="PauseCommand" date="Fri Nov 26 18:57:54 EST 2021" range="1m-2m" starttimestamp="1637970823255" timestamp="251511">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[75236]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="204" _type="ShellCommand" date="Fri Nov 26 18:57:54 EST 2021" starttimestamp="1637970823255" timestamp="251511" type="ECLIPSE_LOST_FOCUS" />
+</Events>

@@ -1,0 +1,415 @@
+<Events startTimestamp="1638235917992" logVersion="1.0.0.202108012048">
+  <Command __id="1" _type="RunCommand" className="/a5/src/a5/LocalChecks.java" date="Mon Nov 29 20:32:06 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638235917992" timestamp="8874" type="Run" />
+  <Command __id="3" _type="PauseCommand" date="Mon Nov 29 20:32:09 EST 2021" range="2s-5s" starttimestamp="1638235917992" timestamp="11313">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[2435]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="2" _type="ShellCommand" date="Mon Nov 29 20:32:09 EST 2021" starttimestamp="1638235917992" timestamp="11309" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="5" _type="PauseCommand" date="Mon Nov 29 20:32:13 EST 2021" range="2s-5s" starttimestamp="1638235917992" timestamp="15231">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3922]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="4" _type="ConsoleOutput" date="Mon Nov 29 20:32:13 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="15231" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):59
+]]></outputString>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="6" _type="ConsoleOutput" date="Mon Nov 29 20:32:13 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="15347" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):1
+Test execution time (ms):10
+Test execution time (ms):13
+Test execution time (ms):86
+Test execution time (ms):89
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"5"), Diff(INSERT,"1¶Test execution time (ms):10¶Test execution time (ms):13¶Test execution time (ms):86¶Test execution time (ms):8"), Diff(EQUAL,"9¶")]]]></diff>
+  </Command>
+  <Command __id="7" _type="ConsoleOutput" date="Mon Nov 29 20:32:13 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="15404" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):2
+Test execution time (ms):0
+Test execution time (ms):0
+Test execution time (ms):1
+Building symbol table and running first pass checks:Mon Nov 29 20:32:13 EST 2021
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"1"), Diff(INSERT,"2"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"1"), Diff(EQUAL,"0¶Test execution time (ms):"), Diff(DELETE,"13"), Diff(INSERT,"0"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"86¶Test execution time (ms):89"), Diff(INSERT,"1¶Building symbol table and running first pass checks:Mon Nov 29 20:32:13 EST 2021"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="9" _type="PauseCommand" date="Mon Nov 29 20:32:14 EST 2021" range="1s-2s" starttimestamp="1638235917992" timestamp="16825">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1421]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="8" _type="ConsoleOutput" date="Mon Nov 29 20:32:14 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="16825" type="ConsoleOutput">
+    <outputString><![CDATA[Symbol table size:40
+Running second pass checks Mon Nov 29 20:32:14 EST 2021
+Start O(n2) inter- and intra class method calls:Mon Nov 29 20:32:14 EST 2021
+End O(n2) inter- and intra class method calls:Mon Nov 29 20:32:14 EST 2021
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):2¶Test execution time (ms):0¶Test execution time (ms):0¶Test execution time (ms):1¶Building symbol table and running first pass check"), Diff(INSERT,"Symbol table size:40¶Running second pass checks Mon Nov 29 20:32:14 EST 2021¶Start O(n2) inter- and intra class method calls:Mon Nov 29 20:32:14 EST 2021¶End O(n2) inter- and intra class method call"), Diff(EQUAL,"s:Mon Nov 29 20:32:1"), Diff(DELETE,"3"), Diff(INSERT,"4"), Diff(EQUAL," EST 2021¶")]]]></diff>
+  </Command>
+  <Command __id="10" _type="ConsoleOutput" date="Mon Nov 29 20:32:15 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="17564" type="ConsoleOutput">
+    <outputString><![CDATA[Finished second pass checks:Mon Nov 29 20:32:15 EST 2021
+Generating checks:Mon Nov 29 20:32:15 EST 2021
+Finished Generating checks:Mon Nov 29 20:32:15 EST 2021
+Generating externals:Mon Nov 29 20:32:15 EST 2021
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Symbol table size:40¶Running"), Diff(INSERT,"Finished"), Diff(EQUAL," second pass checks"), Diff(DELETE," "), Diff(INSERT,":"), Diff(EQUAL,"Mon Nov 29 20:32:1"), Diff(DELETE,"4"), Diff(INSERT,"5"), Diff(EQUAL," EST 2021¶"), Diff(DELETE,"Start O(n2) inter- and intra class method call"), Diff(INSERT,"Generating checks:Mon Nov 29 20:32:15 EST 2021¶Finished Generating check"), Diff(EQUAL,"s:Mon Nov 29 20:32:1"), Diff(DELETE,"4"), Diff(INSERT,"5"), Diff(EQUAL," EST 2021¶"), Diff(DELETE,"End O(n2) inter- and intra class method cal"), Diff(INSERT,"Generating externa"), Diff(EQUAL,"ls:Mon Nov 29 20:32:1"), Diff(DELETE,"4"), Diff(INSERT,"5"), Diff(EQUAL," EST 2021¶")]]]></diff>
+  </Command>
+  <Command __id="11" _type="ConsoleOutput" date="Mon Nov 29 20:32:15 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="17666" type="ConsoleOutput">
+    <outputString><![CDATA[Finished Generating externals:Mon Nov 29 20:32:15 EST 2021
+Test execution time (ms):2263
+Test execution time (ms):14
+Test execution time (ms):0
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):0
+Test execution time (ms):0
+Test execution time (ms):0
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Finished "), Diff(DELETE,"second pass check"), Diff(INSERT,"Generating external"), Diff(EQUAL,"s:Mon Nov 29 20:32:15 EST 2021¶"), Diff(DELETE,"Generating checks:Mon Nov 29 20:32:15 EST 2021¶Finished Generating checks:Mon Nov 29 20:32:15 EST 2021¶Generating externals:Mon Nov 29 20:32:15 EST 2021"), Diff(INSERT,"Test execution time (ms):2263¶Test execution time (ms):14¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):0¶Test execution time (ms):0¶Test execution time (ms):0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="12" _type="ConsoleOutput" date="Mon Nov 29 20:32:15 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="17686" type="ConsoleOutput">
+    <outputString><![CDATA[FuncallCallsExpressionFactory did not pass completely:Checkstyle output does not match:.*INFO.*BasicFuncallEvaluator(.*)main.lisp.parser.terms.ExpressionFactory!newInstance:main.lisp.parser.terms.SExpression;main.lisp.parser.terms.SExpression->SExpression(.*)\[MissingMethodCall\].*. Is your class named or tagged properly and checkstyle file upto date?%0.0
+
+Test execution time (ms):13
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"F"), Diff(DELETE,"inished Generating externals:Mon Nov 29 20:32:15 EST 2021¶Test execution time (ms):2263¶Test execution time (ms):14¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):0¶Test execution time (ms):0"), Diff(INSERT,"uncallCallsExpressionFactory did not pass completely:Checkstyle output does not match:.*INFO.*BasicFuncallEvaluator(.*)main.lisp.parser.terms.ExpressionFactory!newInstance:main.lisp.parser.terms.SExpression;main.lisp.parser.terms.SExpression->SExpression(.*)\[MissingMethodCall\].*. Is your class named or tagged properly and checkstyle file upto date?%0.0¶"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"0"), Diff(INSERT,"13"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="13" _type="ConsoleOutput" date="Mon Nov 29 20:32:15 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="17768" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):9
+Test execution time (ms):8
+Test execution time (ms):22
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"FuncallCallsExpressionFactory did not pass completely:Checkstyle output does not match:.*INFO.*BasicFuncallEvaluator(.*)main.lisp.parser.terms.ExpressionFactory!newInstance:main.lisp.parser.terms.SExpression;main.lisp.parser.terms.SExpression->SExpression(.*)\[MissingMethodCall\].*. Is your class named or tagged properly and checkstyle file upto date?%0.0¶"), Diff(INSERT,"Test execution time (ms):9¶Test execution time (ms):8"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"13"), Diff(INSERT,"22"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="15" _type="PauseCommand" date="Mon Nov 29 20:32:21 EST 2021" range="5s-10s" starttimestamp="1638235917992" timestamp="23319">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[5551]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="14" _type="ConsoleOutput" date="Mon Nov 29 20:32:21 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="23319" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):1
+Test execution time (ms):0
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"9"), Diff(INSERT,"1"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"8¶Test execution time (ms):22"), Diff(INSERT,"0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="17" _type="PauseCommand" date="Mon Nov 29 20:32:22 EST 2021" range="1s-2s" starttimestamp="1638235917992" timestamp="24773">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1454]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="16" _type="ExceptionCommand" date="Mon Nov 29 20:32:22 EST 2021" starttimestamp="1638235917992" timestamp="24773" type="Exception">
+    <exceptionString><![CDATA[Test execution time (ms):1
+Test execution time (ms):0
+Test execution time (ms):0
+Test execution time (ms):0
+Test execution time (ms):1
+Test execution time (ms):1
+java.lang.IllegalStateException: Expression does not start with an operator
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:50)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:23)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at expression.CondEvaluator.eval(CondEvaluator.java:22)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:48)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:23)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at expression.EvalEvaluator.eval(EvalEvaluator.java:10)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:48)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:23)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at expression.EvalEvaluator.eval(EvalEvaluator.java:10)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:48)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:23)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="19" _type="PauseCommand" date="Mon Nov 29 20:32:27 EST 2021" range="2s-5s" starttimestamp="1638235917992" timestamp="29040">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[4267]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="18" _type="ConsoleOutput" date="Mon Nov 29 20:32:27 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="29040" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):20
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"1¶Test execution time (ms):"), Diff(INSERT,"2"), Diff(EQUAL,"0¶")]]]></diff>
+  </Command>
+  <Command __id="21" _type="PauseCommand" date="Mon Nov 29 20:32:31 EST 2021" range="2s-5s" starttimestamp="1638235917992" timestamp="33903">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[4863]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="20" _type="ExceptionCommand" date="Mon Nov 29 20:32:31 EST 2021" starttimestamp="1638235917992" timestamp="33903" type="Exception">
+    <exceptionString><![CDATA[java.lang.IllegalStateException: No evaluator registered for operator 'LET'
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:46)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:23)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="23" _type="PauseCommand" date="Mon Nov 29 20:32:35 EST 2021" range="2s-5s" starttimestamp="1638235917992" timestamp="37098">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[3195]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="22" _type="ExceptionCommand" date="Mon Nov 29 20:32:35 EST 2021" starttimestamp="1638235917992" timestamp="37098" type="Exception">
+    <exceptionString><![CDATA[java.lang.IllegalStateException: No evaluator registered for operator 'CURRY'
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:46)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:23)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at functional.FuncallEvaluator.eval(FuncallEvaluator.java:24)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:48)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:23)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="25" _type="PauseCommand" date="Mon Nov 29 20:32:37 EST 2021" range="2s-5s" starttimestamp="1638235917992" timestamp="39845">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[2747]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="24" _type="ConsoleOutput" date="Mon Nov 29 20:32:37 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="39845" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):0
+Test execution time (ms):0
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"2"), Diff(INSERT,"1¶Test execution time (ms):1¶Test execution time (ms):0¶Test execution time (ms):"), Diff(EQUAL,"0¶")]]]></diff>
+  </Command>
+  <Command __id="27" _type="PauseCommand" date="Mon Nov 29 20:32:39 EST 2021" range="1s-2s" starttimestamp="1638235917992" timestamp="41652">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1807]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="26" _type="ConsoleOutput" date="Mon Nov 29 20:32:39 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="41652" type="ConsoleOutput">
+    <outputString><![CDATA[LispIsListChecker did not pass completely:Expected strings:Tactual string NIL%0.0
+
+Test execution time (ms):1
+LispIsListChecker2 did not pass completely:Expected strings:Tactual string NIL%0.0
+
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+LispToStringChecker did not pass completely:Expected strings:"(1)"actual string (NIL)%0.0
+
+Test execution time (ms):0
+LispToStringChecker2 did not pass completely:Expected strings:"(2 8 (9 5))"actual string (NIL)%0.0
+
+Test execution time (ms):1
+LispToStringChecker3 did not pass completely:Expected strings:"(5 . 6)"actual string (NIL)%0.0
+
+Test execution time (ms):1
+LispToStringChecker4 did not pass completely:Expected strings:"(1 . (3 . 6))"actual string (NIL)%0.0
+
+Test execution time (ms):0
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):0"), Diff(INSERT,"LispIsListChecker did not pass completely:Expected strings:Tactual string NIL%0.0¶¶Test execution time (ms):1¶LispIsListChecker2 did not pass completely:Expected strings:Tactual string NIL%0.0¶¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1¶LispToStringChecker did not pass completely:Expected strings:"(1)"actual string (NIL)%0.0¶¶Test execution time (ms):0¶LispToStringChecker2 did not pass completely:Expected strings:"(2 8 (9 5))"actual string (NIL)%0.0¶¶Test execution time (ms):1¶LispToStringChecker3 did not pass completely:Expected strings:"(5 . 6)"actual string (NIL)%0.0¶¶Test execution time (ms):1¶LispToStringChecker4 did not pass completely:Expected strings:"(1 . (3 . 6))"actual string (NIL)%0.0¶"), Diff(EQUAL,"¶Test execution time (ms):0¶")]]]></diff>
+  </Command>
+  <Command __id="29" _type="PauseCommand" date="Mon Nov 29 20:32:41 EST 2021" range="2s-5s" starttimestamp="1638235917992" timestamp="43887">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2235]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="28" _type="ConsoleOutput" date="Mon Nov 29 20:32:41 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="43887" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):0
+Test execution time (ms):0
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):0
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"LispIsListChecker did not pass completely:Expected strings:Tactual string NIL%0.0¶¶Test execution time (ms):1¶LispIsListChecker2 did not pass completely:Expected strings:Tactual string NIL%0.0¶¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1¶LispToStringChecker did not pass completely:Expected strings:"(1)"actual string (NIL)%0.0¶¶Test execution time (ms):0¶LispToStringChecker2 did not pass completely:Expected strings:"(2 8 (9 5))"actual string (NIL)%0.0¶¶Test execution time (ms):1¶LispToStringChecker3 did not pass completely:Expected strings:"(5 . 6)"actual string (NIL)%0.0¶¶Test execution time (ms):1¶LispToStringChecker4 did not pass completely:Expected strings:"(1 . (3 . 6))"actual string (NIL)%0.0¶"), Diff(INSERT,"Test execution time (ms):0¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1"), Diff(EQUAL,"¶Test execution time (ms):0¶")]]]></diff>
+  </Command>
+  <Command __id="31" _type="PauseCommand" date="Mon Nov 29 20:32:43 EST 2021" range="1s-2s" starttimestamp="1638235917992" timestamp="45654">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1767]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="30" _type="ConsoleOutput" date="Mon Nov 29 20:32:43 EST 2021" overflow="false" starttimestamp="1638235917992" timestamp="45654" type="ConsoleOutput">
+    <outputString><![CDATA[A6CommonPropertiesInherited did not pass completely:See console trace about lines failing  this check%0.0
+
+Test execution time (ms):7
+A6CommonSignaturesAreInherited did not pass completely:See console trace about lines failing  this check%0.7432258064516128
+
+Test execution time (ms):6
+A6Encapsulation did not pass completely:%0.96
+
+Test execution time (ms):4
+A6NoHiddenFields did not pass completely:%0.96
+
+Test execution time (ms):3
+A6NonPublicAccessModifiersMatched did not pass completely:See console trace about lines failing  this check%0.768
+
+Test execution time (ms):6
+A6PublicMethodsOverride did not pass completely:%0.96
+
+Test execution time (ms):5
+A6NoStarImports did not pass completely:%0.96
+
+Test execution time (ms):3
+A6PackageDeclarations did not pass completely:%0.96
+
+Test execution time (ms):3
+F21A6NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0
+
+Test execution time (ms):2
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):0¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1"), Diff(INSERT,"A6CommonPropertiesInherited did not pass completely:See console trace about lines failing  this check%0.0¶¶Test execution time (ms):7¶A6CommonSignaturesAreInherited did not pass completely:See console trace about lines failing  this check%0.7432258064516128¶¶Test execution time (ms):6¶A6Encapsulation did not pass completely:%0.96¶¶Test execution time (ms):4¶A6NoHiddenFields did not pass completely:%0.96¶¶Test execution time (ms):3¶A6NonPublicAccessModifiersMatched did not pass completely:See console trace about lines failing  this check%0.768¶¶Test execution time (ms):6¶A6PublicMethodsOverride did not pass completely:%0.96¶¶Test execution time (ms):5¶A6NoStarImports did not pass completely:%0.96¶¶Test execution time (ms):3¶A6PackageDeclarations did not pass completely:%0.96¶¶Test execution time (ms):3¶F21A6NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0¶"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"0"), Diff(INSERT,"2"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="33" _type="PauseCommand" date="Mon Nov 29 20:33:07 EST 2021" range="20s-30s" starttimestamp="1638235917992" timestamp="69975">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[24321]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="38" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Mon Nov 29 20:33:13 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1638235917992" timestamp="75932" type="Run" />
+  <Command __id="40" _type="PauseCommand" date="Mon Nov 29 20:33:15 EST 2021" range="2s-5s" starttimestamp="1638235917992" timestamp="77949">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[2016]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="42" _type="MoveCaretCommand" caretOffset="872" date="Mon Nov 29 20:33:16 EST 2021" docOffset="872" starttimestamp="1638235917992" timestamp="78574" />
+</Events>

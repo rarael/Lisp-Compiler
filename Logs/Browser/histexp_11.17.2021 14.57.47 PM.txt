@@ -1,0 +1,16 @@
+11/17/2021 15:09:26 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/portal/site/~rarael
+11/17/2021 15:08:39 PM	COMP 311 - Computer Organization - Course.Care	https://course.care/ng/course/57
+11/17/2021 15:09:26 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container
+11/17/2021 15:09:29 PM	Sakai @ UNC-Chapel Hill : COMP311.001.FA21 : Overview	https://sakai.unc.edu/portal/site/d6392143-7cea-4999-9e03-a9842888b676
+11/17/2021 15:09:58 PM		https://sakai.unc.edu/portal/tool/6126f793-9d2f-4fda-ad02-8fcf0dff8dff/synMainLite?time=1
+11/17/2021 15:09:28 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/portal/site/~rarael#
+11/17/2021 15:12:21 PM	Lecture Slides - Google Drive	https://drive.google.com/drive/folders/1elz_HwtGcJDd_1--NRME07vLrWIS1B1_
+11/17/2021 15:08:41 PM	COMP 311 - Computer Organization - Course.Care	https://course.care/course/57/event/7000/queue#/staff/course/57/event/7000
+11/17/2021 15:08:41 PM	COMP 311 - Computer Organization - Course.Care	https://course.care/course/57/event/7000/queue#/staff/course/57/event/7000?_k=u53btx
+11/17/2021 15:09:24 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJbT8IwGIb%2FytJ7160MkYYtmXAhCQph0wtvTNd9uMatnf06D%2F%2FewZBgYkh61%2FfQ90lnKJq65WnnKr2F9w7QeV9NrZEfLmLSWc2NQIVciwaQO8mz9H7FmR%2Fw1hpnpKmJlyKCdcroudHYNWAzsB9KwuN2FZPKuRY5pSjehPI7LX0oO5pVqihMDa7yEQ3dhzK6WWc58Rb9K5QW%2B7wzN5qTV5Ut7ct3qoajcQulsiAdzbI18ZaLmLxMonF5M5rK650cA5sWYxnIiEWCSQhHRSR6GWIHS41OaBcTFrDwKuzPJGcBD6acRc%2FE2xw33ipdKv16GUgxiJDf5fnmahjzBBYPQ3oBSWZ7rPxQbM9AX44Vv3RJ8j9LPLGc0bOCoa3lD33icrExtZLfXlrX5nNuQTiISUhoMlj%2B%2FoHkBw%3D%3D&RelayState=ss%3Amem%3Ad8e89c53627417eef233cf22ef5375a882e3d88559c438d19e8295feb20d0ef7&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=LFQIdCoyYXbqli0eW6uQmP0Ei6S8LUMOxZQtjcJDbeuP08yWTY8hVdGLyz%2FbO34bmrADFpmcalq1YeNlJy5tnE366yQmmuPq2J89oHmMuythEFzAgjtIQYx9Had5f%2Fet%2BWjw85jdnZ53x5i4MWbyEx0ftVq%2FX6qcGMaeAS8tKriYt%2FeqGezCN5TliRXYL8uFB3YEPjAI2ZZPaML5T5of%2FfEhPZGVQgyIuQxO1ydwr6vX0u1JsNsV2elY7%2FYYmZHYAR%2FSE19NsnPXCc%2Bv3Dsmq1b0gaUNAC3pMulZReiEDBdU9ZLoo%2F26eKFWX%2F3E2mPQ9wVF2k6%2BvuFkTyA0C37USw%3D%3D
+11/17/2021 15:09:25 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e2s1
+11/17/2021 15:09:36 PM	Sakai @ UNC-Chapel Hill : COMP311.001.FA21 : Announcements	https://sakai.unc.edu/portal/site/d6392143-7cea-4999-9e03-a9842888b676/tool/a9af813a-1d76-40a6-ab8e-d3663e50689f
+11/17/2021 15:09:50 PM	Sakai @ UNC-Chapel Hill : COMP311.001.FA21 : Messages	https://sakai.unc.edu/portal/site/d6392143-7cea-4999-9e03-a9842888b676/tool/cf0064c6-d8b1-491a-accb-daa9922c5ffb
+11/17/2021 15:09:52 PM	Sakai @ UNC-Chapel Hill : COMP311.001.FA21 : Messages	https://sakai.unc.edu/portal/site/d6392143-7cea-4999-9e03-a9842888b676/tool/cf0064c6-d8b1-491a-accb-daa9922c5ffb/privateMsg/pvtMsg
+11/17/2021 15:09:57 PM	Sakai @ UNC-Chapel Hill : COMP311.001.FA21 : Overview	https://sakai.unc.edu/portal/site/d6392143-7cea-4999-9e03-a9842888b676/page/fa04a93e-f4fa-4caf-8c99-055ea77b86e5
+11/17/2021 15:32:08 PM	MARS 4.5 help contents	https://courses.missouristate.edu/KenVollmar/mars/Help/MarsHelpDebugging.html

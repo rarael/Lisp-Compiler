@@ -1,0 +1,1546 @@
+<Events startTimestamp="1637970118069" logVersion="1.0.0.202108012048">
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="640" date="Fri Nov 26 18:41:58 EST 2021" docOffset="862" starttimestamp="1637970118069" timestamp="477" />
+  <Command __id="3" _type="PauseCommand" date="Fri Nov 26 18:42:11 EST 2021" range="10s-20s" starttimestamp="1637970118069" timestamp="13675">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[13195]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="2" _type="ShellCommand" date="Fri Nov 26 18:42:11 EST 2021" starttimestamp="1637970118069" timestamp="13672" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="8" _type="PauseCommand" date="Fri Nov 26 18:42:14 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="16736">
+    <prevType><![CDATA[Terminate]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1753]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="7" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Nov 26 18:42:14 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970118069" timestamp="16735" type="Run" />
+  <Command __id="9" _type="RunCommand" className="/a5/src/a5/RunLisp.java" date="Fri Nov 26 18:42:14 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970118069" timestamp="16736" type="Run" />
+  <Command __id="11" _type="PauseCommand" date="Fri Nov 26 18:42:34 EST 2021" range="10s-20s" starttimestamp="1637970118069" timestamp="36630">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[19894]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="10" _type="ConsoleInput" date="Fri Nov 26 18:42:34 EST 2021" starttimestamp="1637970118069" timestamp="36630" type="Exception">
+    <outputString><![CDATA[(function (lambda (X) X))
+]]></outputString>
+  </Command>
+  <Command __id="12" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Nov 26 18:42:34 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970118069" timestamp="36689" type="Run" />
+  <Command __id="13" _type="ProgramExecutionEvent" className="/a5/src/a5/RunLisp.java" date="Fri Nov 26 18:42:34 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970118069" timestamp="36689" type="Run" />
+  <Command __id="14" _type="ExceptionCommand" date="Fri Nov 26 18:42:34 EST 2021" starttimestamp="1637970118069" timestamp="36695" type="Exception">
+    <exceptionString><![CDATA[Exception in thread "main" java.lang.IllegalStateException: No evaluator registered for operator 'FUNCTION'
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:55)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at main.lisp.interpreter.BasicLispInterpreterController.run(BasicLispInterpreterController.java:29)
+	at main.Main.main(Main.java:31)
+	at a5.RunLisp.main(RunLisp.java:21)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="16" _type="PauseCommand" date="Fri Nov 26 18:42:55 EST 2021" range="20s-30s" starttimestamp="1637970118069" timestamp="57209">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[20514]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="17" _type="MoveCaretCommand" caretOffset="1562" date="Fri Nov 26 18:42:55 EST 2021" docOffset="1611" starttimestamp="1637970118069" timestamp="57420" />
+  <Command __id="19" _type="PauseCommand" date="Fri Nov 26 18:42:58 EST 2021" range="2s-5s" starttimestamp="1637970118069" timestamp="60098">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2678]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="18" _type="MoveCaretCommand" caretOffset="1565" date="Fri Nov 26 18:42:58 EST 2021" docOffset="1614" starttimestamp="1637970118069" timestamp="60098" />
+  <Command __id="21" _type="InsertStringCommand" date="Fri Nov 26 18:42:58 EST 2021" starttimestamp="1637970118069" timestamp="60503" timestamp2="60503">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="22" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.LINE_UP" date="Fri Nov 26 18:42:59 EST 2021" starttimestamp="1637970118069" timestamp="60987" />
+  <Command __id="24" _type="InsertStringCommand" date="Fri Nov 26 18:42:59 EST 2021" starttimestamp="1637970118069" timestamp="61407" timestamp2="61407">
+    <data><![CDATA[	]]></data>
+  </Command>
+  <Command __id="26" _type="PauseCommand" date="Fri Nov 26 18:43:01 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="63276">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[1869]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="25" _type="MoveCaretCommand" caretOffset="1471" date="Fri Nov 26 18:43:01 EST 2021" docOffset="1520" starttimestamp="1637970118069" timestamp="63276" />
+  <Command __id="27" _type="SelectTextCommand" caretOffset="1499" date="Fri Nov 26 18:43:01 EST 2021" end="1499" start="1467" starttimestamp="1637970118069" timestamp="63422" />
+  <Command __id="28" _type="SelectTextCommand" caretOffset="1564" date="Fri Nov 26 18:43:01 EST 2021" end="1564" start="1465" starttimestamp="1637970118069" timestamp="63590" />
+  <Command __id="29" _type="CopyCommand" date="Fri Nov 26 18:43:02 EST 2021" starttimestamp="1637970118069" timestamp="64372" />
+  <Command __id="30" _type="MoveCaretCommand" caretOffset="1566" date="Fri Nov 26 18:43:03 EST 2021" docOffset="1615" starttimestamp="1637970118069" timestamp="65008" />
+  <Command __id="32" _type="PasteCommand" date="Fri Nov 26 18:43:03 EST 2021" starttimestamp="1637970118069" timestamp="65739" />
+  <Command __id="34" _type="PauseCommand" date="Fri Nov 26 18:43:06 EST 2021" range="2s-5s" starttimestamp="1637970118069" timestamp="68423">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[PasteCommand]]></prev>
+    <pause><![CDATA[2684]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="33" _type="MoveCaretCommand" caretOffset="1635" date="Fri Nov 26 18:43:06 EST 2021" docOffset="1684" starttimestamp="1637970118069" timestamp="68423" />
+  <Command __id="36" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:43:06 EST 2021" starttimestamp="1637970118069" timestamp="68743" />
+  <Command __id="38" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:43:06 EST 2021" starttimestamp="1637970118069" timestamp="68921" />
+  <Command __id="40" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:43:07 EST 2021" starttimestamp="1637970118069" timestamp="69060" />
+  <Command __id="42" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:43:07 EST 2021" starttimestamp="1637970118069" timestamp="69222" />
+  <Command __id="44" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:43:07 EST 2021" starttimestamp="1637970118069" timestamp="69430" />
+  <Command __id="46" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:43:07 EST 2021" starttimestamp="1637970118069" timestamp="69548" />
+  <Command __id="48" _type="InsertStringCommand" date="Fri Nov 26 18:43:08 EST 2021" starttimestamp="1637970118069" timestamp="70022" timestamp2="70022">
+    <data><![CDATA[f]]></data>
+  </Command>
+  <Command __id="50" _type="InsertStringCommand" date="Fri Nov 26 18:43:08 EST 2021" starttimestamp="1637970118069" timestamp="70091" timestamp2="70091">
+    <data><![CDATA[u]]></data>
+  </Command>
+  <Command __id="52" _type="InsertStringCommand" date="Fri Nov 26 18:43:08 EST 2021" starttimestamp="1637970118069" timestamp="70169" timestamp2="70169">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="54" _type="InsertStringCommand" date="Fri Nov 26 18:43:08 EST 2021" starttimestamp="1637970118069" timestamp="70464" timestamp2="70464">
+    <data><![CDATA[c]]></data>
+  </Command>
+  <Command __id="56" _type="InsertStringCommand" date="Fri Nov 26 18:43:08 EST 2021" starttimestamp="1637970118069" timestamp="70560" timestamp2="70560">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="58" _type="InsertStringCommand" date="Fri Nov 26 18:43:08 EST 2021" starttimestamp="1637970118069" timestamp="70633" timestamp2="70633">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="60" _type="InsertStringCommand" date="Fri Nov 26 18:43:08 EST 2021" starttimestamp="1637970118069" timestamp="70783" timestamp2="70783">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="98" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:43:13 EST 2021" starttimestamp="1637970118069" timestamp="75628" />
+  <Command __id="99" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:43:13 EST 2021" starttimestamp="1637970118069" timestamp="75649" />
+  <Command __id="101" _type="PauseCommand" date="Fri Nov 26 18:43:22 EST 2021" range="5s-10s" starttimestamp="1637970118069" timestamp="84431">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[8782]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="102" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:43:22 EST 2021" starttimestamp="1637970118069" timestamp="84484" />
+  <Command __id="103" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:43:22 EST 2021" starttimestamp="1637970118069" timestamp="84489" />
+  <Command __id="104" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:43:22 EST 2021" starttimestamp="1637970118069" timestamp="84489" />
+  <Command __id="105" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:43:22 EST 2021" starttimestamp="1637970118069" timestamp="84491" />
+  <Command __id="106" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:43:22 EST 2021" starttimestamp="1637970118069" timestamp="84491" />
+  <Command __id="107" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:43:22 EST 2021" starttimestamp="1637970118069" timestamp="84492" />
+  <Command __id="108" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:43:22 EST 2021" starttimestamp="1637970118069" timestamp="84492" />
+  <Command __id="109" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:43:22 EST 2021" starttimestamp="1637970118069" timestamp="84495" />
+  <Command __id="110" _type="MoveCaretCommand" caretOffset="175" date="Fri Nov 26 18:43:22 EST 2021" docOffset="317" starttimestamp="1637970118069" timestamp="84623" />
+  <Command __id="112" _type="PauseCommand" date="Fri Nov 26 18:43:24 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="86396">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1773]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="114" _type="PauseCommand" date="Fri Nov 26 18:44:49 EST 2021" range="1m-2m" starttimestamp="1637970118069" timestamp="171477">
+    <prevType><![CDATA[Open File]]></prevType>
+    <prev><![CDATA[DiffBasedFileOpenCommand]]></prev>
+    <pause><![CDATA[85081]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="113" _type="ShellCommand" date="Fri Nov 26 18:44:49 EST 2021" starttimestamp="1637970118069" timestamp="171477" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="116" _type="PauseCommand" date="Fri Nov 26 18:44:51 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="173149">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1672]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="115" _type="ShellCommand" date="Fri Nov 26 18:44:51 EST 2021" starttimestamp="1637970118069" timestamp="173149" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="117" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:44:51 EST 2021" starttimestamp="1637970118069" timestamp="173246" />
+  <Command __id="118" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:44:51 EST 2021" starttimestamp="1637970118069" timestamp="173247" />
+  <Command __id="119" _type="ProgramExecutionEvent" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:44:51 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970118069" timestamp="173330" type="Run" />
+  <Command __id="120" _type="RunCommand" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:44:51 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970118069" timestamp="173330" type="Run" />
+  <Command __id="121" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:44:51 EST 2021" starttimestamp="1637970118069" timestamp="173348" />
+  <Command __id="122" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:44:51 EST 2021" starttimestamp="1637970118069" timestamp="173353" />
+  <Command __id="123" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:44:51 EST 2021" starttimestamp="1637970118069" timestamp="173353" />
+  <Command __id="124" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:44:51 EST 2021" starttimestamp="1637970118069" timestamp="173355" />
+  <Command __id="125" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:44:51 EST 2021" starttimestamp="1637970118069" timestamp="173356" />
+  <Command __id="126" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:44:51 EST 2021" starttimestamp="1637970118069" timestamp="173360" />
+  <Command __id="127" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:44:51 EST 2021" starttimestamp="1637970118069" timestamp="173360" />
+  <Command __id="128" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:44:51 EST 2021" starttimestamp="1637970118069" timestamp="173364" />
+  <Command __id="130" _type="PauseCommand" date="Fri Nov 26 18:44:53 EST 2021" range="2s-5s" starttimestamp="1637970118069" timestamp="175600">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2236]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="129" _type="ShellCommand" date="Fri Nov 26 18:44:53 EST 2021" starttimestamp="1637970118069" timestamp="175600" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="132" _type="PauseCommand" date="Fri Nov 26 18:44:56 EST 2021" range="2s-5s" starttimestamp="1637970118069" timestamp="178792">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3192]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="131" _type="ConsoleOutput" date="Fri Nov 26 18:44:56 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="178792" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):24
+Test execution time (ms):2
+]]></outputString>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="134" _type="PauseCommand" date="Fri Nov 26 18:44:57 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="179902">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1109]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="133" _type="ConsoleOutput" date="Fri Nov 26 18:44:57 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="179901" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"24¶Test execution time (ms):2"), Diff(INSERT,"1"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="135" _type="ConsoleOutput" date="Fri Nov 26 18:44:58 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="179995" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):78
+Test execution time (ms):80
+Test execution time (ms):3
+Test execution time (ms):1
+Test execution time (ms):0
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"Test execution time (ms):78¶Test execution time (ms):80¶Test execution time (ms):3¶Test execution time (ms):1¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1¶"), Diff(EQUAL,"Test execution time (ms):1¶")]]]></diff>
+  </Command>
+  <Command __id="137" _type="PauseCommand" date="Fri Nov 26 18:44:59 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="181170">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1175]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="136" _type="ConsoleOutput" date="Fri Nov 26 18:44:59 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="181170" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):78¶Test execution time (ms):80¶Test execution time (ms):3¶"), Diff(EQUAL,"Test execution time (ms):1¶Test execution time (ms):"), Diff(DELETE,"0"), Diff(INSERT,"1"), Diff(EQUAL,"¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1¶")]]]></diff>
+  </Command>
+  <Command __id="139" _type="PauseCommand" date="Fri Nov 26 18:45:00 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="182581">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1411]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="138" _type="ConsoleOutput" date="Fri Nov 26 18:45:00 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="182581" type="ConsoleOutput">
+    <outputString><![CDATA[java.lang.StackOverflowError
+	at environments.EnvironmentImplementation.lookup(EnvironmentImplementation.java:39)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:25)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1"), Diff(INSERT,"java.lang.StackOverflowError¶	at environments.EnvironmentImplementation.lookup(EnvironmentImplementation.java:39)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:25)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="140" _type="ConsoleOutput" date="Fri Nov 26 18:45:00 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="182709" type="ConsoleOutput">
+    <outputString><![CDATA[TimesGeneratorChecker did not pass completely:null%0.0
+
+Test execution time (ms):54
+java.lang.StackOverflowError
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:14)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"java.lang.StackOverflowError¶	at environments.EnvironmentImplementation.lookup(EnvironmentImplementation.java:39)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:25)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)"), Diff(INSERT,"TimesGeneratorChecker did not pass completely:null%0.0¶¶Test execution time (ms):54¶java.lang.StackOverflowError"), Diff(EQUAL,"¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:1"), Diff(DELETE,"5"), Diff(INSERT,"4"), Diff(EQUAL,")¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶")]]]></diff>
+  </Command>
+  <Command __id="142" _type="PauseCommand" date="Fri Nov 26 18:45:02 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="184062">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1353]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="141" _type="ConsoleOutput" date="Fri Nov 26 18:45:02 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="184062" type="ConsoleOutput">
+    <outputString><![CDATA[java.lang.StackOverflowError
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:14)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"TimesGeneratorChecker did not pass completely:null%0.0¶¶Test execution time (ms):54¶"), Diff(EQUAL,"java.lang.StackOverflowError¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:14)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶"), Diff(INSERT,"	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶")]]]></diff>
+  </Command>
+  <Command __id="143" _type="ConsoleOutput" date="Fri Nov 26 18:45:02 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="184093" type="ConsoleOutput">
+    <outputString><![CDATA[	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+LispIsListChecker2 did not pass completely:null%0.0
+
+Test execution time (ms):35
+java.lang.StackOverflowError
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:14)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"java.lang.StackOverflowError¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:14)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶"), Diff(EQUAL,"	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶"), Diff(DELETE,"	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15"), Diff(INSERT,"LispIsListChecker2 did not pass completely:null%0.0¶¶Test execution time (ms):35¶java.lang.StackOverflowError¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:14)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26"), Diff(EQUAL,")¶")]]]></diff>
+  </Command>
+  <Command __id="144" _type="ConsoleOutput" date="Fri Nov 26 18:45:02 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="184198" type="ConsoleOutput">
+    <outputString><![CDATA[	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶"), Diff(EQUAL,"	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶"), Diff(DELETE,"LispIsListChecker2 did not pass completely:null%0.0¶¶Test execution time (ms):35¶java.lang.StackOverflowError¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:14)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26"), Diff(INSERT,"	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32"), Diff(EQUAL,")¶")]]]></diff>
+  </Command>
+  <Command __id="145" _type="ConsoleOutput" date="Fri Nov 26 18:45:02 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="184223" type="ConsoleOutput">
+    <outputString><![CDATA[	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶"), Diff(EQUAL,"	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶"), Diff(INSERT,"	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶")]]]></diff>
+  </Command>
+  <Command __id="146" _type="ConsoleOutput" date="Fri Nov 26 18:45:02 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="184319" type="ConsoleOutput">
+    <outputString><![CDATA[	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶"), Diff(EQUAL,"	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶"), Diff(DELETE,"	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶")]]]></diff>
+  </Command>
+  <Command __id="147" _type="ConsoleOutput" date="Fri Nov 26 18:45:02 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="184345" type="ConsoleOutput">
+    <outputString><![CDATA[	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶"), Diff(EQUAL,"	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶"), Diff(DELETE,"	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶")]]]></diff>
+  </Command>
+  <Command __id="149" _type="PauseCommand" date="Fri Nov 26 18:45:04 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="186228">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1883]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="148" _type="ConsoleOutput" date="Fri Nov 26 18:45:04 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="186228" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp524f19.assignment2.testcases.LispFunctionCheckers.LispIsListChecker@241fec20 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)¶	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)¶	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)¶	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:15)¶	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)"), Diff(INSERT,"Re-running test gradingTools.comp524f19.assignment2.testcases.LispFunctionCheckers.LispIsListChecker@241fec20 . Results may change."), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="151" _type="PauseCommand" date="Fri Nov 26 18:45:20 EST 2021" range="10s-20s" starttimestamp="1637970118069" timestamp="202596">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[16368]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="150" _type="ShellCommand" date="Fri Nov 26 18:45:20 EST 2021" starttimestamp="1637970118069" timestamp="202596" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="153" _type="SelectTextCommand" caretOffset="288" date="Fri Nov 26 18:45:21 EST 2021" end="288" start="239" starttimestamp="1637970118069" timestamp="202938" />
+  <Command __id="155" _type="PauseCommand" date="Fri Nov 26 18:45:31 EST 2021" range="10s-20s" starttimestamp="1637970118069" timestamp="213056">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[10118]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="154" _type="ShellCommand" date="Fri Nov 26 18:45:31 EST 2021" starttimestamp="1637970118069" timestamp="213056" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="157" _type="PauseCommand" date="Fri Nov 26 18:45:32 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="214077">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1021]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="156" _type="ShellCommand" date="Fri Nov 26 18:45:32 EST 2021" starttimestamp="1637970118069" timestamp="214077" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="158" _type="MoveCaretCommand" caretOffset="277" date="Fri Nov 26 18:45:32 EST 2021" docOffset="499" starttimestamp="1637970118069" timestamp="214164" />
+  <Command __id="194" _type="PauseCommand" date="Fri Nov 26 18:45:38 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="220179">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1713]]></pause>
+    <nextType><![CDATA[Debug]]></nextType>
+    <next><![CDATA[RunCommand]]></next>
+  </Command>
+  <Command __id="193" _type="RunCommand" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:45:38 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970118069" timestamp="220179" type="Run" />
+  <Command __id="195" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:38 EST 2021" starttimestamp="1637970118069" timestamp="220278" />
+  <Command __id="196" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:38 EST 2021" starttimestamp="1637970118069" timestamp="220282" />
+  <Command __id="197" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:38 EST 2021" starttimestamp="1637970118069" timestamp="220282" />
+  <Command __id="198" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:38 EST 2021" starttimestamp="1637970118069" timestamp="220283" />
+  <Command __id="199" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:38 EST 2021" starttimestamp="1637970118069" timestamp="220283" />
+  <Command __id="200" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:38 EST 2021" starttimestamp="1637970118069" timestamp="220293" />
+  <Command __id="201" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:38 EST 2021" starttimestamp="1637970118069" timestamp="220293" />
+  <Command __id="202" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:38 EST 2021" starttimestamp="1637970118069" timestamp="220296" />
+  <Command __id="204" _type="PauseCommand" date="Fri Nov 26 18:45:40 EST 2021" range="2s-5s" starttimestamp="1637970118069" timestamp="222345">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2049]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="203" _type="ShellCommand" date="Fri Nov 26 18:45:40 EST 2021" starttimestamp="1637970118069" timestamp="222345" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="209" _type="PauseCommand" date="Fri Nov 26 18:45:43 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="225803">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[1647]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="208" _type="ProgramExecutionEvent" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:45:43 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970118069" timestamp="225803" type="Run" />
+  <Command __id="210" _type="ProgramExecutionEvent" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:45:43 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970118069" timestamp="225803" type="Run" />
+  <Command __id="212" _type="PauseCommand" date="Fri Nov 26 18:45:51 EST 2021" range="5s-10s" starttimestamp="1637970118069" timestamp="233266">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[7463]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="211" _type="ShellCommand" date="Fri Nov 26 18:45:51 EST 2021" starttimestamp="1637970118069" timestamp="233266" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="214" _type="PauseCommand" date="Fri Nov 26 18:45:53 EST 2021" range="2s-5s" starttimestamp="1637970118069" timestamp="235785">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2519]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="213" _type="MoveCaretCommand" caretOffset="295" date="Fri Nov 26 18:45:53 EST 2021" docOffset="517" starttimestamp="1637970118069" timestamp="235785" />
+  <Command __id="216" _type="PauseCommand" date="Fri Nov 26 18:45:55 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="237230">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1445]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="215" _type="SelectTextCommand" caretOffset="286" date="Fri Nov 26 18:45:55 EST 2021" end="297" start="286" starttimestamp="1637970118069" timestamp="237230" />
+  <Command __id="218" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 26 18:45:55 EST 2021" starttimestamp="1637970118069" timestamp="237625" />
+  <Command __id="219" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Fri Nov 26 18:45:56 EST 2021" starttimestamp="1637970118069" timestamp="238544" />
+  <Command __id="220" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:56 EST 2021" starttimestamp="1637970118069" timestamp="238636" />
+  <Command __id="221" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:56 EST 2021" starttimestamp="1637970118069" timestamp="238640" />
+  <Command __id="222" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:56 EST 2021" starttimestamp="1637970118069" timestamp="238640" />
+  <Command __id="223" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:56 EST 2021" starttimestamp="1637970118069" timestamp="238641" />
+  <Command __id="224" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:56 EST 2021" starttimestamp="1637970118069" timestamp="238641" />
+  <Command __id="225" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:56 EST 2021" starttimestamp="1637970118069" timestamp="238642" />
+  <Command __id="226" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:56 EST 2021" starttimestamp="1637970118069" timestamp="238642" />
+  <Command __id="227" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:56 EST 2021" starttimestamp="1637970118069" timestamp="238644" />
+  <Command __id="228" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:56 EST 2021" starttimestamp="1637970118069" timestamp="238644" />
+  <Command __id="229" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:45:56 EST 2021" starttimestamp="1637970118069" timestamp="238655" />
+  <Command __id="236" _type="PauseCommand" date="Fri Nov 26 18:46:00 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="242228">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[1614]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ProgramExecutionEvent]]></next>
+  </Command>
+  <Command __id="235" _type="ProgramExecutionEvent" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:46:00 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970118069" timestamp="242228" type="Run" />
+  <Command __id="237" _type="RunCommand" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:46:00 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970118069" timestamp="242228" type="Run" />
+  <Command __id="238" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:46:00 EST 2021" starttimestamp="1637970118069" timestamp="242318" />
+  <Command __id="239" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:46:00 EST 2021" starttimestamp="1637970118069" timestamp="242322" />
+  <Command __id="240" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:46:00 EST 2021" starttimestamp="1637970118069" timestamp="242322" />
+  <Command __id="241" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:46:00 EST 2021" starttimestamp="1637970118069" timestamp="242323" />
+  <Command __id="242" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:46:00 EST 2021" starttimestamp="1637970118069" timestamp="242323" />
+  <Command __id="243" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:46:00 EST 2021" starttimestamp="1637970118069" timestamp="242324" />
+  <Command __id="244" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:46:00 EST 2021" starttimestamp="1637970118069" timestamp="242324" />
+  <Command __id="245" _type="EclipseCommand" commandID="" date="Fri Nov 26 18:46:00 EST 2021" starttimestamp="1637970118069" timestamp="242329" />
+  <Command __id="247" _type="PauseCommand" date="Fri Nov 26 18:46:02 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="244301">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1972]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="246" _type="ShellCommand" date="Fri Nov 26 18:46:02 EST 2021" starttimestamp="1637970118069" timestamp="244301" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="249" _type="PauseCommand" date="Fri Nov 26 18:46:07 EST 2021" range="2s-5s" starttimestamp="1637970118069" timestamp="249181">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4880]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="248" _type="ExceptionCommand" date="Fri Nov 26 18:46:07 EST 2021" starttimestamp="1637970118069" timestamp="249181" type="Exception">
+    <exceptionString><![CDATA[Test execution time (ms):15
+Test execution time (ms):4
+Test execution time (ms):7
+Test execution time (ms):60
+java.lang.ClassCastException: class a5.VariableEval cannot be cast to class main.lisp.evaluator.function.Function (a5.VariableEval and main.lisp.evaluator.function.Function are in unnamed module of loader 'app')
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:26)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="250" _type="ConsoleOutput" date="Fri Nov 26 18:46:07 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="249306" type="ConsoleOutput">
+    <outputString><![CDATA[	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4556)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):15¶Test execution time (ms):4¶Test execution time (ms):8"), Diff(INSERT,"	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)¶	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)¶	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)¶	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)¶	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)¶	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)¶	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)¶	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)¶	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)¶	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)¶	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)¶	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)¶	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)¶	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)¶	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)¶	at java.desktop/java.awt.Component.processEvent(Component.java:6400)¶	at java.desktop/java.awt.Container.processEvent(Container.java:2263)¶	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)¶	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)¶	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)¶	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)¶	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4556)¶	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)¶	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)¶	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)¶	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)¶	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)¶	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)¶	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)¶	at java.base/java.security.AccessController.doPrivileged(Native Method)¶	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)¶	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)¶	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)¶	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)¶	at java.base/java.security.AccessController.doPrivileged(Native Method)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="252" _type="PauseCommand" date="Fri Nov 26 18:46:13 EST 2021" range="5s-10s" starttimestamp="1637970118069" timestamp="255257">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[5951]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="251" _type="ShellCommand" date="Fri Nov 26 18:46:13 EST 2021" starttimestamp="1637970118069" timestamp="255257" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="254" _type="PauseCommand" date="Fri Nov 26 18:46:20 EST 2021" range="5s-10s" starttimestamp="1637970118069" timestamp="262143">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[6886]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="253" _type="ShellCommand" date="Fri Nov 26 18:46:20 EST 2021" starttimestamp="1637970118069" timestamp="262143" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="256" _type="PauseCommand" date="Fri Nov 26 18:46:21 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="263215">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1072]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="255" _type="ShellCommand" date="Fri Nov 26 18:46:21 EST 2021" starttimestamp="1637970118069" timestamp="263215" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="258" _type="MoveCaretCommand" caretOffset="11" date="Fri Nov 26 18:46:21 EST 2021" docOffset="11" starttimestamp="1637970118069" timestamp="263313" />
+  <Command __id="260" _type="MoveCaretCommand" caretOffset="695" date="Fri Nov 26 18:46:22 EST 2021" docOffset="917" starttimestamp="1637970118069" timestamp="264037" />
+  <Command __id="262" _type="PauseCommand" date="Fri Nov 26 18:46:51 EST 2021" range="20s-30s" starttimestamp="1637970118069" timestamp="293226">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[29189]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="261" _type="SelectTextCommand" caretOffset="0" date="Fri Nov 26 18:46:51 EST 2021" end="380" start="0" starttimestamp="1637970118069" timestamp="293226" />
+  <Command __id="264" _type="PauseCommand" date="Fri Nov 26 18:46:52 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="294639">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[1413]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="263" _type="ShellCommand" date="Fri Nov 26 18:46:52 EST 2021" starttimestamp="1637970118069" timestamp="294639" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="266" _type="PauseCommand" date="Fri Nov 26 18:46:55 EST 2021" range="2s-5s" starttimestamp="1637970118069" timestamp="297021">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2382]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="265" _type="ConsoleOutput" date="Fri Nov 26 18:46:55 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="297021" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):0
+Test execution time (ms):1
+Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)¶	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)¶	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)¶	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)¶	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)¶	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)¶	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)¶	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)¶	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)¶	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)¶	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)¶	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)¶	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)¶	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)¶	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)¶	at java.desktop/java.awt.Component.processEvent(Component.java:6400)¶	at java.desktop/java.awt.Container.processEvent(Container.java:2263)¶	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)¶	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)¶	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)¶	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)¶	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4556)¶	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)¶	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)¶	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)¶	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)¶	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)¶	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)¶	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)¶	at java.base/java.security.AccessController.doPrivileged(Native Method)¶	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)¶	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)¶	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)¶	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)¶	at java.base/java.security.AccessController.doPrivileged(Native Method)"), Diff(INSERT,"Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="267" _type="ShellCommand" date="Fri Nov 26 18:46:55 EST 2021" starttimestamp="1637970118069" timestamp="297061" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="269" _type="PauseCommand" date="Fri Nov 26 18:46:56 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="298182">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1121]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="268" _type="ShellCommand" date="Fri Nov 26 18:46:56 EST 2021" starttimestamp="1637970118069" timestamp="298182" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="270" _type="ExceptionCommand" date="Fri Nov 26 18:46:56 EST 2021" starttimestamp="1637970118069" timestamp="298794" type="Exception">
+    <exceptionString><![CDATA[java.lang.ClassCastException: class a5.VariableEval cannot be cast to class main.lisp.evaluator.function.Function (a5.VariableEval and main.lisp.evaluator.function.Function are in unnamed module of loader 'app')
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:26)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="271" _type="ExceptionCommand" date="Fri Nov 26 18:46:56 EST 2021" starttimestamp="1637970118069" timestamp="298822" type="Exception">
+    <exceptionString><![CDATA[	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+java.lang.ClassCastException: class a5.VariableEval cannot be cast to class main.lisp.evaluator.function.Function (a5.VariableEval and main.lisp.evaluator.function.Function are in unnamed module of loader 'app')
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:26)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="272" _type="ConsoleOutput" date="Fri Nov 26 18:46:56 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="298882" type="ConsoleOutput">
+    <outputString><![CDATA[	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4556)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1"), Diff(INSERT,"	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)¶	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)¶	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)¶	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)¶	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)¶	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)¶	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)¶	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)¶	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)¶	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)¶	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)¶	at java.desktop/java.awt.Component.processEvent(Component.java:6400)¶	at java.desktop/java.awt.Container.processEvent(Container.java:2263)¶	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)¶	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)¶	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)¶	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)¶	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4556)¶	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)¶	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)¶	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)¶	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)¶	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)¶	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)¶	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)¶	at java.base/java.security.AccessController.doPrivileged(Native Method)¶	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)¶	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)¶	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)¶	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)¶	at java.base/java.security.AccessController.doPrivileged(Native Method)¶	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)¶	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)¶	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)¶	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="273" _type="ConsoleOutput" date="Fri Nov 26 18:46:57 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="298959" type="ConsoleOutput">
+    <outputString><![CDATA[	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)¶	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)¶	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)¶	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)¶	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)¶	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)¶	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)¶	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)¶	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)¶	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)¶	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)¶	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)¶	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)¶	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)¶	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)¶"), Diff(EQUAL,"	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)¶	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)¶	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)¶	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)¶	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)¶	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)¶	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)¶	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)¶	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)¶	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)¶	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)¶	at java.desktop/java.awt.Component.processEvent(Component.java:6400)¶	at java.desktop/java.awt.Container.processEvent(Container.java:2263)¶	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)¶	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)¶"), Diff(DELETE,"	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)¶	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)¶	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4556)¶	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)¶	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)¶	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)¶	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)¶	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)¶	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)¶	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)¶	at java.base/java.security.AccessController.doPrivileged(Native Method)¶	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)¶	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)¶	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)¶	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)¶	at java.base/java.security.AccessController.doPrivileged(Native Method)¶	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)¶	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)¶	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)¶	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)¶")]]]></diff>
+  </Command>
+  <Command __id="274" _type="ExceptionCommand" date="Fri Nov 26 18:46:57 EST 2021" starttimestamp="1637970118069" timestamp="298984" type="Exception">
+    <exceptionString><![CDATA[	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+java.lang.ClassCastException: class a5.VariableEval cannot be cast to class main.lisp.evaluator.function.Function (a5.VariableEval and main.lisp.evaluator.function.Function are in unnamed module of loader 'app')
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:26)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="276" _type="PauseCommand" date="Fri Nov 26 18:46:59 EST 2021" range="2s-5s" starttimestamp="1637970118069" timestamp="301132">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[2148]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="275" _type="ShellCommand" date="Fri Nov 26 18:46:59 EST 2021" starttimestamp="1637970118069" timestamp="301132" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="278" _type="PauseCommand" date="Fri Nov 26 18:47:03 EST 2021" range="2s-5s" starttimestamp="1637970118069" timestamp="305295">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4163]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="277" _type="ShellCommand" date="Fri Nov 26 18:47:03 EST 2021" starttimestamp="1637970118069" timestamp="305295" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="279" _type="ConsoleOutput" date="Fri Nov 26 18:47:03 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="305613" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):0
+Test execution time (ms):1
+Test execution time (ms):0
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)¶	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)¶	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)¶	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)¶	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)¶	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)¶	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)¶	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)¶	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)¶	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)¶	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)¶	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)¶	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)¶	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)¶	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)¶	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)¶	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)¶	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)¶	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)¶	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)¶	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)¶	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)¶	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)¶	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)¶	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)¶	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)¶	at java.desktop/java.awt.Component.processEvent(Component.java:6400)¶	at java.desktop/java.awt.Container.processEvent(Container.java:2263)¶	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)¶	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)"), Diff(INSERT,"Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="281" _type="PauseCommand" date="Fri Nov 26 18:47:05 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="307137">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1524]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="280" _type="ConsoleOutput" date="Fri Nov 26 18:47:05 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="307137" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):0
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):1¶Test execution time (ms):0¶"), Diff(DELETE,"Test execution time (ms):1¶Test execution time (ms):0¶")]]]></diff>
+  </Command>
+  <Command __id="283" _type="PauseCommand" date="Fri Nov 26 18:47:06 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="308592">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1455]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="282" _type="ExceptionCommand" date="Fri Nov 26 18:47:06 EST 2021" starttimestamp="1637970118069" timestamp="308592" type="Exception">
+    <exceptionString><![CDATA[java.lang.ClassCastException: class a5.VariableEval cannot be cast to class main.lisp.evaluator.function.Function (a5.VariableEval and main.lisp.evaluator.function.Function are in unnamed module of loader 'app')
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:26)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="285" _type="PauseCommand" date="Fri Nov 26 18:47:08 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="309984">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[1392]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="284" _type="ExceptionCommand" date="Fri Nov 26 18:47:08 EST 2021" starttimestamp="1637970118069" timestamp="309984" type="Exception">
+    <exceptionString><![CDATA[java.lang.IllegalStateException: No evaluator registered for operator 'LET'
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:55)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="287" _type="PauseCommand" date="Fri Nov 26 18:47:13 EST 2021" range="5s-10s" starttimestamp="1637970118069" timestamp="315530">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[5546]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="286" _type="ConsoleOutput" date="Fri Nov 26 18:47:13 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="315530" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):0
+Test execution time (ms):1
+Test execution time (ms):0
+Test execution time (ms):0
+Test execution time (ms):0
+Test execution time (ms):1
+Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"1¶Test execution time (ms):1"), Diff(INSERT,"0"), Diff(EQUAL,"¶Test execution time (ms):1¶Test execution time (ms):0¶"), Diff(INSERT,"Test execution time (ms):0¶Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):1¶")]]]></diff>
+  </Command>
+  <Command __id="289" _type="PauseCommand" date="Fri Nov 26 18:47:14 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="316734">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1204]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="288" _type="ConsoleOutput" date="Fri Nov 26 18:47:14 EST 2021" overflow="false" starttimestamp="1637970118069" timestamp="316734" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):0
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):0¶Test execution time (ms):1¶Test execution time (ms):"), Diff(DELETE,"0¶Test execution time (ms):0¶Test execution time (ms):0"), Diff(INSERT,"1"), Diff(EQUAL,"¶Test execution time (ms):1¶Test execution time (ms):1¶")]]]></diff>
+  </Command>
+  <Command __id="290" _type="ExceptionCommand" date="Fri Nov 26 18:47:15 EST 2021" starttimestamp="1637970118069" timestamp="317725" type="Exception">
+    <exceptionString><![CDATA[java.lang.ClassCastException: class a5.VariableEval cannot be cast to class main.lisp.evaluator.function.Function (a5.VariableEval and main.lisp.evaluator.function.Function are in unnamed module of loader 'app')
+	at evaluators.FuncallEvaluator.eval(FuncallEvaluator.java:26)
+	at evaluators.LambdaSExpressionEvaluator.basicEvaluator(LambdaSExpressionEvaluator.java:57)
+	at evaluators.LambdaSExpressionEvaluator.eval(LambdaSExpressionEvaluator.java:32)
+	at main.lisp.parser.terms.BasicExpression.eval(BasicExpression.java:26)
+	at main.lisp.interpreter.ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.newInput(ObservableLispInterpreterWithEnvironmentAndLazyEvaluation.java:92)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.provideInput(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:100)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:133)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionInputterAndEvaluatorRegisterer.evaluate(AbstractLispExpressionInputterAndEvaluatorRegisterer.java:65)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.compareOutput(AbstractLispExpressionChecker.java:21)
+	at gradingTools.comp524f19.assignment2.testcases.AbstractLispExpressionChecker.test(AbstractLispExpressionChecker.java:47)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at grader.basics.testcase.PassFailJUnitTestCase.defaultTest(PassFailJUnitTestCase.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="292" _type="PauseCommand" date="Fri Nov 26 18:47:31 EST 2021" range="10s-20s" starttimestamp="1637970118069" timestamp="333109">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[15384]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="291" _type="ShellCommand" date="Fri Nov 26 18:47:31 EST 2021" starttimestamp="1637970118069" timestamp="333109" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="293" _type="ProgramExecutionEvent" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:47:31 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970118069" timestamp="333767" type="Run" />
+  <Command __id="294" _type="ProgramExecutionEvent" className="/a5/src/a5/LocalChecks.java" date="Fri Nov 26 18:47:31 EST 2021" kind="HitBreakPoint" projectName="a5" starttimestamp="1637970118069" timestamp="333767" type="Run" />
+  <Command __id="296" _type="PauseCommand" date="Fri Nov 26 18:48:00 EST 2021" range="20s-30s" starttimestamp="1637970118069" timestamp="362551">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[28784]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="298" _type="MoveCaretCommand" caretOffset="1650" date="Fri Nov 26 18:48:01 EST 2021" docOffset="1699" starttimestamp="1637970118069" timestamp="363583" />
+  <Command __id="300" _type="PauseCommand" date="Fri Nov 26 18:48:02 EST 2021" range="1s-2s" starttimestamp="1637970118069" timestamp="364608">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1025]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="301" _type="SelectTextCommand" caretOffset="0" date="Fri Nov 26 18:48:02 EST 2021" end="380" start="0" starttimestamp="1637970118069" timestamp="364682" />
+  <Command __id="302" _type="MoveCaretCommand" caretOffset="357" date="Fri Nov 26 18:48:03 EST 2021" docOffset="579" starttimestamp="1637970118069" timestamp="365595" />
+  <Command __id="304" _type="PauseCommand" date="Fri Nov 26 18:48:24 EST 2021" range="20s-30s" starttimestamp="1637970118069" timestamp="386381">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[20786]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="303" _type="ShellCommand" date="Fri Nov 26 18:48:24 EST 2021" starttimestamp="1637970118069" timestamp="386381" type="ECLIPSE_LOST_FOCUS" />
+</Events>

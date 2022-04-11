@@ -1,0 +1,1471 @@
+<Events startTimestamp="1636127927059" logVersion="1.0.0.202108012048">
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="1009" date="Fri Nov 05 11:58:47 EDT 2021" docOffset="1053" starttimestamp="1636127927059" timestamp="209" />
+  <Command __id="3" _type="PauseCommand" date="Fri Nov 05 11:59:00 EDT 2021" range="10s-20s" starttimestamp="1636127927059" timestamp="13487">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[13275]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="2" _type="ShellCommand" date="Fri Nov 05 11:59:00 EDT 2021" starttimestamp="1636127927059" timestamp="13484" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="5" _type="PauseCommand" date="Fri Nov 05 11:59:22 EDT 2021" range="20s-30s" starttimestamp="1636127927059" timestamp="35545">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[22061]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="4" _type="ShellCommand" date="Fri Nov 05 11:59:22 EDT 2021" starttimestamp="1636127927059" timestamp="35545" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="7" _type="PauseCommand" date="Fri Nov 05 11:59:23 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="36822">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1277]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6" _type="ShellCommand" date="Fri Nov 05 11:59:23 EDT 2021" starttimestamp="1636127927059" timestamp="36822" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="9" _type="PauseCommand" date="Fri Nov 05 11:59:27 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="40649">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3827]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="8" _type="ShellCommand" date="Fri Nov 05 11:59:27 EDT 2021" starttimestamp="1636127927059" timestamp="40649" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="11" _type="PauseCommand" date="Fri Nov 05 11:59:33 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="46663">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[6014]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="10" _type="ShellCommand" date="Fri Nov 05 11:59:33 EDT 2021" starttimestamp="1636127927059" timestamp="46663" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="13" _type="PauseCommand" date="Fri Nov 05 11:59:53 EDT 2021" range="10s-20s" starttimestamp="1636127927059" timestamp="66016">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[19352]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="12" _type="ShellCommand" date="Fri Nov 05 11:59:53 EDT 2021" starttimestamp="1636127927059" timestamp="66015" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="15" _type="PauseCommand" date="Fri Nov 05 12:00:11 EDT 2021" range="10s-20s" starttimestamp="1636127927059" timestamp="84505">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[18490]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="16" _type="SelectTextCommand" caretOffset="596" date="Fri Nov 05 12:00:11 EDT 2021" end="596" start="194" starttimestamp="1636127927059" timestamp="84586" />
+  <Command __id="18" _type="PauseCommand" date="Fri Nov 05 12:00:12 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="85642">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[1056]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="17" _type="MoveCaretCommand" caretOffset="192" date="Fri Nov 05 12:00:12 EDT 2021" docOffset="236" starttimestamp="1636127927059" timestamp="85642" />
+  <Command __id="20" _type="PauseCommand" date="Fri Nov 05 12:00:13 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="86649">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1007]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="21" _type="MoveCaretCommand" caretOffset="1009" date="Fri Nov 05 12:00:13 EDT 2021" docOffset="1053" starttimestamp="1636127927059" timestamp="86770" />
+  <Command __id="23" _type="PauseCommand" date="Fri Nov 05 12:00:33 EDT 2021" range="10s-20s" starttimestamp="1636127927059" timestamp="106751">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[19981]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="22" _type="SelectTextCommand" caretOffset="906" date="Fri Nov 05 12:00:33 EDT 2021" end="1046" start="906" starttimestamp="1636127927059" timestamp="106751" />
+  <Command __id="24" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:00:34 EDT 2021" starttimestamp="1636127927059" timestamp="107148" />
+  <Command __id="25" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:00:34 EDT 2021" starttimestamp="1636127927059" timestamp="107354" />
+  <Command __id="27" _type="PauseCommand" date="Fri Nov 05 12:00:37 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="110015">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2661]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="26" _type="MoveCaretCommand" caretOffset="860" date="Fri Nov 05 12:00:37 EDT 2021" docOffset="904" starttimestamp="1636127927059" timestamp="110015" />
+  <Command __id="29" _type="PauseCommand" date="Fri Nov 05 12:00:40 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="113823">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3808]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="28" _type="MoveCaretCommand" caretOffset="994" date="Fri Nov 05 12:00:40 EDT 2021" docOffset="1038" starttimestamp="1636127927059" timestamp="113823" />
+  <Command __id="31" _type="PauseCommand" date="Fri Nov 05 12:00:42 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="115651">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1828]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[InsertStringCommand]]></next>
+  </Command>
+  <Command __id="30" _type="InsertStringCommand" date="Fri Nov 05 12:00:42 EDT 2021" starttimestamp="1636127927059" timestamp="115651" timestamp2="115651">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="32" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:00:43 EDT 2021" starttimestamp="1636127927059" timestamp="116207" />
+  <Command __id="33" _type="InsertStringCommand" date="Fri Nov 05 12:00:43 EDT 2021" starttimestamp="1636127927059" timestamp="116495" timestamp2="116495">
+    <data><![CDATA[@]]></data>
+  </Command>
+  <Command __id="34" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:00:43 EDT 2021" starttimestamp="1636127927059" timestamp="116903" />
+  <Command __id="35" _type="InsertStringCommand" date="Fri Nov 05 12:00:44 EDT 2021" starttimestamp="1636127927059" timestamp="117305" timestamp2="117305">
+    <data><![CDATA[	]]></data>
+  </Command>
+  <Command __id="36" _type="InsertStringCommand" date="Fri Nov 05 12:00:45 EDT 2021" starttimestamp="1636127927059" timestamp="118142" timestamp2="118142">
+    <data><![CDATA[@]]></data>
+  </Command>
+  <Command __id="37" _type="InsertStringCommand" date="Fri Nov 05 12:00:45 EDT 2021" starttimestamp="1636127927059" timestamp="118607" timestamp2="118607">
+    <data><![CDATA[O]]></data>
+  </Command>
+  <Command __id="38" _type="InsertStringCommand" date="Fri Nov 05 12:00:45 EDT 2021" starttimestamp="1636127927059" timestamp="118804" timestamp2="118804">
+    <data><![CDATA[v]]></data>
+  </Command>
+  <Command __id="39" _type="InsertStringCommand" date="Fri Nov 05 12:00:45 EDT 2021" starttimestamp="1636127927059" timestamp="118883" timestamp2="118883">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="40" _type="InsertStringCommand" date="Fri Nov 05 12:00:46 EDT 2021" starttimestamp="1636127927059" timestamp="118988" timestamp2="118988">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="41" _type="InsertStringCommand" date="Fri Nov 05 12:00:46 EDT 2021" starttimestamp="1636127927059" timestamp="119180" timestamp2="119180">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="42" _type="InsertStringCommand" date="Fri Nov 05 12:00:46 EDT 2021" starttimestamp="1636127927059" timestamp="119270" timestamp2="119270">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="43" _type="InsertStringCommand" date="Fri Nov 05 12:00:46 EDT 2021" starttimestamp="1636127927059" timestamp="119389" timestamp2="119389">
+    <data><![CDATA[d]]></data>
+  </Command>
+  <Command __id="44" _type="InsertStringCommand" date="Fri Nov 05 12:00:46 EDT 2021" starttimestamp="1636127927059" timestamp="119450" timestamp2="119450">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="46" _type="PauseCommand" date="Fri Nov 05 12:00:47 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="120779">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[1329]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="45" _type="ShellCommand" date="Fri Nov 05 12:00:47 EDT 2021" starttimestamp="1636127927059" timestamp="120779" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="48" _type="PauseCommand" date="Fri Nov 05 12:01:00 EDT 2021" range="10s-20s" starttimestamp="1636127927059" timestamp="133405">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[12626]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="47" _type="ShellCommand" date="Fri Nov 05 12:01:00 EDT 2021" starttimestamp="1636127927059" timestamp="133405" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="50" _type="PauseCommand" date="Fri Nov 05 12:01:01 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="134759">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1354]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[InsertStringCommand]]></next>
+  </Command>
+  <Command __id="49" _type="InsertStringCommand" date="Fri Nov 05 12:01:01 EDT 2021" starttimestamp="1636127927059" timestamp="134759" timestamp2="134759">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="51" _type="InsertStringCommand" date="Fri Nov 05 12:01:02 EDT 2021" starttimestamp="1636127927059" timestamp="135144" timestamp2="135144">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="52" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:01:02 EDT 2021" starttimestamp="1636127927059" timestamp="135528" />
+  <Command __id="53" _type="InsertStringCommand" date="Fri Nov 05 12:01:02 EDT 2021" starttimestamp="1636127927059" timestamp="135811" timestamp2="135811">
+    <data><![CDATA[p]]></data>
+  </Command>
+  <Command __id="54" _type="InsertStringCommand" date="Fri Nov 05 12:01:03 EDT 2021" starttimestamp="1636127927059" timestamp="136066" timestamp2="136066">
+    <data><![CDATA[u]]></data>
+  </Command>
+  <Command __id="55" _type="InsertStringCommand" date="Fri Nov 05 12:01:03 EDT 2021" starttimestamp="1636127927059" timestamp="136242" timestamp2="136242">
+    <data><![CDATA[b]]></data>
+  </Command>
+  <Command __id="56" _type="InsertStringCommand" date="Fri Nov 05 12:01:03 EDT 2021" starttimestamp="1636127927059" timestamp="136409" timestamp2="136409">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="57" _type="InsertStringCommand" date="Fri Nov 05 12:01:03 EDT 2021" starttimestamp="1636127927059" timestamp="136487" timestamp2="136487">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="58" _type="InsertStringCommand" date="Fri Nov 05 12:01:03 EDT 2021" starttimestamp="1636127927059" timestamp="136660" timestamp2="136660">
+    <data><![CDATA[c]]></data>
+  </Command>
+  <Command __id="59" _type="InsertStringCommand" date="Fri Nov 05 12:01:03 EDT 2021" starttimestamp="1636127927059" timestamp="136803" timestamp2="136803">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="60" _type="InsertStringCommand" date="Fri Nov 05 12:01:04 EDT 2021" starttimestamp="1636127927059" timestamp="137019" timestamp2="137019">
+    <data><![CDATA[S]]></data>
+  </Command>
+  <Command __id="61" _type="InsertStringCommand" date="Fri Nov 05 12:01:04 EDT 2021" starttimestamp="1636127927059" timestamp="137141" timestamp2="137141">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="62" _type="InsertStringCommand" date="Fri Nov 05 12:01:04 EDT 2021" starttimestamp="1636127927059" timestamp="137236" timestamp2="137236">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="63" _type="InsertStringCommand" date="Fri Nov 05 12:01:04 EDT 2021" starttimestamp="1636127927059" timestamp="137350" timestamp2="137350">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="64" _type="InsertStringCommand" date="Fri Nov 05 12:01:04 EDT 2021" starttimestamp="1636127927059" timestamp="137445" timestamp2="137445">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="65" _type="InsertStringCommand" date="Fri Nov 05 12:01:04 EDT 2021" starttimestamp="1636127927059" timestamp="137557" timestamp2="137557">
+    <data><![CDATA[g]]></data>
+  </Command>
+  <Command __id="66" _type="InsertStringCommand" date="Fri Nov 05 12:01:04 EDT 2021" starttimestamp="1636127927059" timestamp="137664" timestamp2="137664">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="67" _type="InsertStringCommand" date="Fri Nov 05 12:01:04 EDT 2021" starttimestamp="1636127927059" timestamp="137767" timestamp2="137767">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="68" _type="InsertStringCommand" date="Fri Nov 05 12:01:04 EDT 2021" starttimestamp="1636127927059" timestamp="137872" timestamp2="137872">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="69" _type="InsertStringCommand" date="Fri Nov 05 12:01:05 EDT 2021" starttimestamp="1636127927059" timestamp="138320" timestamp2="138320">
+    <data><![CDATA[S]]></data>
+  </Command>
+  <Command __id="70" _type="InsertStringCommand" date="Fri Nov 05 12:01:05 EDT 2021" starttimestamp="1636127927059" timestamp="138442" timestamp2="138442">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="71" _type="InsertStringCommand" date="Fri Nov 05 12:01:05 EDT 2021" starttimestamp="1636127927059" timestamp="138547" timestamp2="138547">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="72" _type="InsertStringCommand" date="Fri Nov 05 12:01:05 EDT 2021" starttimestamp="1636127927059" timestamp="138625" timestamp2="138625">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="73" _type="InsertStringCommand" date="Fri Nov 05 12:01:05 EDT 2021" starttimestamp="1636127927059" timestamp="138692" timestamp2="138692">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="74" _type="InsertStringCommand" date="Fri Nov 05 12:01:05 EDT 2021" starttimestamp="1636127927059" timestamp="138794" timestamp2="138794">
+    <data><![CDATA[g]]></data>
+  </Command>
+  <Command __id="75" _type="InsertStringCommand" date="Fri Nov 05 12:01:06 EDT 2021" starttimestamp="1636127927059" timestamp="139004" timestamp2="139004">
+    <data><![CDATA[A]]></data>
+  </Command>
+  <Command __id="76" _type="InsertStringCommand" date="Fri Nov 05 12:01:06 EDT 2021" starttimestamp="1636127927059" timestamp="139181" timestamp2="139181">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="77" _type="InsertStringCommand" date="Fri Nov 05 12:01:06 EDT 2021" starttimestamp="1636127927059" timestamp="139633" timestamp2="139633">
+    <data><![CDATA[L]]></data>
+  </Command>
+  <Command __id="78" _type="InsertStringCommand" date="Fri Nov 05 12:01:06 EDT 2021" starttimestamp="1636127927059" timestamp="139844" timestamp2="139844">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="79" _type="InsertStringCommand" date="Fri Nov 05 12:01:07 EDT 2021" starttimestamp="1636127927059" timestamp="139945" timestamp2="139945">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="80" _type="InsertStringCommand" date="Fri Nov 05 12:01:07 EDT 2021" starttimestamp="1636127927059" timestamp="140025" timestamp2="140025">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="81" _type="InsertStringCommand" date="Fri Nov 05 12:01:07 EDT 2021" starttimestamp="1636127927059" timestamp="140336" timestamp2="140336">
+    <data><![CDATA[H]]></data>
+  </Command>
+  <Command __id="82" _type="InsertStringCommand" date="Fri Nov 05 12:01:07 EDT 2021" starttimestamp="1636127927059" timestamp="140457" timestamp2="140457">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="83" _type="InsertStringCommand" date="Fri Nov 05 12:01:07 EDT 2021" starttimestamp="1636127927059" timestamp="140588" timestamp2="140588">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="84" _type="InsertStringCommand" date="Fri Nov 05 12:01:07 EDT 2021" starttimestamp="1636127927059" timestamp="140768" timestamp2="140768">
+    <data><![CDATA[p]]></data>
+  </Command>
+  <Command __id="85" _type="InsertStringCommand" date="Fri Nov 05 12:01:07 EDT 2021" starttimestamp="1636127927059" timestamp="140876" timestamp2="140876">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="86" _type="InsertStringCommand" date="Fri Nov 05 12:01:08 EDT 2021" starttimestamp="1636127927059" timestamp="140974" timestamp2="140974">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="87" _type="InsertStringCommand" date="Fri Nov 05 12:01:08 EDT 2021" starttimestamp="1636127927059" timestamp="141318" timestamp2="141318">
+    <data><![CDATA[(]]></data>
+  </Command>
+  <Command __id="88" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Fri Nov 05 12:01:08 EDT 2021" starttimestamp="1636127927059" timestamp="141911" />
+  <Command __id="89" _type="InsertStringCommand" date="Fri Nov 05 12:01:09 EDT 2021" starttimestamp="1636127927059" timestamp="142224" timestamp2="142224">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="90" _type="InsertStringCommand" date="Fri Nov 05 12:01:09 EDT 2021" starttimestamp="1636127927059" timestamp="142608" timestamp2="142608">
+    <data><![CDATA[{]]></data>
+  </Command>
+  <Command __id="91" _type="InsertStringCommand" date="Fri Nov 05 12:01:09 EDT 2021" starttimestamp="1636127927059" timestamp="142861" timestamp2="142861">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="93" _type="PauseCommand" date="Fri Nov 05 12:01:11 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="144454">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[1593]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[InsertStringCommand]]></next>
+  </Command>
+  <Command __id="92" _type="InsertStringCommand" date="Fri Nov 05 12:01:11 EDT 2021" starttimestamp="1636127927059" timestamp="144454" timestamp2="144454">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="94" _type="InsertStringCommand" date="Fri Nov 05 12:01:11 EDT 2021" starttimestamp="1636127927059" timestamp="144551" timestamp2="144551">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="95" _type="InsertStringCommand" date="Fri Nov 05 12:01:11 EDT 2021" starttimestamp="1636127927059" timestamp="144672" timestamp2="144672">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="96" _type="InsertStringCommand" date="Fri Nov 05 12:01:11 EDT 2021" starttimestamp="1636127927059" timestamp="144782" timestamp2="144782">
+    <data><![CDATA[u]]></data>
+  </Command>
+  <Command __id="97" _type="InsertStringCommand" date="Fri Nov 05 12:01:11 EDT 2021" starttimestamp="1636127927059" timestamp="144873" timestamp2="144873">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="98" _type="InsertStringCommand" date="Fri Nov 05 12:01:12 EDT 2021" starttimestamp="1636127927059" timestamp="145247" timestamp2="145247">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="99" _type="InsertStringCommand" date="Fri Nov 05 12:01:12 EDT 2021" starttimestamp="1636127927059" timestamp="145390" timestamp2="145390">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="100" _type="InsertStringCommand" date="Fri Nov 05 12:01:13 EDT 2021" starttimestamp="1636127927059" timestamp="145976" timestamp2="145976">
+    <data><![CDATA["]]></data>
+  </Command>
+  <Command __id="101" _type="InsertStringCommand" date="Fri Nov 05 12:01:14 EDT 2021" starttimestamp="1636127927059" timestamp="146972" timestamp2="146972">
+    <data><![CDATA["]]></data>
+  </Command>
+  <Command __id="102" _type="InsertStringCommand" date="Fri Nov 05 12:01:14 EDT 2021" starttimestamp="1636127927059" timestamp="147315" timestamp2="147315">
+    <data><![CDATA[;]]></data>
+  </Command>
+  <Command __id="104" _type="PauseCommand" date="Fri Nov 05 12:01:17 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="150269">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[2954]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="103" _type="ShellCommand" date="Fri Nov 05 12:01:17 EDT 2021" starttimestamp="1636127927059" timestamp="150269" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="105" _type="ShellCommand" date="Fri Nov 05 12:01:17 EDT 2021" starttimestamp="1636127927059" timestamp="150280" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="106" _type="ShellCommand" date="Fri Nov 05 12:01:17 EDT 2021" starttimestamp="1636127927059" timestamp="150358" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="108" _type="PauseCommand" date="Fri Nov 05 12:01:37 EDT 2021" range="20s-30s" starttimestamp="1636127927059" timestamp="170462">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[20104]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="107" _type="ShellCommand" date="Fri Nov 05 12:01:37 EDT 2021" starttimestamp="1636127927059" timestamp="170462" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="110" _type="MoveCaretCommand" caretOffset="822" date="Fri Nov 05 12:01:37 EDT 2021" docOffset="866" starttimestamp="1636127927059" timestamp="170531" />
+  <Command __id="112" _type="PauseCommand" date="Fri Nov 05 12:01:39 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="172559">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2028]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="111" _type="SelectTextCommand" caretOffset="796" date="Fri Nov 05 12:01:39 EDT 2021" end="822" start="796" starttimestamp="1636127927059" timestamp="172559" />
+  <Command __id="113" _type="SelectTextCommand" caretOffset="796" date="Fri Nov 05 12:01:39 EDT 2021" end="822" start="796" starttimestamp="1636127927059" timestamp="172559" />
+  <Command __id="114" _type="CopyCommand" date="Fri Nov 05 12:01:40 EDT 2021" starttimestamp="1636127927059" timestamp="173042" />
+  <Command __id="116" _type="PauseCommand" date="Fri Nov 05 12:01:41 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="174471">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[CopyCommand]]></prev>
+    <pause><![CDATA[1429]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="115" _type="SelectTextCommand" caretOffset="924" date="Fri Nov 05 12:01:41 EDT 2021" end="934" start="924" starttimestamp="1636127927059" timestamp="174471" />
+  <Command __id="117" _type="SelectTextCommand" caretOffset="924" date="Fri Nov 05 12:01:41 EDT 2021" end="934" start="924" starttimestamp="1636127927059" timestamp="174471" />
+  <Command __id="119" _type="PasteCommand" date="Fri Nov 05 12:01:41 EDT 2021" starttimestamp="1636127927059" timestamp="174866" />
+  <Command __id="121" _type="PauseCommand" date="Fri Nov 05 12:01:43 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="176672">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[PasteCommand]]></prev>
+    <pause><![CDATA[1806]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="120" _type="SelectTextCommand" caretOffset="875" date="Fri Nov 05 12:01:43 EDT 2021" end="885" start="875" starttimestamp="1636127927059" timestamp="176672" />
+  <Command __id="122" _type="SelectTextCommand" caretOffset="875" date="Fri Nov 05 12:01:43 EDT 2021" end="885" start="875" starttimestamp="1636127927059" timestamp="176672" />
+  <Command __id="124" _type="PasteCommand" date="Fri Nov 05 12:01:44 EDT 2021" starttimestamp="1636127927059" timestamp="177248" />
+  <Command __id="126" _type="PauseCommand" date="Fri Nov 05 12:01:47 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="180257">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[PasteCommand]]></prev>
+    <pause><![CDATA[3009]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="125" _type="SelectTextCommand" caretOffset="773" date="Fri Nov 05 12:01:47 EDT 2021" end="822" start="773" starttimestamp="1636127927059" timestamp="180257" />
+  <Command __id="127" _type="SelectTextCommand" caretOffset="773" date="Fri Nov 05 12:01:47 EDT 2021" end="822" start="773" starttimestamp="1636127927059" timestamp="180257" />
+  <Command __id="129" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:01:47 EDT 2021" starttimestamp="1636127927059" timestamp="180531" />
+  <Command __id="130" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:01:47 EDT 2021" starttimestamp="1636127927059" timestamp="180531" />
+  <Command __id="132" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:01:47 EDT 2021" starttimestamp="1636127927059" timestamp="180829" />
+  <Command __id="133" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:01:47 EDT 2021" starttimestamp="1636127927059" timestamp="180829" />
+  <Command __id="135" _type="PauseCommand" date="Fri Nov 05 12:01:49 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="182210">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1381]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="134" _type="MoveCaretCommand" caretOffset="914" date="Fri Nov 05 12:01:49 EDT 2021" docOffset="958" starttimestamp="1636127927059" timestamp="182210" />
+  <Command __id="136" _type="MoveCaretCommand" caretOffset="914" date="Fri Nov 05 12:01:49 EDT 2021" docOffset="958" starttimestamp="1636127927059" timestamp="182211" />
+  <Command __id="137" _type="MoveCaretCommand" caretOffset="914" date="Fri Nov 05 12:01:49 EDT 2021" docOffset="958" starttimestamp="1636127927059" timestamp="182641" />
+  <Command __id="138" _type="MoveCaretCommand" caretOffset="914" date="Fri Nov 05 12:01:49 EDT 2021" docOffset="958" starttimestamp="1636127927059" timestamp="182641" />
+  <Command __id="139" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Fri Nov 05 12:01:50 EDT 2021" starttimestamp="1636127927059" timestamp="183387" />
+  <Command __id="140" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Fri Nov 05 12:01:50 EDT 2021" starttimestamp="1636127927059" timestamp="183387" />
+  <Command __id="142" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:01:50 EDT 2021" starttimestamp="1636127927059" timestamp="183765" />
+  <Command __id="143" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:01:50 EDT 2021" starttimestamp="1636127927059" timestamp="183765" />
+  <Command __id="153" _type="PauseCommand" date="Fri Nov 05 12:01:54 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="187892">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1588]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="152" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:01:54 EDT 2021" starttimestamp="1636127927059" timestamp="187891" />
+  <Command __id="154" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Fri Nov 05 12:01:54 EDT 2021" starttimestamp="1636127927059" timestamp="187921" />
+  <Command __id="155" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:01:55 EDT 2021" starttimestamp="1636127927059" timestamp="188064" />
+  <Command __id="156" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:01:55 EDT 2021" starttimestamp="1636127927059" timestamp="188110" />
+  <Command __id="157" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:01:55 EDT 2021" starttimestamp="1636127927059" timestamp="188183" />
+  <Command __id="158" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:01:55 EDT 2021" starttimestamp="1636127927059" timestamp="188188" />
+  <Command __id="159" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:01:55 EDT 2021" starttimestamp="1636127927059" timestamp="188327" />
+  <Command __id="160" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:01:55 EDT 2021" starttimestamp="1636127927059" timestamp="188331" />
+  <Command __id="161" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:01:55 EDT 2021" starttimestamp="1636127927059" timestamp="188364" />
+  <Command __id="162" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:01:55 EDT 2021" starttimestamp="1636127927059" timestamp="188365" />
+  <Command __id="163" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:01:55 EDT 2021" starttimestamp="1636127927059" timestamp="188401" />
+  <Command __id="165" _type="PauseCommand" date="Fri Nov 05 12:02:10 EDT 2021" range="10s-20s" starttimestamp="1636127927059" timestamp="203068">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[14667]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="164" _type="MoveCaretCommand" caretOffset="856" date="Fri Nov 05 12:02:10 EDT 2021" docOffset="900" starttimestamp="1636127927059" timestamp="203068" />
+  <Command __id="166" _type="MoveCaretCommand" caretOffset="856" date="Fri Nov 05 12:02:10 EDT 2021" docOffset="900" starttimestamp="1636127927059" timestamp="203068" />
+  <Command __id="168" _type="PauseCommand" date="Fri Nov 05 12:02:17 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="210092">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[7024]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="167" _type="MoveCaretCommand" caretOffset="950" date="Fri Nov 05 12:02:17 EDT 2021" docOffset="994" starttimestamp="1636127927059" timestamp="210092" />
+  <Command __id="169" _type="MoveCaretCommand" caretOffset="950" date="Fri Nov 05 12:02:17 EDT 2021" docOffset="994" starttimestamp="1636127927059" timestamp="210092" />
+  <Command __id="170" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Fri Nov 05 12:02:18 EDT 2021" starttimestamp="1636127927059" timestamp="211090" />
+  <Command __id="171" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Fri Nov 05 12:02:18 EDT 2021" starttimestamp="1636127927059" timestamp="211090" />
+  <Command __id="173" _type="InsertStringCommand" date="Fri Nov 05 12:02:18 EDT 2021" starttimestamp="1636127927059" timestamp="211482" timestamp2="211482">
+    <data><![CDATA[H]]></data>
+  </Command>
+  <Command __id="174" _type="InsertStringCommand" date="Fri Nov 05 12:02:18 EDT 2021" starttimestamp="1636127927059" timestamp="211482" timestamp2="211482">
+    <data><![CDATA[H]]></data>
+  </Command>
+  <Command __id="176" _type="InsertStringCommand" date="Fri Nov 05 12:02:18 EDT 2021" starttimestamp="1636127927059" timestamp="211668" timestamp2="211668">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="177" _type="InsertStringCommand" date="Fri Nov 05 12:02:18 EDT 2021" starttimestamp="1636127927059" timestamp="211668" timestamp2="211668">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="179" _type="InsertStringCommand" date="Fri Nov 05 12:02:18 EDT 2021" starttimestamp="1636127927059" timestamp="211794" timestamp2="211794">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="180" _type="InsertStringCommand" date="Fri Nov 05 12:02:18 EDT 2021" starttimestamp="1636127927059" timestamp="211794" timestamp2="211794">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="182" _type="InsertStringCommand" date="Fri Nov 05 12:02:19 EDT 2021" starttimestamp="1636127927059" timestamp="212015" timestamp2="212015">
+    <data><![CDATA[p]]></data>
+  </Command>
+  <Command __id="183" _type="InsertStringCommand" date="Fri Nov 05 12:02:19 EDT 2021" starttimestamp="1636127927059" timestamp="212015" timestamp2="212015">
+    <data><![CDATA[p]]></data>
+  </Command>
+  <Command __id="185" _type="InsertStringCommand" date="Fri Nov 05 12:02:19 EDT 2021" starttimestamp="1636127927059" timestamp="212119" timestamp2="212119">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="186" _type="InsertStringCommand" date="Fri Nov 05 12:02:19 EDT 2021" starttimestamp="1636127927059" timestamp="212119" timestamp2="212119">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="188" _type="InsertStringCommand" date="Fri Nov 05 12:02:19 EDT 2021" starttimestamp="1636127927059" timestamp="212240" timestamp2="212240">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="189" _type="InsertStringCommand" date="Fri Nov 05 12:02:19 EDT 2021" starttimestamp="1636127927059" timestamp="212241" timestamp2="212241">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="191" _type="PauseCommand" date="Fri Nov 05 12:02:22 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="215296">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[3055]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="190" _type="MoveCaretCommand" caretOffset="976" date="Fri Nov 05 12:02:22 EDT 2021" docOffset="1020" starttimestamp="1636127927059" timestamp="215296" />
+  <Command __id="192" _type="MoveCaretCommand" caretOffset="976" date="Fri Nov 05 12:02:22 EDT 2021" docOffset="1020" starttimestamp="1636127927059" timestamp="215296" />
+  <Command __id="194" _type="PauseCommand" date="Fri Nov 05 12:02:39 EDT 2021" range="10s-20s" starttimestamp="1636127927059" timestamp="232276">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[16980]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="193" _type="ShellCommand" date="Fri Nov 05 12:02:39 EDT 2021" starttimestamp="1636127927059" timestamp="232276" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="196" _type="PauseCommand" date="Fri Nov 05 12:03:01 EDT 2021" range="20s-30s" starttimestamp="1636127927059" timestamp="254834">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[22558]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="195" _type="ShellCommand" date="Fri Nov 05 12:03:01 EDT 2021" starttimestamp="1636127927059" timestamp="254834" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="198" _type="PauseCommand" date="Fri Nov 05 12:03:05 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="258805">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3971]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="197" _type="ShellCommand" date="Fri Nov 05 12:03:05 EDT 2021" starttimestamp="1636127927059" timestamp="258805" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="199" _type="ShellCommand" date="Fri Nov 05 12:03:05 EDT 2021" starttimestamp="1636127927059" timestamp="258920" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="208" _type="MoveCaretCommand" caretOffset="1078" date="Fri Nov 05 12:03:06 EDT 2021" docOffset="1170" starttimestamp="1636127927059" timestamp="259924" />
+  <Command __id="209" _type="MoveCaretCommand" caretOffset="1078" date="Fri Nov 05 12:03:06 EDT 2021" docOffset="1170" starttimestamp="1636127927059" timestamp="259924" />
+  <Command __id="211" _type="PauseCommand" date="Fri Nov 05 12:03:09 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="262392">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2468]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="210" _type="MoveCaretCommand" caretOffset="947" date="Fri Nov 05 12:03:09 EDT 2021" docOffset="1039" starttimestamp="1636127927059" timestamp="262392" />
+  <Command __id="212" _type="MoveCaretCommand" caretOffset="947" date="Fri Nov 05 12:03:09 EDT 2021" docOffset="1039" starttimestamp="1636127927059" timestamp="262392" />
+  <Command __id="213" _type="MoveCaretCommand" caretOffset="948" date="Fri Nov 05 12:03:10 EDT 2021" docOffset="1040" starttimestamp="1636127927059" timestamp="263156" />
+  <Command __id="214" _type="MoveCaretCommand" caretOffset="948" date="Fri Nov 05 12:03:10 EDT 2021" docOffset="1040" starttimestamp="1636127927059" timestamp="263156" />
+  <Command __id="216" _type="PauseCommand" date="Fri Nov 05 12:03:11 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="264201">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1045]]></pause>
+    <nextType><![CDATA[Save]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="215" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Fri Nov 05 12:03:11 EDT 2021" starttimestamp="1636127927059" timestamp="264201" />
+  <Command __id="217" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:03:11 EDT 2021" starttimestamp="1636127927059" timestamp="264296" />
+  <Command __id="218" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:03:11 EDT 2021" starttimestamp="1636127927059" timestamp="264301" />
+  <Command __id="219" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:03:11 EDT 2021" starttimestamp="1636127927059" timestamp="264301" />
+  <Command __id="220" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:03:11 EDT 2021" starttimestamp="1636127927059" timestamp="264303" />
+  <Command __id="221" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:03:11 EDT 2021" starttimestamp="1636127927059" timestamp="264303" />
+  <Command __id="222" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:03:11 EDT 2021" starttimestamp="1636127927059" timestamp="264304" />
+  <Command __id="223" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:03:11 EDT 2021" starttimestamp="1636127927059" timestamp="264305" />
+  <Command __id="224" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:03:11 EDT 2021" starttimestamp="1636127927059" timestamp="264307" />
+  <Command __id="225" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:03:11 EDT 2021" starttimestamp="1636127927059" timestamp="264307" />
+  <Command __id="226" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:03:11 EDT 2021" starttimestamp="1636127927059" timestamp="264319" />
+  <Command __id="228" _type="PauseCommand" date="Fri Nov 05 12:03:18 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="271376">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[7057]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="227" _type="ShellCommand" date="Fri Nov 05 12:03:18 EDT 2021" starttimestamp="1636127927059" timestamp="271376" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="230" _type="PauseCommand" date="Fri Nov 05 12:03:52 EDT 2021" range="30s-1m" starttimestamp="1636127927059" timestamp="305881">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[34505]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="229" _type="ShellCommand" date="Fri Nov 05 12:03:52 EDT 2021" starttimestamp="1636127927059" timestamp="305881" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="232" _type="PauseCommand" date="Fri Nov 05 12:03:59 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="312618">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[6737]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="231" _type="ShellCommand" date="Fri Nov 05 12:03:59 EDT 2021" starttimestamp="1636127927059" timestamp="312618" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="234" _type="PauseCommand" date="Fri Nov 05 12:04:08 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="321445">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[8827]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="233" _type="ShellCommand" date="Fri Nov 05 12:04:08 EDT 2021" starttimestamp="1636127927059" timestamp="321445" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="235" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:08 EDT 2021" starttimestamp="1636127927059" timestamp="321484" />
+  <Command __id="236" _type="EclipseCommand" commandID="org.eclipse.ui.project.properties" date="Fri Nov 05 12:04:08 EDT 2021" starttimestamp="1636127927059" timestamp="321494" />
+  <Command __id="237" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:08 EDT 2021" starttimestamp="1636127927059" timestamp="321526" />
+  <Command __id="238" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:08 EDT 2021" starttimestamp="1636127927059" timestamp="321531" />
+  <Command __id="239" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:08 EDT 2021" starttimestamp="1636127927059" timestamp="321537" />
+  <Command __id="240" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:08 EDT 2021" starttimestamp="1636127927059" timestamp="321538" />
+  <Command __id="241" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:08 EDT 2021" starttimestamp="1636127927059" timestamp="321541" />
+  <Command __id="242" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:08 EDT 2021" starttimestamp="1636127927059" timestamp="321542" />
+  <Command __id="243" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:08 EDT 2021" starttimestamp="1636127927059" timestamp="321543" />
+  <Command __id="244" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:08 EDT 2021" starttimestamp="1636127927059" timestamp="321544" />
+  <Command __id="245" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:08 EDT 2021" starttimestamp="1636127927059" timestamp="321546" />
+  <Command __id="247" _type="PauseCommand" date="Fri Nov 05 12:04:16 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="329923">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[8377]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="246" _type="ShellCommand" date="Fri Nov 05 12:04:16 EDT 2021" starttimestamp="1636127927059" timestamp="329923" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="249" _type="PauseCommand" date="Fri Nov 05 12:04:21 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="334751">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4827]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="248" _type="ShellCommand" date="Fri Nov 05 12:04:21 EDT 2021" starttimestamp="1636127927059" timestamp="334750" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="250" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:21 EDT 2021" starttimestamp="1636127927059" timestamp="334778" />
+  <Command __id="251" _type="EclipseCommand" commandID="org.eclipse.ui.project.properties" date="Fri Nov 05 12:04:21 EDT 2021" starttimestamp="1636127927059" timestamp="334797" />
+  <Command __id="252" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:21 EDT 2021" starttimestamp="1636127927059" timestamp="334813" />
+  <Command __id="253" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:21 EDT 2021" starttimestamp="1636127927059" timestamp="334820" />
+  <Command __id="254" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:21 EDT 2021" starttimestamp="1636127927059" timestamp="334826" />
+  <Command __id="255" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:21 EDT 2021" starttimestamp="1636127927059" timestamp="334827" />
+  <Command __id="256" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:21 EDT 2021" starttimestamp="1636127927059" timestamp="334828" />
+  <Command __id="257" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:21 EDT 2021" starttimestamp="1636127927059" timestamp="334829" />
+  <Command __id="258" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:21 EDT 2021" starttimestamp="1636127927059" timestamp="334831" />
+  <Command __id="259" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:21 EDT 2021" starttimestamp="1636127927059" timestamp="334831" />
+  <Command __id="260" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:04:21 EDT 2021" starttimestamp="1636127927059" timestamp="334836" />
+  <Command __id="262" _type="PauseCommand" date="Fri Nov 05 12:04:30 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="343588">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[8752]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="261" _type="ShellCommand" date="Fri Nov 05 12:04:30 EDT 2021" starttimestamp="1636127927059" timestamp="343588" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="264" _type="PauseCommand" date="Fri Nov 05 12:05:20 EDT 2021" range="30s-1m" starttimestamp="1636127927059" timestamp="393168">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[49580]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="263" _type="ShellCommand" date="Fri Nov 05 12:05:20 EDT 2021" starttimestamp="1636127927059" timestamp="393168" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="266" _type="PauseCommand" date="Fri Nov 05 12:05:27 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="400896">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[7728]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="265" _type="MoveCaretCommand" caretOffset="63" date="Fri Nov 05 12:05:27 EDT 2021" docOffset="63" starttimestamp="1636127927059" timestamp="400896" />
+  <Command __id="267" _type="MoveCaretCommand" caretOffset="63" date="Fri Nov 05 12:05:27 EDT 2021" docOffset="63" starttimestamp="1636127927059" timestamp="400896" />
+  <Command __id="269" _type="PauseCommand" date="Fri Nov 05 12:05:42 EDT 2021" range="10s-20s" starttimestamp="1636127927059" timestamp="415565">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[14669]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="268" _type="SelectTextCommand" caretOffset="1010" date="Fri Nov 05 12:05:42 EDT 2021" end="1019" start="1010" starttimestamp="1636127927059" timestamp="415565" />
+  <Command __id="270" _type="SelectTextCommand" caretOffset="1010" date="Fri Nov 05 12:05:42 EDT 2021" end="1019" start="1010" starttimestamp="1636127927059" timestamp="415565" />
+  <Command __id="272" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:05:42 EDT 2021" starttimestamp="1636127927059" timestamp="415860" />
+  <Command __id="273" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:05:42 EDT 2021" starttimestamp="1636127927059" timestamp="415860" />
+  <Command __id="275" _type="PauseCommand" date="Fri Nov 05 12:05:44 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="417350">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1490]]></pause>
+    <nextType><![CDATA[Save]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="274" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Fri Nov 05 12:05:44 EDT 2021" starttimestamp="1636127927059" timestamp="417350" />
+  <Command __id="276" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:44 EDT 2021" starttimestamp="1636127927059" timestamp="417494" />
+  <Command __id="277" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:44 EDT 2021" starttimestamp="1636127927059" timestamp="417498" />
+  <Command __id="278" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:44 EDT 2021" starttimestamp="1636127927059" timestamp="417498" />
+  <Command __id="279" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:44 EDT 2021" starttimestamp="1636127927059" timestamp="417499" />
+  <Command __id="280" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:44 EDT 2021" starttimestamp="1636127927059" timestamp="417499" />
+  <Command __id="281" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:44 EDT 2021" starttimestamp="1636127927059" timestamp="417500" />
+  <Command __id="282" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:44 EDT 2021" starttimestamp="1636127927059" timestamp="417500" />
+  <Command __id="283" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:44 EDT 2021" starttimestamp="1636127927059" timestamp="417502" />
+  <Command __id="284" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:44 EDT 2021" starttimestamp="1636127927059" timestamp="417502" />
+  <Command __id="285" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:44 EDT 2021" starttimestamp="1636127927059" timestamp="417512" />
+  <Command __id="287" _type="PauseCommand" date="Fri Nov 05 12:05:51 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="424334">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[6822]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Insert]]></next>
+  </Command>
+  <Command __id="288" _type="InsertStringCommand" date="Fri Nov 05 12:05:51 EDT 2021" starttimestamp="1636127927059" timestamp="424338" timestamp2="424338">
+    <data><![CDATA[@]]></data>
+  </Command>
+  <Command __id="289" _type="InsertStringCommand" date="Fri Nov 05 12:05:51 EDT 2021" starttimestamp="1636127927059" timestamp="424338" timestamp2="424338">
+    <data><![CDATA[@]]></data>
+  </Command>
+  <Command __id="291" _type="InsertStringCommand" date="Fri Nov 05 12:05:51 EDT 2021" starttimestamp="1636127927059" timestamp="424821" timestamp2="424821">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="292" _type="InsertStringCommand" date="Fri Nov 05 12:05:51 EDT 2021" starttimestamp="1636127927059" timestamp="424821" timestamp2="424821">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="294" _type="InsertStringCommand" date="Fri Nov 05 12:05:52 EDT 2021" starttimestamp="1636127927059" timestamp="424982" timestamp2="424982">
+    <data><![CDATA[v]]></data>
+  </Command>
+  <Command __id="295" _type="InsertStringCommand" date="Fri Nov 05 12:05:52 EDT 2021" starttimestamp="1636127927059" timestamp="424982" timestamp2="424982">
+    <data><![CDATA[v]]></data>
+  </Command>
+  <Command __id="297" _type="InsertStringCommand" date="Fri Nov 05 12:05:52 EDT 2021" starttimestamp="1636127927059" timestamp="425059" timestamp2="425059">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="298" _type="InsertStringCommand" date="Fri Nov 05 12:05:52 EDT 2021" starttimestamp="1636127927059" timestamp="425059" timestamp2="425059">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="300" _type="InsertStringCommand" date="Fri Nov 05 12:05:52 EDT 2021" starttimestamp="1636127927059" timestamp="425155" timestamp2="425155">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="301" _type="InsertStringCommand" date="Fri Nov 05 12:05:52 EDT 2021" starttimestamp="1636127927059" timestamp="425155" timestamp2="425155">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="303" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:05:52 EDT 2021" starttimestamp="1636127927059" timestamp="425517" />
+  <Command __id="304" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:05:52 EDT 2021" starttimestamp="1636127927059" timestamp="425517" />
+  <Command __id="306" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:05:52 EDT 2021" starttimestamp="1636127927059" timestamp="425686" />
+  <Command __id="307" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:05:52 EDT 2021" starttimestamp="1636127927059" timestamp="425686" />
+  <Command __id="309" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:05:52 EDT 2021" starttimestamp="1636127927059" timestamp="425852" />
+  <Command __id="310" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:05:52 EDT 2021" starttimestamp="1636127927059" timestamp="425852" />
+  <Command __id="312" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:05:53 EDT 2021" starttimestamp="1636127927059" timestamp="425990" />
+  <Command __id="313" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:05:53 EDT 2021" starttimestamp="1636127927059" timestamp="425990" />
+  <Command __id="315" _type="InsertStringCommand" date="Fri Nov 05 12:05:53 EDT 2021" starttimestamp="1636127927059" timestamp="426238" timestamp2="426238">
+    <data><![CDATA[O]]></data>
+  </Command>
+  <Command __id="316" _type="InsertStringCommand" date="Fri Nov 05 12:05:53 EDT 2021" starttimestamp="1636127927059" timestamp="426238" timestamp2="426238">
+    <data><![CDATA[O]]></data>
+  </Command>
+  <Command __id="318" _type="InsertStringCommand" date="Fri Nov 05 12:05:53 EDT 2021" starttimestamp="1636127927059" timestamp="426476" timestamp2="426476">
+    <data><![CDATA[v]]></data>
+  </Command>
+  <Command __id="319" _type="InsertStringCommand" date="Fri Nov 05 12:05:53 EDT 2021" starttimestamp="1636127927059" timestamp="426476" timestamp2="426476">
+    <data><![CDATA[v]]></data>
+  </Command>
+  <Command __id="321" _type="InsertStringCommand" date="Fri Nov 05 12:05:53 EDT 2021" starttimestamp="1636127927059" timestamp="426565" timestamp2="426565">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="322" _type="InsertStringCommand" date="Fri Nov 05 12:05:53 EDT 2021" starttimestamp="1636127927059" timestamp="426565" timestamp2="426565">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="324" _type="InsertStringCommand" date="Fri Nov 05 12:05:53 EDT 2021" starttimestamp="1636127927059" timestamp="426659" timestamp2="426659">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="325" _type="InsertStringCommand" date="Fri Nov 05 12:05:53 EDT 2021" starttimestamp="1636127927059" timestamp="426659" timestamp2="426659">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="327" _type="InsertStringCommand" date="Fri Nov 05 12:05:53 EDT 2021" starttimestamp="1636127927059" timestamp="426856" timestamp2="426856">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="328" _type="InsertStringCommand" date="Fri Nov 05 12:05:53 EDT 2021" starttimestamp="1636127927059" timestamp="426856" timestamp2="426856">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="330" _type="InsertStringCommand" date="Fri Nov 05 12:05:54 EDT 2021" starttimestamp="1636127927059" timestamp="426961" timestamp2="426961">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="331" _type="InsertStringCommand" date="Fri Nov 05 12:05:54 EDT 2021" starttimestamp="1636127927059" timestamp="426961" timestamp2="426961">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="333" _type="InsertStringCommand" date="Fri Nov 05 12:05:54 EDT 2021" starttimestamp="1636127927059" timestamp="427057" timestamp2="427057">
+    <data><![CDATA[d]]></data>
+  </Command>
+  <Command __id="334" _type="InsertStringCommand" date="Fri Nov 05 12:05:54 EDT 2021" starttimestamp="1636127927059" timestamp="427057" timestamp2="427057">
+    <data><![CDATA[d]]></data>
+  </Command>
+  <Command __id="336" _type="InsertStringCommand" date="Fri Nov 05 12:05:54 EDT 2021" starttimestamp="1636127927059" timestamp="427168" timestamp2="427168">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="337" _type="InsertStringCommand" date="Fri Nov 05 12:05:54 EDT 2021" starttimestamp="1636127927059" timestamp="427168" timestamp2="427168">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="339" _type="PauseCommand" date="Fri Nov 05 12:05:55 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="428761">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[1593]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="338" _type="MoveCaretCommand" caretOffset="965" date="Fri Nov 05 12:05:55 EDT 2021" docOffset="1057" starttimestamp="1636127927059" timestamp="428761" />
+  <Command __id="340" _type="MoveCaretCommand" caretOffset="965" date="Fri Nov 05 12:05:55 EDT 2021" docOffset="1057" starttimestamp="1636127927059" timestamp="428761" />
+  <Command __id="341" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:56 EDT 2021" starttimestamp="1636127927059" timestamp="429493" />
+  <Command __id="342" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:56 EDT 2021" starttimestamp="1636127927059" timestamp="429497" />
+  <Command __id="343" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:56 EDT 2021" starttimestamp="1636127927059" timestamp="429497" />
+  <Command __id="344" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:56 EDT 2021" starttimestamp="1636127927059" timestamp="429498" />
+  <Command __id="345" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:56 EDT 2021" starttimestamp="1636127927059" timestamp="429498" />
+  <Command __id="346" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:56 EDT 2021" starttimestamp="1636127927059" timestamp="429499" />
+  <Command __id="347" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:56 EDT 2021" starttimestamp="1636127927059" timestamp="429499" />
+  <Command __id="348" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:05:56 EDT 2021" starttimestamp="1636127927059" timestamp="429501" />
+  <Command __id="350" _type="InsertStringCommand" date="Fri Nov 05 12:05:57 EDT 2021" starttimestamp="1636127927059" timestamp="430190" timestamp2="430190">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="351" _type="InsertStringCommand" date="Fri Nov 05 12:05:57 EDT 2021" starttimestamp="1636127927059" timestamp="430190" timestamp2="430190">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="353" _type="InsertStringCommand" date="Fri Nov 05 12:05:57 EDT 2021" starttimestamp="1636127927059" timestamp="430330" timestamp2="430330">
+    <data><![CDATA[h]]></data>
+  </Command>
+  <Command __id="354" _type="InsertStringCommand" date="Fri Nov 05 12:05:57 EDT 2021" starttimestamp="1636127927059" timestamp="430330" timestamp2="430330">
+    <data><![CDATA[h]]></data>
+  </Command>
+  <Command __id="356" _type="InsertStringCommand" date="Fri Nov 05 12:05:57 EDT 2021" starttimestamp="1636127927059" timestamp="430426" timestamp2="430426">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="357" _type="InsertStringCommand" date="Fri Nov 05 12:05:57 EDT 2021" starttimestamp="1636127927059" timestamp="430426" timestamp2="430426">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="359" _type="InsertStringCommand" date="Fri Nov 05 12:05:57 EDT 2021" starttimestamp="1636127927059" timestamp="430543" timestamp2="430543">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="360" _type="InsertStringCommand" date="Fri Nov 05 12:05:57 EDT 2021" starttimestamp="1636127927059" timestamp="430543" timestamp2="430543">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="362" _type="InsertStringCommand" date="Fri Nov 05 12:05:57 EDT 2021" starttimestamp="1636127927059" timestamp="430732" timestamp2="430732">
+    <data><![CDATA[.]]></data>
+  </Command>
+  <Command __id="363" _type="InsertStringCommand" date="Fri Nov 05 12:05:57 EDT 2021" starttimestamp="1636127927059" timestamp="430732" timestamp2="430732">
+    <data><![CDATA[.]]></data>
+  </Command>
+  <Command __id="364" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="true" date="Fri Nov 05 12:05:58 EDT 2021" start_end="START" starttimestamp="1636127927059" timestamp="430994" />
+  <Command __id="366" _type="PauseCommand" date="Fri Nov 05 12:06:00 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="433594">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[AssistCommand]]></prev>
+    <pause><![CDATA[2600]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[AssistCommand]]></next>
+  </Command>
+  <Command __id="365" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="false" date="Fri Nov 05 12:06:00 EDT 2021" start_end="END" starttimestamp="1636127927059" timestamp="433594" />
+  <Command __id="368" _type="PauseCommand" date="Fri Nov 05 12:06:03 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="436360">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[AssistCommand]]></prev>
+    <pause><![CDATA[2766]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="367" _type="MoveCaretCommand" caretOffset="969" date="Fri Nov 05 12:06:03 EDT 2021" docOffset="1061" starttimestamp="1636127927059" timestamp="436360" />
+  <Command __id="369" _type="MoveCaretCommand" caretOffset="969" date="Fri Nov 05 12:06:03 EDT 2021" docOffset="1061" starttimestamp="1636127927059" timestamp="436360" />
+  <Command __id="371" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:03 EDT 2021" starttimestamp="1636127927059" timestamp="436628" />
+  <Command __id="372" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:03 EDT 2021" starttimestamp="1636127927059" timestamp="436628" />
+  <Command __id="374" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:03 EDT 2021" starttimestamp="1636127927059" timestamp="436820" />
+  <Command __id="375" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:03 EDT 2021" starttimestamp="1636127927059" timestamp="436820" />
+  <Command __id="377" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="436948" />
+  <Command __id="378" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="436948" />
+  <Command __id="380" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437100" />
+  <Command __id="381" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437100" />
+  <Command __id="383" _type="InsertStringCommand" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437234" timestamp2="437234">
+    <data><![CDATA[S]]></data>
+  </Command>
+  <Command __id="384" _type="InsertStringCommand" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437235" timestamp2="437235">
+    <data><![CDATA[S]]></data>
+  </Command>
+  <Command __id="386" _type="InsertStringCommand" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437348" timestamp2="437348">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="387" _type="InsertStringCommand" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437348" timestamp2="437348">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="389" _type="InsertStringCommand" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437433" timestamp2="437433">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="390" _type="InsertStringCommand" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437434" timestamp2="437434">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="392" _type="InsertStringCommand" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437539" timestamp2="437539">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="393" _type="InsertStringCommand" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437539" timestamp2="437539">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="395" _type="InsertStringCommand" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437580" timestamp2="437580">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="396" _type="InsertStringCommand" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437581" timestamp2="437581">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="398" _type="InsertStringCommand" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437673" timestamp2="437673">
+    <data><![CDATA[g]]></data>
+  </Command>
+  <Command __id="399" _type="InsertStringCommand" date="Fri Nov 05 12:06:04 EDT 2021" starttimestamp="1636127927059" timestamp="437673" timestamp2="437673">
+    <data><![CDATA[g]]></data>
+  </Command>
+  <Command __id="401" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438269" timestamp2="438269">
+    <data><![CDATA[f]]></data>
+  </Command>
+  <Command __id="402" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438269" timestamp2="438269">
+    <data><![CDATA[f]]></data>
+  </Command>
+  <Command __id="404" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438357" timestamp2="438357">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="405" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438357" timestamp2="438357">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="407" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438452" timestamp2="438452">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="408" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438452" timestamp2="438452">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="410" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438554" timestamp2="438554">
+    <data><![CDATA[m]]></data>
+  </Command>
+  <Command __id="411" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438554" timestamp2="438554">
+    <data><![CDATA[m]]></data>
+  </Command>
+  <Command __id="413" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438657" timestamp2="438657">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="414" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438657" timestamp2="438657">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="416" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438736" timestamp2="438736">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="417" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438736" timestamp2="438736">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="419" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438839" timestamp2="438839">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="420" _type="InsertStringCommand" date="Fri Nov 05 12:06:05 EDT 2021" starttimestamp="1636127927059" timestamp="438839" timestamp2="438839">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="422" _type="PauseCommand" date="Fri Nov 05 12:06:09 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="442721">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[3882]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="421" _type="MoveCaretCommand" caretOffset="972" date="Fri Nov 05 12:06:09 EDT 2021" docOffset="1064" starttimestamp="1636127927059" timestamp="442721" />
+  <Command __id="423" _type="MoveCaretCommand" caretOffset="972" date="Fri Nov 05 12:06:09 EDT 2021" docOffset="1064" starttimestamp="1636127927059" timestamp="442722" />
+  <Command __id="425" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:10 EDT 2021" starttimestamp="1636127927059" timestamp="443001" />
+  <Command __id="426" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:10 EDT 2021" starttimestamp="1636127927059" timestamp="443001" />
+  <Command __id="428" _type="InsertStringCommand" date="Fri Nov 05 12:06:10 EDT 2021" starttimestamp="1636127927059" timestamp="443147" timestamp2="443147">
+    <data><![CDATA[F]]></data>
+  </Command>
+  <Command __id="429" _type="InsertStringCommand" date="Fri Nov 05 12:06:10 EDT 2021" starttimestamp="1636127927059" timestamp="443147" timestamp2="443147">
+    <data><![CDATA[F]]></data>
+  </Command>
+  <Command __id="430" _type="MoveCaretCommand" caretOffset="1018" date="Fri Nov 05 12:06:11 EDT 2021" docOffset="1110" starttimestamp="1636127927059" timestamp="444113" />
+  <Command __id="431" _type="MoveCaretCommand" caretOffset="1018" date="Fri Nov 05 12:06:11 EDT 2021" docOffset="1110" starttimestamp="1636127927059" timestamp="444113" />
+  <Command __id="433" _type="PauseCommand" date="Fri Nov 05 12:06:14 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="447297">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3184]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="432" _type="MoveCaretCommand" caretOffset="965" date="Fri Nov 05 12:06:14 EDT 2021" docOffset="1057" starttimestamp="1636127927059" timestamp="447297" />
+  <Command __id="434" _type="MoveCaretCommand" caretOffset="965" date="Fri Nov 05 12:06:14 EDT 2021" docOffset="1057" starttimestamp="1636127927059" timestamp="447298" />
+  <Command __id="436" _type="InsertStringCommand" date="Fri Nov 05 12:06:15 EDT 2021" starttimestamp="1636127927059" timestamp="448013" timestamp2="448013">
+    <data><![CDATA[(]]></data>
+  </Command>
+  <Command __id="437" _type="InsertStringCommand" date="Fri Nov 05 12:06:15 EDT 2021" starttimestamp="1636127927059" timestamp="448013" timestamp2="448013">
+    <data><![CDATA[(]]></data>
+  </Command>
+  <Command __id="439" _type="PauseCommand" date="Fri Nov 05 12:06:16 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="449558">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[1545]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="438" _type="MoveCaretCommand" caretOffset="1002" date="Fri Nov 05 12:06:16 EDT 2021" docOffset="1094" starttimestamp="1636127927059" timestamp="449558" />
+  <Command __id="440" _type="MoveCaretCommand" caretOffset="1002" date="Fri Nov 05 12:06:16 EDT 2021" docOffset="1094" starttimestamp="1636127927059" timestamp="449558" />
+  <Command __id="442" _type="InsertStringCommand" date="Fri Nov 05 12:06:17 EDT 2021" starttimestamp="1636127927059" timestamp="450088" timestamp2="450088">
+    <data><![CDATA[)]]></data>
+  </Command>
+  <Command __id="443" _type="InsertStringCommand" date="Fri Nov 05 12:06:17 EDT 2021" starttimestamp="1636127927059" timestamp="450088" timestamp2="450088">
+    <data><![CDATA[)]]></data>
+  </Command>
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Fri Nov 05 11:58:47 EDT 2021" docASTNodeCount="202" docActiveCodeLength="1287" docExpressionCount="149" docLength="1591" projectName="a5" starttimestamp="1636127927059" timestamp="165">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\a5\StringFormats.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package a5;
+import main.lisp.parser.terms.BasicExpression;
+import main.lisp.parser.terms.SExpression;
+public class StringFormats extends BasicExpression{
+
+	public StringFormats(SExpression head, SExpression tail) {
+		super(head, tail);
+	}
+	@Override
+	public String toString() {
+		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();
+	}
+	@Override
+	public String toStringAsSExpressionDeep() {
+		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";
+	}
+	
+	@Override
+	public String toStringAsSExpression() {
+		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";
+	}
+	
+	@Override
+	public String toStringAsList() {
+			// does the same thing as toStringas list deep....need to change
+			String headString = this.getHead().toString();
+			if (this.getTail().isNIL()) {
+				return "(" + headString + ")";
+			}else {
+				// replace the this.getTail() to string as list to helper method to check if nill perhaps?4
+				//if (this.getTail().getTail().isNIL())
+				return "("  + headString + " " + this.getTail().toStringAsList() + ")";
+			}
+	}
+	
+	@Override
+	public boolean isList() {
+		// if head is a non nil atom and tail is nil, is a list
+		if(this.getHead().isAtom() && !(this.getHead().isNIL()) && this.getTail().isNIL()) {
+			return true;
+			// if the tail is an atom but not nil, it is not a list
+		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {
+			return false;
+		} else 
+			return this.getTail().isList();
+		}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="14" _type="DiffBasedFileOpenCommand" date="Fri Nov 05 12:00:11 EDT 2021" docASTNodeCount="95" docActiveCodeLength="537" docExpressionCount="69" docLength="647" projectName="a5" starttimestamp="1636127927059" timestamp="84505">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\a5\List.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package a5;
+
+import main.lisp.parser.terms.BasicExpression;
+import main.lisp.parser.terms.SExpression;
+public class List extends BasicExpression {
+
+	protected List(SExpression head, SExpression tail) {
+		super(head, tail);
+	}
+	
+	@Override
+	public boolean isList() {
+		// if head is a non nil atom and tail is nil, is a list
+		if(this.getHead().isAtom() && !(this.getHead().isNIL()) && this.getTail().isNIL()) {
+			return true;
+			// if the tail is an atom but not nil, it is not a list
+		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {
+			return false;
+		} else 
+			return this.getTail().isList();
+		}
+}
+
+]]></snapshot>
+  </Command>
+  <Command __id="19" _type="DiffBasedFileOpenCommand" date="Fri Nov 05 12:00:13 EDT 2021" docASTNodeCount="202" docActiveCodeLength="1287" docExpressionCount="149" docLength="1591" projectName="a5" starttimestamp="1636127927059" timestamp="86649">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\a5\StringFormats.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package a5;¶import main.lisp.parser.terms.BasicExpression;¶import main.lisp.parser.terms.SExpression;¶public class StringFormats extends BasicExpression{¶¶	public StringFormats(SExpression head, SExpression tail) {¶		super(head, tail);¶	}¶	@Override¶	public String toString() {¶		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();¶	}¶	@Override¶	public String toStringAsSExpressionDeep() {¶		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";¶	}¶	¶	@Override¶	public String toStringAsSExpression() {¶		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";¶	}¶	¶	@Override¶	public String toStringAsList() {¶			// does the same thing as toStringas list deep....need to change¶			String headString = this.getHead().toString();¶			if (this.getTail().isNIL()) {¶				return "(" + headString + ")";¶			}else {¶				// replace the this.getTail() to string as list to helper method to check if nill perhaps?4¶				//if (this.getTail().getTail().isNIL())¶				return "("  + headString + " " + this.getTail().toStringAsList() + ")";¶			}¶	}¶	¶	@Override¶	public boolean isList() {¶		// if head is a non nil atom and tail is nil, is a list¶		if(this.getHead().isAtom() && !(this.getHead().isNIL()) && this.getTail().isNIL()) {¶			return true;¶			// if the tail is an atom but not nil, it is not a list¶		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {¶			return false;¶		} else ¶			return this.getTail().isList();¶		}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="109" _type="DiffBasedFileOpenCommand" date="Fri Nov 05 12:01:37 EDT 2021" docASTNodeCount="212" docActiveCodeLength="1346" docExpressionCount="154" docLength="1520" projectName="a5" starttimestamp="1636127927059" timestamp="170481">
+    <filePath><![CDATA[C:\Users\rarael\OneDrive\Documents\COMPSCIENCE\COMP 524\a5\src\a5\StringFormats.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package a5;¶import main.lisp.parser.terms.BasicExpression;¶import main.lisp.parser.terms.SExpression;¶public class StringFormats extends BasicExpression{¶¶	public StringFormats(SExpression head, SExpression tail) {¶		super(head, tail);¶	}¶	@Override¶	public String toString() {¶		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();¶	}¶	@Override¶	public String toStringAsSExpressionDeep() {¶		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";¶	}¶	¶	@Override¶	public String toStringAsSExpression() {¶		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";¶	}¶	¶	@Override¶	public String toStringAsList() {¶			// does the same thing as toStringas list deep....need to change¶			String headString = this.getHead().toString();¶			if (this.getTail().isNIL()) {¶				return "(" + headString + ")";¶			}else {¶				"), Diff(DELETE,"// replace the this.getTail() to string as list to helper method to check if nill perhaps?4¶				//if (this.getTail().getTail().isNIL())¶				"), Diff(EQUAL,"return "("  + headString + " " + this.getTail().toStringAsList() + ")";¶			}¶	}¶	¶	@Override¶	"), Diff(INSERT,"public String toStringAsListHelper() {¶		return "";¶	}¶	@Override¶	"), Diff(EQUAL,"public boolean isList() {¶		// if head is a non nil atom and tail is nil, is a list¶		if(this.getHead().isAtom() && !(this.getHead().isNIL()) && this.getTail().isNIL()) {¶			return true;¶			// if the tail is an atom but not nil, it is not a list¶		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {¶			return false;¶		} else ¶			return this.getTail().isList();¶		}¶¶}¶")]]]></diff>
+    <snapshot><![CDATA[package a5;
+import main.lisp.parser.terms.BasicExpression;
+import main.lisp.parser.terms.SExpression;
+public class StringFormats extends BasicExpression{
+
+	public StringFormats(SExpression head, SExpression tail) {
+		super(head, tail);
+	}
+	@Override
+	public String toString() {
+		return this.isList()? this.toStringAsList() : this.toStringAsSExpression();
+	}
+	@Override
+	public String toStringAsSExpressionDeep() {
+		return "(" + this.getHead().toStringAsSExpressionDeep() + " . " + this.getTail().toStringAsSExpressionDeep() + ")";
+	}
+	
+	@Override
+	public String toStringAsSExpression() {
+		return "(" + this.getHead().toString() + " . " + this.getTail().toString() + ")";
+	}
+	
+	@Override
+	public String toStringAsList() {
+			// does the same thing as toStringas list deep....need to change
+			String headString = this.getHead().toString();
+			if (this.getTail().isNIL()) {
+				return "(" + headString + ")";
+			}else {
+				return "("  + headString + " " + this.getTail().toStringAsList() + ")";
+			}
+	}
+	
+	@Override
+	public String toStringAsListHelper() {
+		return "";
+	}
+	@Override
+	public boolean isList() {
+		// if head is a non nil atom and tail is nil, is a list
+		if(this.getHead().isAtom() && !(this.getHead().isNIL()) && this.getTail().isNIL()) {
+			return true;
+			// if the tail is an atom but not nil, it is not a list
+		} else if (this.getTail().isAtom() && !(this.getTail().isNIL())) {
+			return false;
+		} else 
+			return this.getTail().isList();
+		}
+
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="118" _type="Replace" date="Fri Nov 05 12:01:41 EDT 2021" docASTNodeCount="219" docActiveCodeLength="1362" docExpressionCount="160" docLength="1536" endLine="29" insertionLength="26" int_docASTNodeCount="212" int_docActiveCodeLength="1336" int_docExpressionCount="154" int_docLength="1510" length="10" offset="968" startLine="29" starttimestamp="1636127927059" timestamp="174861">
+    <deletedText><![CDATA[headString]]></deletedText>
+    <insertedText><![CDATA[this.getHead().toString();]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="123" _type="Replace" date="Fri Nov 05 12:01:44 EDT 2021" docASTNodeCount="224" docActiveCodeLength="1378" docExpressionCount="164" docLength="1552" endLine="27" insertionLength="26" int_docASTNodeCount="219" int_docActiveCodeLength="1352" int_docExpressionCount="160" int_docLength="1526" length="10" offset="919" startLine="27" starttimestamp="1636127927059" timestamp="177243">
+    <deletedText><![CDATA[headString]]></deletedText>
+    <insertedText><![CDATA[this.getHead().toString();]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="128" _type="Delete" date="Fri Nov 05 12:01:47 EDT 2021" docASTNodeCount="214" docActiveCodeLength="1327" docExpressionCount="157" docLength="1501" endLine="25" length="51" offset="815" repeat="2" startLine="24" starttimestamp="1636127927059" timestamp="180528" timestamp2="180825">
+    <text><![CDATA[
+			String headString = this.getHead().toString();]]></text>
+  </DocumentChange>
+  <DocumentChange __id="141" _type="Delete" date="Fri Nov 05 12:01:50 EDT 2021" docASTNodeCount="211" docActiveCodeLength="1326" docExpressionCount="155" docLength="1500" endLine="28" length="1" offset="958" startLine="28" starttimestamp="1636127927059" timestamp="183761">
+    <text><![CDATA[;]]></text>
+  </DocumentChange>
+  <DocumentChange __id="149" _type="Delete" date="Fri Nov 05 12:01:53 EDT 2021" docASTNodeCount="210" docActiveCodeLength="1325" docExpressionCount="155" docLength="1499" endLine="26" length="1" offset="893" startLine="26" starttimestamp="1636127927059" timestamp="186300">
+    <text><![CDATA[;]]></text>
+  </DocumentChange>
+  <DocumentChange __id="172" _type="Insert" date="Fri Nov 05 12:02:18 EDT 2021" docASTNodeCount="210" docActiveCodeLength="1331" docExpressionCount="155" docLength="1505" length="6" offset="995" repeat="6" starttimestamp="1636127927059" timestamp="211477" timestamp2="212236">
+    <text><![CDATA[Helper]]></text>
+  </DocumentChange>
+  <DocumentChange __id="200" _type="Delete" date="Fri Nov 05 12:03:06 EDT 2021" docASTNodeCount="207" docActiveCodeLength="1317" docExpressionCount="152" docLength="1491" endLine="28" length="14" offset="966" startLine="28" starttimestamp="1636127927059" timestamp="258995">
+    <text><![CDATA[this.getTail()]]></text>
+  </DocumentChange>
+  <DocumentChange __id="201" _type="Insert" date="Fri Nov 05 12:03:06 EDT 2021" docASTNodeCount="214" docActiveCodeLength="1355" docExpressionCount="158" docLength="1529" length="38" offset="966" repeat="5" starttimestamp="1636127927059" timestamp="258997" timestamp2="259005">
+    <text><![CDATA[((AbstractSExpression) this.getTail())]]></text>
+  </DocumentChange>
+  <DocumentChange __id="206" _type="Insert" date="Fri Nov 05 12:03:06 EDT 2021" docASTNodeCount="224" docActiveCodeLength="1407" docExpressionCount="167" docLength="1581" length="52" offset="13" repeat="2" starttimestamp="1636127927059" timestamp="259006" timestamp2="259008">
+    <text><![CDATA[import main.lisp.parser.terms.AbstractSExpression;
+]]></text>
+  </DocumentChange>
+  <DocumentChange __id="271" _type="Delete" date="Fri Nov 05 12:05:42 EDT 2021" docASTNodeCount="222" docActiveCodeLength="1398" docExpressionCount="165" docLength="1572" endLine="33" length="9" offset="1102" startLine="33" starttimestamp="1636127927059" timestamp="415856">
+    <text><![CDATA[@Override]]></text>
+  </DocumentChange>
+  <DocumentChange __id="286" _type="Insert" date="Fri Nov 05 12:05:51 EDT 2021" docASTNodeCount="224" docActiveCodeLength="1403" docExpressionCount="167" docLength="1577" length="5" offset="1102" repeat="5" starttimestamp="1636127927059" timestamp="424334" timestamp2="425152">
+    <text><![CDATA[@over]]></text>
+  </DocumentChange>
+  <DocumentChange __id="302" _type="Delete" date="Fri Nov 05 12:05:52 EDT 2021" docASTNodeCount="222" docActiveCodeLength="1399" docExpressionCount="165" docLength="1573" endLine="33" length="4" offset="1103" repeat="4" startLine="33" starttimestamp="1636127927059" timestamp="425515" timestamp2="425988">
+    <text><![CDATA[over]]></text>
+  </DocumentChange>
+  <DocumentChange __id="314" _type="Insert" date="Fri Nov 05 12:05:53 EDT 2021" docASTNodeCount="224" docActiveCodeLength="1407" docExpressionCount="167" docLength="1581" length="8" offset="1103" repeat="8" starttimestamp="1636127927059" timestamp="426235" timestamp2="427165">
+    <text><![CDATA[Override]]></text>
+  </DocumentChange>
+  <DocumentChange __id="349" _type="Insert" date="Fri Nov 05 12:05:57 EDT 2021" docASTNodeCount="226" docActiveCodeLength="1412" docExpressionCount="169" docLength="1586" length="5" offset="1057" repeat="5" starttimestamp="1636127927059" timestamp="430187" timestamp2="430729">
+    <text><![CDATA[this.]]></text>
+  </DocumentChange>
+  <DocumentChange __id="370" _type="Delete" date="Fri Nov 05 12:06:03 EDT 2021" docASTNodeCount="224" docActiveCodeLength="1408" docExpressionCount="167" docLength="1582" endLine="29" length="4" offset="1057" repeat="4" startLine="29" starttimestamp="1636127927059" timestamp="436624" timestamp2="437098">
+    <text><![CDATA[this]]></text>
+  </DocumentChange>
+  <DocumentChange __id="382" _type="Insert" date="Fri Nov 05 12:06:04 EDT 2021" docASTNodeCount="226" docActiveCodeLength="1421" docExpressionCount="169" docLength="1595" length="13" offset="1057" repeat="13" starttimestamp="1636127927059" timestamp="437231" timestamp2="438836">
+    <text><![CDATA[Stringformats]]></text>
+  </DocumentChange>
+  <DocumentChange __id="424" _type="Delete" date="Fri Nov 05 12:06:10 EDT 2021" docASTNodeCount="226" docActiveCodeLength="1420" docExpressionCount="169" docLength="1594" endLine="29" length="1" offset="1063" startLine="29" starttimestamp="1636127927059" timestamp="442999">
+    <text><![CDATA[f]]></text>
+  </DocumentChange>
+  <DocumentChange __id="427" _type="Insert" date="Fri Nov 05 12:06:10 EDT 2021" docASTNodeCount="226" docActiveCodeLength="1421" docExpressionCount="169" docLength="1595" length="1" offset="1063" starttimestamp="1636127927059" timestamp="443144">
+    <text><![CDATA[F]]></text>
+  </DocumentChange>
+  <DocumentChange __id="435" _type="Insert" date="Fri Nov 05 12:06:15 EDT 2021" docASTNodeCount="226" docActiveCodeLength="1422" docExpressionCount="169" docLength="1596" length="1" offset="1057" starttimestamp="1636127927059" timestamp="448009">
+    <text><![CDATA[(]]></text>
+  </DocumentChange>
+  <DocumentChange __id="441" _type="Insert" date="Fri Nov 05 12:06:17 EDT 2021" docASTNodeCount="227" docActiveCodeLength="1423" docExpressionCount="170" docLength="1597" length="1" offset="1094" starttimestamp="1636127927059" timestamp="450083">
+    <text><![CDATA[)]]></text>
+  </DocumentChange>
+  <Command __id="445" _type="PauseCommand" date="Fri Nov 05 12:06:23 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="456185">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[6097]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="444" _type="MoveCaretCommand" caretOffset="966" date="Fri Nov 05 12:06:23 EDT 2021" docOffset="1058" starttimestamp="1636127927059" timestamp="456185" />
+  <Command __id="446" _type="MoveCaretCommand" caretOffset="966" date="Fri Nov 05 12:06:23 EDT 2021" docOffset="1058" starttimestamp="1636127927059" timestamp="456185" />
+  <Command __id="448" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:23 EDT 2021" starttimestamp="1636127927059" timestamp="456864" />
+  <Command __id="449" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:23 EDT 2021" starttimestamp="1636127927059" timestamp="456864" />
+  <Command __id="451" _type="PauseCommand" date="Fri Nov 05 12:06:25 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="458619">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1755]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="450" _type="SelectTextCommand" caretOffset="965" date="Fri Nov 05 12:06:25 EDT 2021" end="979" start="965" starttimestamp="1636127927059" timestamp="458619" />
+  <Command __id="452" _type="SelectTextCommand" caretOffset="965" date="Fri Nov 05 12:06:25 EDT 2021" end="979" start="965" starttimestamp="1636127927059" timestamp="458619" />
+  <Command __id="454" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:26 EDT 2021" starttimestamp="1636127927059" timestamp="458955" />
+  <Command __id="455" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:26 EDT 2021" starttimestamp="1636127927059" timestamp="458955" />
+  <Command __id="457" _type="PauseCommand" date="Fri Nov 05 12:06:27 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="460023">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1068]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="456" _type="MoveCaretCommand" caretOffset="1005" date="Fri Nov 05 12:06:27 EDT 2021" docOffset="1097" starttimestamp="1636127927059" timestamp="460023" />
+  <Command __id="458" _type="MoveCaretCommand" caretOffset="1005" date="Fri Nov 05 12:06:27 EDT 2021" docOffset="1097" starttimestamp="1636127927059" timestamp="460023" />
+  <Command __id="460" _type="PauseCommand" date="Fri Nov 05 12:06:29 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="462219">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2196]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="459" _type="MoveCaretCommand" caretOffset="988" date="Fri Nov 05 12:06:29 EDT 2021" docOffset="1080" starttimestamp="1636127927059" timestamp="462219" />
+  <Command __id="461" _type="MoveCaretCommand" caretOffset="988" date="Fri Nov 05 12:06:29 EDT 2021" docOffset="1080" starttimestamp="1636127927059" timestamp="462219" />
+  <Command __id="463" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:29 EDT 2021" starttimestamp="1636127927059" timestamp="462817" />
+  <Command __id="464" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:29 EDT 2021" starttimestamp="1636127927059" timestamp="462817" />
+  <Command __id="498" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:35 EDT 2021" starttimestamp="1636127927059" timestamp="468564" />
+  <Command __id="499" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:35 EDT 2021" starttimestamp="1636127927059" timestamp="468565" />
+  <Command __id="500" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:35 EDT 2021" starttimestamp="1636127927059" timestamp="468565" />
+  <Command __id="501" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:35 EDT 2021" starttimestamp="1636127927059" timestamp="468566" />
+  <Command __id="502" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:35 EDT 2021" starttimestamp="1636127927059" timestamp="468566" />
+  <Command __id="503" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:35 EDT 2021" starttimestamp="1636127927059" timestamp="468568" />
+  <Command __id="504" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:35 EDT 2021" starttimestamp="1636127927059" timestamp="468568" />
+  <Command __id="505" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:35 EDT 2021" starttimestamp="1636127927059" timestamp="468589" />
+  <Command __id="507" _type="PauseCommand" date="Fri Nov 05 12:06:36 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="469685">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1096]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Delete]]></next>
+  </Command>
+  <Command __id="508" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:36 EDT 2021" starttimestamp="1636127927059" timestamp="469690" />
+  <Command __id="509" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:36 EDT 2021" starttimestamp="1636127927059" timestamp="469690" />
+  <Command __id="511" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:36 EDT 2021" starttimestamp="1636127927059" timestamp="469851" />
+  <Command __id="512" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:36 EDT 2021" starttimestamp="1636127927059" timestamp="469851" />
+  <Command __id="514" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:37 EDT 2021" starttimestamp="1636127927059" timestamp="470019" />
+  <Command __id="515" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:37 EDT 2021" starttimestamp="1636127927059" timestamp="470019" />
+  <Command __id="517" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:37 EDT 2021" starttimestamp="1636127927059" timestamp="470175" />
+  <Command __id="518" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:37 EDT 2021" starttimestamp="1636127927059" timestamp="470175" />
+  <Command __id="520" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:37 EDT 2021" starttimestamp="1636127927059" timestamp="470336" />
+  <Command __id="521" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:37 EDT 2021" starttimestamp="1636127927059" timestamp="470336" />
+  <Command __id="523" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:37 EDT 2021" starttimestamp="1636127927059" timestamp="470541" />
+  <Command __id="524" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:37 EDT 2021" starttimestamp="1636127927059" timestamp="470541" />
+  <Command __id="526" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:37 EDT 2021" starttimestamp="1636127927059" timestamp="470723" />
+  <Command __id="527" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:37 EDT 2021" starttimestamp="1636127927059" timestamp="470723" />
+  <Command __id="529" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:38 EDT 2021" starttimestamp="1636127927059" timestamp="471363" />
+  <Command __id="530" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:38 EDT 2021" starttimestamp="1636127927059" timestamp="471363" />
+  <Command __id="532" _type="InsertStringCommand" date="Fri Nov 05 12:06:38 EDT 2021" starttimestamp="1636127927059" timestamp="471658" timestamp2="471658">
+    <data><![CDATA[u]]></data>
+  </Command>
+  <Command __id="533" _type="InsertStringCommand" date="Fri Nov 05 12:06:38 EDT 2021" starttimestamp="1636127927059" timestamp="471658" timestamp2="471658">
+    <data><![CDATA[u]]></data>
+  </Command>
+  <Command __id="535" _type="InsertStringCommand" date="Fri Nov 05 12:06:38 EDT 2021" starttimestamp="1636127927059" timestamp="471753" timestamp2="471753">
+    <data><![CDATA[b]]></data>
+  </Command>
+  <Command __id="536" _type="InsertStringCommand" date="Fri Nov 05 12:06:38 EDT 2021" starttimestamp="1636127927059" timestamp="471753" timestamp2="471753">
+    <data><![CDATA[b]]></data>
+  </Command>
+  <Command __id="538" _type="InsertStringCommand" date="Fri Nov 05 12:06:38 EDT 2021" starttimestamp="1636127927059" timestamp="471904" timestamp2="471904">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="539" _type="InsertStringCommand" date="Fri Nov 05 12:06:38 EDT 2021" starttimestamp="1636127927059" timestamp="471904" timestamp2="471904">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="541" _type="InsertStringCommand" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="471974" timestamp2="471974">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="542" _type="InsertStringCommand" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="471974" timestamp2="471974">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="544" _type="InsertStringCommand" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="472059" timestamp2="472059">
+    <data><![CDATA[c]]></data>
+  </Command>
+  <Command __id="545" _type="InsertStringCommand" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="472059" timestamp2="472059">
+    <data><![CDATA[c]]></data>
+  </Command>
+  <Command __id="546" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="472409" />
+  <Command __id="547" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="472504" />
+  <Command __id="548" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="472510" />
+  <Command __id="549" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="472510" />
+  <Command __id="550" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="472511" />
+  <Command __id="551" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="472511" />
+  <Command __id="552" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="472512" />
+  <Command __id="553" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="472512" />
+  <Command __id="554" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="472514" />
+  <Command __id="555" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="472514" />
+  <Command __id="556" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:39 EDT 2021" starttimestamp="1636127927059" timestamp="472534" />
+  <Command __id="558" _type="PauseCommand" date="Fri Nov 05 12:06:41 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="474060">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1526]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="557" _type="SelectTextCommand" caretOffset="1009" date="Fri Nov 05 12:06:41 EDT 2021" end="1078" start="1009" starttimestamp="1636127927059" timestamp="474060" />
+  <Command __id="559" _type="SelectTextCommand" caretOffset="1009" date="Fri Nov 05 12:06:41 EDT 2021" end="1078" start="1009" starttimestamp="1636127927059" timestamp="474060" />
+  <Command __id="560" _type="CopyCommand" date="Fri Nov 05 12:06:41 EDT 2021" starttimestamp="1636127927059" timestamp="474467" />
+  <Command __id="562" _type="PauseCommand" date="Fri Nov 05 12:06:42 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="475798">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[CopyCommand]]></prev>
+    <pause><![CDATA[1331]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="561" _type="MoveCaretCommand" caretOffset="671" date="Fri Nov 05 12:06:42 EDT 2021" docOffset="763" starttimestamp="1636127927059" timestamp="475798" />
+  <Command __id="563" _type="MoveCaretCommand" caretOffset="671" date="Fri Nov 05 12:06:42 EDT 2021" docOffset="763" starttimestamp="1636127927059" timestamp="475798" />
+  <Command __id="564" _type="MoveCaretCommand" caretOffset="659" date="Fri Nov 05 12:06:43 EDT 2021" docOffset="751" starttimestamp="1636127927059" timestamp="476549" />
+  <Command __id="565" _type="MoveCaretCommand" caretOffset="659" date="Fri Nov 05 12:06:43 EDT 2021" docOffset="751" starttimestamp="1636127927059" timestamp="476549" />
+  <Command __id="567" _type="PasteCommand" date="Fri Nov 05 12:06:44 EDT 2021" starttimestamp="1636127927059" timestamp="477165" />
+  <Command __id="586" _type="PauseCommand" date="Fri Nov 05 12:06:55 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="488038">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[8407]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="585" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:55 EDT 2021" starttimestamp="1636127927059" timestamp="488038" />
+  <Command __id="587" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:55 EDT 2021" starttimestamp="1636127927059" timestamp="488042" />
+  <Command __id="588" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:55 EDT 2021" starttimestamp="1636127927059" timestamp="488043" />
+  <Command __id="589" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:55 EDT 2021" starttimestamp="1636127927059" timestamp="488044" />
+  <Command __id="590" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:55 EDT 2021" starttimestamp="1636127927059" timestamp="488044" />
+  <Command __id="591" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:55 EDT 2021" starttimestamp="1636127927059" timestamp="488045" />
+  <Command __id="592" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:55 EDT 2021" starttimestamp="1636127927059" timestamp="488045" />
+  <Command __id="593" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:06:55 EDT 2021" starttimestamp="1636127927059" timestamp="488047" />
+  <Command __id="595" _type="PauseCommand" date="Fri Nov 05 12:06:57 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="490362">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2315]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="594" _type="SelectTextCommand" caretOffset="995" date="Fri Nov 05 12:06:57 EDT 2021" end="1016" start="995" starttimestamp="1636127927059" timestamp="490362" />
+  <Command __id="596" _type="SelectTextCommand" caretOffset="995" date="Fri Nov 05 12:06:57 EDT 2021" end="1016" start="995" starttimestamp="1636127927059" timestamp="490363" />
+  <Command __id="598" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:57 EDT 2021" starttimestamp="1636127927059" timestamp="490674" />
+  <Command __id="599" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:57 EDT 2021" starttimestamp="1636127927059" timestamp="490674" />
+  <Command __id="601" _type="PauseCommand" date="Fri Nov 05 12:06:59 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="491960">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1286]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="600" _type="MoveCaretCommand" caretOffset="996" date="Fri Nov 05 12:06:59 EDT 2021" docOffset="1088" starttimestamp="1636127927059" timestamp="491960" />
+  <Command __id="602" _type="MoveCaretCommand" caretOffset="996" date="Fri Nov 05 12:06:59 EDT 2021" docOffset="1088" starttimestamp="1636127927059" timestamp="491960" />
+  <Command __id="604" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:59 EDT 2021" starttimestamp="1636127927059" timestamp="492289" />
+  <Command __id="605" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:06:59 EDT 2021" starttimestamp="1636127927059" timestamp="492289" />
+  <Command __id="607" _type="PauseCommand" date="Fri Nov 05 12:07:02 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="495227">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2938]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="606" _type="MoveCaretCommand" caretOffset="1010" date="Fri Nov 05 12:07:02 EDT 2021" docOffset="1102" starttimestamp="1636127927059" timestamp="495227" />
+  <Command __id="608" _type="MoveCaretCommand" caretOffset="1010" date="Fri Nov 05 12:07:02 EDT 2021" docOffset="1102" starttimestamp="1636127927059" timestamp="495227" />
+  <Command __id="610" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:07:02 EDT 2021" starttimestamp="1636127927059" timestamp="495545" />
+  <Command __id="611" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:07:02 EDT 2021" starttimestamp="1636127927059" timestamp="495545" />
+  <Command __id="612" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Fri Nov 05 12:07:03 EDT 2021" starttimestamp="1636127927059" timestamp="496299" />
+  <Command __id="613" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:03 EDT 2021" starttimestamp="1636127927059" timestamp="496401" />
+  <Command __id="614" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:03 EDT 2021" starttimestamp="1636127927059" timestamp="496404" />
+  <Command __id="615" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:03 EDT 2021" starttimestamp="1636127927059" timestamp="496404" />
+  <Command __id="616" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:03 EDT 2021" starttimestamp="1636127927059" timestamp="496405" />
+  <Command __id="617" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:03 EDT 2021" starttimestamp="1636127927059" timestamp="496405" />
+  <Command __id="618" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:03 EDT 2021" starttimestamp="1636127927059" timestamp="496406" />
+  <Command __id="619" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:03 EDT 2021" starttimestamp="1636127927059" timestamp="496406" />
+  <Command __id="620" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:03 EDT 2021" starttimestamp="1636127927059" timestamp="496408" />
+  <Command __id="621" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:03 EDT 2021" starttimestamp="1636127927059" timestamp="496408" />
+  <Command __id="622" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:03 EDT 2021" starttimestamp="1636127927059" timestamp="496418" />
+  <Command __id="624" _type="PauseCommand" date="Fri Nov 05 12:07:10 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="503338">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[6920]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="623" _type="ShellCommand" date="Fri Nov 05 12:07:10 EDT 2021" starttimestamp="1636127927059" timestamp="503338" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="625" _type="ShellCommand" date="Fri Nov 05 12:07:10 EDT 2021" starttimestamp="1636127927059" timestamp="503451" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="633" _type="PauseCommand" date="Fri Nov 05 12:07:13 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="506926">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[Insert]]></prev>
+    <pause><![CDATA[3459]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="632" _type="ShellCommand" date="Fri Nov 05 12:07:13 EDT 2021" starttimestamp="1636127927059" timestamp="506926" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="635" _type="PauseCommand" date="Fri Nov 05 12:07:15 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="508709">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1783]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="634" _type="ShellCommand" date="Fri Nov 05 12:07:15 EDT 2021" starttimestamp="1636127927059" timestamp="508709" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="638" _type="PauseCommand" date="Fri Nov 05 12:07:23 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="516248">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[Replace]]></prev>
+    <pause><![CDATA[7529]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Delete]]></next>
+  </Command>
+  <Command __id="639" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:07:23 EDT 2021" starttimestamp="1636127927059" timestamp="516251" />
+  <Command __id="640" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Nov 05 12:07:23 EDT 2021" starttimestamp="1636127927059" timestamp="516251" />
+  <Command __id="642" _type="PauseCommand" date="Fri Nov 05 12:07:25 EDT 2021" range="2s-5s" starttimestamp="1636127927059" timestamp="518648">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2397]]></pause>
+    <nextType><![CDATA[Save]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="641" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Fri Nov 05 12:07:25 EDT 2021" starttimestamp="1636127927059" timestamp="518648" />
+  <Command __id="643" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:25 EDT 2021" starttimestamp="1636127927059" timestamp="518743" />
+  <Command __id="644" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:25 EDT 2021" starttimestamp="1636127927059" timestamp="518747" />
+  <Command __id="645" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:25 EDT 2021" starttimestamp="1636127927059" timestamp="518747" />
+  <Command __id="646" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:25 EDT 2021" starttimestamp="1636127927059" timestamp="518747" />
+  <Command __id="647" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:25 EDT 2021" starttimestamp="1636127927059" timestamp="518748" />
+  <Command __id="648" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:25 EDT 2021" starttimestamp="1636127927059" timestamp="518748" />
+  <Command __id="649" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:25 EDT 2021" starttimestamp="1636127927059" timestamp="518749" />
+  <Command __id="650" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:25 EDT 2021" starttimestamp="1636127927059" timestamp="518750" />
+  <Command __id="651" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:25 EDT 2021" starttimestamp="1636127927059" timestamp="518751" />
+  <Command __id="652" _type="EclipseCommand" commandID="" date="Fri Nov 05 12:07:25 EDT 2021" starttimestamp="1636127927059" timestamp="518760" />
+  <Command __id="654" _type="PauseCommand" date="Fri Nov 05 12:07:34 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="527380">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[8620]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="653" _type="ShellCommand" date="Fri Nov 05 12:07:34 EDT 2021" starttimestamp="1636127927059" timestamp="527380" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="656" _type="PauseCommand" date="Fri Nov 05 12:08:11 EDT 2021" range="30s-1m" starttimestamp="1636127927059" timestamp="564253">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[36873]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="655" _type="ShellCommand" date="Fri Nov 05 12:08:11 EDT 2021" starttimestamp="1636127927059" timestamp="564253" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="658" _type="PauseCommand" date="Fri Nov 05 12:08:16 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="569396">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[5143]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="657" _type="SelectTextCommand" caretOffset="1055" date="Fri Nov 05 12:08:16 EDT 2021" end="1055" start="994" starttimestamp="1636127927059" timestamp="569396" />
+  <Command __id="659" _type="SelectTextCommand" caretOffset="1055" date="Fri Nov 05 12:08:16 EDT 2021" end="1055" start="994" starttimestamp="1636127927059" timestamp="569397" />
+  <Command __id="660" _type="CopyCommand" date="Fri Nov 05 12:08:16 EDT 2021" starttimestamp="1636127927059" timestamp="569865" />
+  <Command __id="662" _type="PauseCommand" date="Fri Nov 05 12:08:17 EDT 2021" range="1s-2s" starttimestamp="1636127927059" timestamp="570871">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[CopyCommand]]></prev>
+    <pause><![CDATA[1006]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="661" _type="ShellCommand" date="Fri Nov 05 12:08:17 EDT 2021" starttimestamp="1636127927059" timestamp="570871" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="664" _type="PauseCommand" date="Fri Nov 05 12:09:21 EDT 2021" range="1m-2m" starttimestamp="1636127927059" timestamp="634029">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[63158]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="663" _type="ShellCommand" date="Fri Nov 05 12:09:21 EDT 2021" starttimestamp="1636127927059" timestamp="634029" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="666" _type="PauseCommand" date="Fri Nov 05 12:09:27 EDT 2021" range="5s-10s" starttimestamp="1636127927059" timestamp="640657">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[6627]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="665" _type="ShellCommand" date="Fri Nov 05 12:09:27 EDT 2021" starttimestamp="1636127927059" timestamp="640656" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="668" _type="PauseCommand" date="Fri Nov 05 12:10:11 EDT 2021" range="30s-1m" starttimestamp="1636127927059" timestamp="684624">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[43968]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="667" _type="ShellCommand" date="Fri Nov 05 12:10:11 EDT 2021" starttimestamp="1636127927059" timestamp="684624" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="669" _type="ShellCommand" date="Fri Nov 05 12:10:11 EDT 2021" starttimestamp="1636127927059" timestamp="684687" type="ECLIPSE_LOST_FOCUS" />
+</Events>

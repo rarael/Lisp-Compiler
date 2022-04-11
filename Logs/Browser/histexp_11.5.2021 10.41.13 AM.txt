@@ -1,0 +1,41 @@
+11/5/2021 10:44:40 AM	Assignment-5.docx - Google Docs	https://docs.google.com/document/d/1NUkkRpZjGgYxg6Rlo2WphVVY2hMW0l_S/edit#
+11/5/2021 10:42:52 AM	Java-lisp-interpreter/SExpression.java at 4783ff9cc5d5d573d622340770dc7bfaa614cc44 · avitkus/Java-lisp-interpreter	https://github.com/avitkus/Java-lisp-interpreter/blob/4783ff9cc5d5d573d622340770dc7bfaa614cc44/src/main/lisp/parser/terms/SExpression.java#L11
+11/5/2021 10:43:42 AM	Assignment-5.docx - Google Docs	https://docs.google.com/document/d/1NUkkRpZjGgYxg6Rlo2WphVVY2hMW0l_S/edit#heading=h.h2rs38jnvmz3
+11/5/2021 10:44:48 AM	Redirecting	https://www.google.com/url?q=https://github.com/avitkus/Java-lisp-interpreter/blob/master/src/main/lisp/parser/terms/AbstractExpression.java&sa=D&source=docs&ust=1636127082727000&usg=AOvVaw1nCbezqsGNAWOdHHNYdx9h
+11/5/2021 10:55:21 AM	COMP 426 (2 unread)	https://piazza.com/class/ksggerz7gba71r
+11/5/2021 10:55:27 AM	COMP 524 (13 unread)	https://piazza.com/class/ksf2o98md07hl
+11/5/2021 10:55:29 AM	COMP 524 (13 unread)	https://piazza.com/class/ksf2o98md07hl?cid=13
+11/5/2021 10:59:27 AM		https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZFBa8JAFITv%2FRVh78kmadS4mIjWSgWLwcQWeilr8lIXkt1030ZKf33VKLVQPD6Y%2Bd4wMxp%2F1ZW1B41CyYh4jksskLkqhPyIyCab2yEZx3cj5HXlN2zSmp1cw2cLaKwJImhz8D0oiW0NOgW9Fzls1suI7IxpkFHaytz5Vqp2WqRHCE3TFbFmB7%2BQ3JyeXqSIyjnKoWipKBraaFWKCmg6eV76dA2F0JCbDjBXOodTmoiUvEIg1mIWkdfH6Xvo3Zf9wg2Lfun1CigGQZD72z4funw49AbBQYkJRxR7%2BPUitrCQaLg0EfFd37M9z3Z7mRew3pD5odMPwzdiJVoZlatqKmTXUKslUxwFMslrQGZydozLfMdl206E7CnLEjtZpRmxXi5N%2B8emD91LZF23t1nN%2BTGJuynYKbG%2BJtwG8MtYJP5nmhG9psbn8%2B%2Fe8Q8%3D&_x_zm_rtaid=JFWzDr_SQAa98iZRjdLonQ.1636124365359.8da2a23ee908979f676f19235b7eb54c&_x_zm_rhtaid=158
+11/5/2021 11:29:37 AM	Lectures - Google Drive	https://drive.google.com/drive/folders/14RRzusx6-WneUxkScwrdUR3MZFz_f1I9
+11/5/2021 11:30:17 AM	7-Lisp-Print.pptx - Google Slides	https://docs.google.com/presentation/d/193H5A-Z3v9nTQPu1LmcOpAmWaGrq3IsF/edit?usp=drive_web&ouid=108989945004428762145&rtpof=true
+11/5/2021 11:30:18 AM	7-Lisp-Print.pptx - Google Slides	https://docs.google.com/presentation/d/193H5A-Z3v9nTQPu1LmcOpAmWaGrq3IsF/edit?rtpof=true
+11/5/2021 11:30:21 AM	7-Lisp-Print.pptx - Google Slides	https://docs.google.com/presentation/d/193H5A-Z3v9nTQPu1LmcOpAmWaGrq3IsF/edit
+11/5/2021 11:30:21 AM	7-Lisp-Print.pptx - Google Slides	https://docs.google.com/presentation/d/193H5A-Z3v9nTQPu1LmcOpAmWaGrq3IsF/edit#slide=id.p2
+11/5/2021 11:30:22 AM	7-Lisp-Print.pptx - Google Slides	https://docs.google.com/presentation/d/193H5A-Z3v9nTQPu1LmcOpAmWaGrq3IsF/edit#slide=id.p3
+11/5/2021 11:30:22 AM	7-Lisp-Print.pptx - Google Slides	https://docs.google.com/presentation/d/193H5A-Z3v9nTQPu1LmcOpAmWaGrq3IsF/edit#slide=id.p4
+11/5/2021 11:30:23 AM	7-Lisp-Print.pptx - Google Slides	https://docs.google.com/presentation/d/193H5A-Z3v9nTQPu1LmcOpAmWaGrq3IsF/edit#slide=id.p5
+11/5/2021 11:30:24 AM	7-Lisp-Print.pptx - Google Slides	https://docs.google.com/presentation/d/193H5A-Z3v9nTQPu1LmcOpAmWaGrq3IsF/edit#slide=id.p6
+11/5/2021 11:30:25 AM	7-Lisp-Print.pptx - Google Slides	https://docs.google.com/presentation/d/193H5A-Z3v9nTQPu1LmcOpAmWaGrq3IsF/edit#slide=id.p7
+11/5/2021 11:30:25 AM	7-Lisp-Print.pptx - Google Slides	https://docs.google.com/presentation/d/193H5A-Z3v9nTQPu1LmcOpAmWaGrq3IsF/edit#slide=id.p8
+11/5/2021 11:30:26 AM	7-Lisp-Print.pptx - Google Slides	https://docs.google.com/presentation/d/193H5A-Z3v9nTQPu1LmcOpAmWaGrq3IsF/edit#slide=id.p9
+11/5/2021 11:30:27 AM	7-Lisp-Print.pptx - Google Slides	https://docs.google.com/presentation/d/193H5A-Z3v9nTQPu1LmcOpAmWaGrq3IsF/edit#slide=id.p10
+11/5/2021 11:30:27 AM	7-Lisp-Print.pptx - Google Slides	https://docs.google.com/presentation/d/193H5A-Z3v9nTQPu1LmcOpAmWaGrq3IsF/edit#slide=id.p11
+11/5/2021 11:29:52 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit?usp=drive_web&ouid=108989945004428762145&rtpof=true
+11/5/2021 11:29:53 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit?rtpof=true
+11/5/2021 11:29:54 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit
+11/5/2021 11:29:54 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p2
+11/5/2021 11:29:55 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p3
+11/5/2021 11:29:55 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p4
+11/5/2021 11:29:55 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p5
+11/5/2021 11:29:56 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p6
+11/5/2021 11:29:56 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p7
+11/5/2021 11:29:57 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p8
+11/5/2021 11:29:57 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p9
+11/5/2021 11:30:10 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p10
+11/5/2021 11:30:11 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p11
+11/5/2021 11:30:11 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p12
+11/5/2021 11:30:11 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p13
+11/5/2021 11:30:11 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p14
+11/5/2021 11:30:12 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p15
+11/5/2021 11:30:12 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p16
+11/5/2021 11:30:12 AM	6-Lisp-SExpression.pptx - Google Slides	https://docs.google.com/presentation/d/1BjpOz4UL3sBDhHb3lT7T1UulpNZ8o9CY/edit#slide=id.p17
